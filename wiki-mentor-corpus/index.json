@@ -1,0 +1,38 @@
+{
+  "utterances-index": {
+    "clean_text": "<class 'str'>",
+    "word_count": "<class 'int'>",
+    "revid": "<class 'int'>",
+    "article": "<class 'str'>",
+    "reply_signer": "<class 'str'>"
+  },
+  "speakers-index": {
+    "role": "<class 'str'>"
+  },
+  "conversations-index": {
+    "mentor": "<class 'str'>",
+    "mentee": "<class 'str'>",
+    "mentor_type": "<class 'str'>",
+    "has_reply": "<class 'bool'>",
+    "reply_signer": "<class 'str'>",
+    "actual_responders": "<class 'list'>",
+    "page": "<class 'str'>",
+    "article": "<class 'str'>"
+  },
+  "overall-index": {
+    "name": "<class 'str'>",
+    "description": "<class 'str'>",
+    "num_conversations": "<class 'int'>",
+    "num_utterances": "<class 'int'>",
+    "num_questions": "<class 'int'>",
+    "num_replies": "<class 'int'>",
+    "num_speakers": "<class 'int'>",
+    "num_mentors": "<class 'int'>",
+    "num_mentees": "<class 'int'>",
+    "time_range": "<class 'str'>",
+    "language": "<class 'str'>",
+    "source": "<class 'str'>",
+    "assigned_only": "<class 'bool'>"
+  },
+  "version": "1"
+}
