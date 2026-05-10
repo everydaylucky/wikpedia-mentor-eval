@@ -3,3 +3,9 @@ data/
 
 # Environment
 .env
+
+# Python cache
+__pycache__/
+
+# macOS
+.DS_Store

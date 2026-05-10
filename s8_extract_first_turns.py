@@ -99,6 +99,14 @@ def main():
                 reply_signer = "unknown"
             actual_responders = sorted(signers - {mentee_norm})
 
+        # reply_signer=unknown means no identifiable mentor/other replied
+        # (typically mentee self-reply or parsing artifact) — treat as no reply
+        if reply_signer == "unknown":
+            r = dict(r, has_reply=False, reply_clean="", reply_emb="",
+                     reply_words=0, reply_timestamp=None)
+            reply_signer = "none"
+            actual_responders = []
+
         rec = {
             "conversation_id": r["conversation_id"],
             "mentor": r["mentor"],

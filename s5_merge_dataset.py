@@ -102,6 +102,12 @@ def parse_s2():
                 revid = tag_rec["revid"] if tag_rec else None
 
                 lines = body.split("\n")
+                # Skip "mentor is away" forwarding header — it starts with : but is not a reply
+                import re as _re
+                while lines and _re.match(
+                        r"^\s*:?\s*'*\s*(Note:\s*)?\[\[User[ _]talk:",
+                        lines[0]) and "is away" in lines[0]:
+                    lines.pop(0)
                 q_lines, r_lines = [], []
                 found_reply = False
                 for ln in lines:

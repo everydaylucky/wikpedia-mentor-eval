@@ -286,7 +286,10 @@ def clean_wikitext(text):
     lines = text.split('\n')
     cleaned_lines = []
     for line in lines:
-        stripped = line.lstrip(':*').strip()
+        # Protect emoticons like :) :( :D :P :/ before stripping wikitext indent colons
+        protected = re.sub(r':([)D(P/|\\])', r'EMOTICON_COLON\1', line)
+        stripped = protected.lstrip(':*').strip()
+        stripped = stripped.replace('EMOTICON_COLON', ':')
         if stripped:
             cleaned_lines.append(stripped)
     text = '\n'.join(cleaned_lines)
@@ -369,6 +372,20 @@ def main():
         r_raw = r.get("mentor_reply") or ""
 
         q_raw = re.split(r'\n==.+==\s*\n', q_raw)[0]
+
+        # Strip question text duplicated at start of reply (s4 recovery artifact):
+        # Some s4_recovered replies contain the full question + mentee signature
+        # before the actual reply. Detect by checking if reply starts with question
+        # text (after optional templates), then cut at the mentee's first signature.
+        if q_raw and r_raw and len(q_raw) > 20:
+            r_no_tpl = re.sub(r'^\{\{[^}]+\}\}\s*', '', r_raw)
+            if r_no_tpl.startswith(q_raw[:50]):
+                mentee_norm = mentee.strip().replace("_", " ").lower()
+                sigs = _find_signed_timestamps(r_raw)
+                for end, signer, _ts in sigs:
+                    if signer == mentee_norm:
+                        r_raw = r_raw[end:].lstrip()
+                        break
 
         reply_ts = extract_reply_timestamp(r_raw, mentor) if r_raw else None
 

@@ -1,12 +1,12 @@
-# Wikipedia Mentor Research — Data Collection Pipeline
+# Wikipedia Mentor Research — Data Collection & Analysis Pipeline
 
-Academic research pipeline for collecting and analyzing Wikipedia's [Growth Team Mentorship Program](https://www.mediawiki.org/wiki/Growth/Mentor_dashboard) data.
+Research pipeline for collecting and analyzing Wikipedia's [Growth Team Mentorship Program](https://www.mediawiki.org/wiki/Growth/Mentor_dashboard) data, supporting the paper *"Who Benefits from Wikipedia's Growth Mentorship? The Role of Newcomer Information Needs."*
 
 ---
 
 ## Overview
 
-The program pairs newly registered Wikipedia editors ("mentees") with experienced editors ("mentors"). This pipeline collects the full historical roster of mentors, their conversations with mentees, validates coverage using Wikipedia edit tags, recovers missing conversations, cleans wikitext into analysis-ready text, and exports a ConvoKit corpus.
+The program pairs newly registered Wikipedia editors ("mentees") with experienced editors ("mentors"). This pipeline collects the full historical roster of mentors, their conversations with mentees, validates coverage using Wikipedia edit tags, recovers missing conversations, cleans wikitext into analysis-ready text, exports a ConvoKit corpus, and runs the full causal analysis (propensity score stratification, heterogeneous effects by question type, and reply text feature analysis).
 
 **Pipeline:**
 
@@ -21,7 +21,15 @@ s6_describe.py              → stdout    (descriptive statistics for s1-s5)
 s7_clean_conversations.py   → data/s7/  (wikitext → cleaned text + semantic tokens)
 s8_extract_first_turns.py   → data/s8/  (first question + reply per mentee)
 s9_export_corpus.py         → wiki-mentor-corpus/  (ConvoKit format)
-s10_perspective_api.py      → data/s10/ (Google Perspective API toxicity scores)
+s10_1_perspective_api.py       → data/s10/ (Google Perspective API toxicity scores)
+s10_2_llm_annotation.py        → data/s10/ (LLM annotation of question types)
+s10_3_agreement.py             → data/s10/ (inter-annotator & human-LLM agreement)
+s11_build_features.py          → data/s11/ (analysis-ready feature matrix)
+s12_build_psm_dataset.py       → data/s12/ (PSM dataset: covariates + outcomes)
+s13_psm_analysis.py            → data/s13/ (main PSM results + robustness checks)
+s14_heterogeneous_effects.py   → data/s14/ (within-subgroup PSM by question type)
+s15_1_reply_text_analysis.py   → data/s15/ (reply text feature extraction)
+s15_2_reply_association.py     → data/s15/ (reply feature–retention association)
 ```
 
 All scripts are **resume-safe** with checkpoint files. Restart at any point and completed work is skipped.
@@ -41,17 +49,30 @@ All scripts are **resume-safe** with checkpoint files. Restart at any point and 
 ├── s7_clean_conversations.py
 ├── s8_extract_first_turns.py
 ├── s9_export_corpus.py
-├── s10_perspective_api.py
+├── s10_1_perspective_api.py
+├── s10_2_llm_annotation.py
+├── s10_3_agreement.py
+├── s11_build_features.py
+├── s12_build_psm_dataset.py
+├── s13_psm_analysis.py
+├── s14_heterogeneous_effects.py
+├── s15_1_reply_text_analysis.py
+├── s15_2_reply_association.py
 ├── data/
-│   ├── s1/   (mentor list, change log, checkpoints)
-│   ├── s2/   (conversations, merged output, checkpoints)
-│   ├── s3/   (tag revision cache, coverage results)
-│   ├── s4/   (recovered conversations, caches)
-│   ├── s5/   (final merged dataset, report)
-│   ├── s6/   (user profiles, contributions, logs, abuse filter)
-│   ├── s7/   (cleaned conversations)
-│   ├── s8/   (first turns extraction)
-│   ├── s10/  (Perspective API scores)
+│   ├── s1/    (mentor list, change log, checkpoints)
+│   ├── s2/    (conversations, merged output, checkpoints)
+│   ├── s3/    (tag revision cache, coverage results)
+│   ├── s4/    (recovered conversations, caches)
+│   ├── s5/    (final merged dataset, report)
+│   ├── s6/    (user profiles, contributions, logs, abuse filter)
+│   ├── s7/    (cleaned conversations)
+│   ├── s8/    (first turns extraction)
+│   ├── s10/   (Perspective scores, LLM annotations, agreement)
+│   ├── s11/   (feature matrix)
+│   ├── s12/   (PSM dataset: covariates + outcomes)
+│   ├── s13/   (PSM results, figures, tables)
+│   ├── s14/   (subgroup PSM results, figures, tables)
+│   ├── s15/   (reply features, association results)
 │   └── legacy/  (old Perspective data for import)
 ├── wiki-mentor-corpus/  (ConvoKit output)
 └── README.md
@@ -186,7 +207,7 @@ Exports to [ConvoKit](https://convokit.cornell.edu/) corpus format with addition
 
 ---
 
-### `s10_perspective_api.py` (optional)
+### `s10_1_perspective_api.py` (optional)
 Fetches Google Perspective API scores (23 attributes: toxicity, insult, curiosity, etc.) for questions and replies. Imports old scores from `data/legacy/`. Resume-safe.
 
 | Output | Description |
@@ -196,30 +217,120 @@ Fetches Google Perspective API scores (23 attributes: toxicity, insult, curiosit
 
 ---
 
+### `s10_2_llm_annotation.py`
+Annotates all 41,339 first-turn questions with Morrison (1993) information-seeking dimensions using DeepSeek-v4-Flash. Five binary dimensions: Q1 (Substantive), Q2 (Referent), Q3 (Appraisal), Q4 (Normative), Q5 (Own Work). Resume-safe with JSONL checkpoint.
+
+| Output | Description |
+|--------|-------------|
+| `data/s10/corpus_annotations_v2.jsonl` | One record per question with Q1–Q5 labels |
+
+---
+
+### `s10_3_agreement.py`
+Computes inter-annotator reliability (Cohen's κ) for human-human (Iteration 2) and human-LLM agreement. Reports separately for validation set (first 120), test set (last 121), and full set (n=241).
+
+| Output | Description |
+|--------|-------------|
+| `data/s10/agreement_v2.csv` | κ values by dimension and annotator pair |
+
+---
+
+### `s11_build_features.py`
+Builds the analysis-ready feature matrix from s1/s5/s6/s7/s8/s10. Computes edit history features, text embeddings (OpenAI), linguistic features, Perspective API scores, and temporal variables.
+
+| Output | Description |
+|--------|-------------|
+| `data/s11/s11_features.jsonl` | One record per conversation with all features |
+
+---
+
+### `s12_build_psm_dataset.py`
+Assembles the final PSM dataset from s8/s10/s11. Applies sample restrictions (English, first conversation, auto-assigned mentor). Constructs 164 covariates across 6 feature blocks, treatment indicators, and 10 outcome variables. Exports as NumPy archive.
+
+| Output | Description |
+|--------|-------------|
+| `data/s12/psm_data/psm_dataset.npz` | Arrays: X covariates, treatment, outcomes, IDs |
+
+---
+
+### `s13_psm_analysis.py`
+Full PSM analysis: propensity score estimation (logistic regression with 5-fold CV), stratification, covariate balance diagnostics, ATT estimation with cluster bootstrap CIs, feature ablation (15 specifications), strata sensitivity, PS trimming, outcome window sensitivity, Rosenbaum bounds, and E-values.
+
+| Output | Description |
+|--------|-------------|
+| `data/s13/tables/` | Main results, robustness checks, covariate balance |
+| `data/s13/figures/` | Forest plot, PS distribution, balance plots, robustness |
+
+---
+
+### `s14_heterogeneous_effects.py`
+Within-subgroup PSM analysis by Morrison question type (Q1–Q5). Re-estimates propensity scores within each subgroup and computes subgroup-specific ATTs with bootstrap CIs.
+
+| Output | Description |
+|--------|-------------|
+| `data/s14/tables/` | Subgroup ATTs, cross-DV heatmap data |
+| `data/s14/figures/` | Subgroup forest plots, heatmap |
+
+---
+
+### `s15_1_reply_text_analysis.py`
+Extracts interpretable text features from mentor replies (treated group only): reply lag, word count, question marks, "I"/"we" rates, gratitude, greeting, subjectivity, etc. Compares feature distributions across Morrison question-type subgroups.
+
+| Output | Description |
+|--------|-------------|
+| `data/s15/reply_features.csv` | Per-reply feature matrix |
+| `data/s15/subgroup_comparison.csv` | Feature means by question type |
+
+---
+
+### `s15_2_reply_association.py`
+OLS regression of reply text features on newcomer retention outcomes, controlling for 164 pre-treatment covariates. Reports standardized coefficients across multiple DVs and subgroups.
+
+| Output | Description |
+|--------|-------------|
+| `data/s15/association_results.csv` | Full-sample regression coefficients |
+| `data/s15/association_by_subgroup.csv` | Subgroup-level coefficients |
+
+---
+
 ## Setup & Usage
 
-**Dependencies:** Python 3 standard library only (s1-s9). s10 requires `requests`.
+**Dependencies:** Python 3 standard library only (s1-s9). See `requirements.txt` for additional packages needed by s10–s15 (numpy, pandas, scikit-learn, matplotlib, openai, etc.).
 
-**Environment:** Create `.env` with:
+**Environment:** Copy `.env.example` to `.env` and fill in your keys:
 ```
-WIKI_BOT_PASSWORD=your_bot_password_here
-PERSPECTIVE_API_KEY=your_key_here  # only needed for s10
+WIKI_BOT_PASSWORD=your_bot_password_here       # s6: authenticated Wikipedia API access
+PERSPECTIVE_API_KEY=your_perspective_api_key    # s10_1: Google Perspective API
+DEEPSEEK_API_KEY=your_deepseek_api_key         # s10_2: LLM annotation
 ```
 
 **Run in order:**
 
 ```bash
+# Data collection (s1–s9)
 python3 s1_collect_mentors.py              # ~2h
 python3 s2_collect_conversations.py        # ~4-6h
 python3 s3_validate_tags.py                # ~1h
 python3 s4_recover_missing.py              # ~2-4h
 python3 s5_merge_dataset.py                # <1min
-python3 s6_collect_users.py                # ~6-12h (or --phase 1 for profiles only)
+python3 s6_collect_users.py                # ~6-12h
 python3 s6_describe.py                     # <1min
 python3 s7_clean_conversations.py          # ~2min
 python3 s8_extract_first_turns.py          # ~1min
 python3 s9_export_corpus.py                # <1min
-python3 s10_perspective_api.py             # ~10h (optional)
+
+# Annotation & features (s10–s11)
+python3 s10_1_perspective_api.py           # ~10h (optional, requires API key)
+python3 s10_2_llm_annotation.py            # ~2h (requires API key)
+python3 s10_3_agreement.py                 # <1min (requires human annotation files)
+python3 s11_build_features.py              # ~30min
+
+# Analysis (s12–s15)
+python3 s12_build_psm_dataset.py           # ~2min
+python3 s13_psm_analysis.py                # ~20min
+python3 s14_heterogeneous_effects.py       # ~30min
+python3 s15_1_reply_text_analysis.py       # ~2min
+python3 s15_2_reply_association.py         # ~5min
 ```
 
 All scripts are resume-safe. Restart at any point and completed work is skipped.
@@ -241,6 +352,12 @@ All scripts are resume-safe. Restart at any point and completed work is skipped.
 | S7 | 41,339 cleaned conversations |
 | S8 | 41,339 first-turn records (35,920 English first conversations) |
 | S9 | **35,480 conversations** in ConvoKit corpus (after cleanup) |
+| S10 | LLM annotations for 41,339 questions|
+| S11 | Feature matrix: edit history, text, embeddings, Perspective scores |
+| S12 | **35,381 conversations** in PSM dataset (164 covariates, 10 outcomes) |
+| S13 | ATT = +0.0165 (primary), stable across 15 specifications |
+| S14 | Subgroup ATTs: Technical +0.024\*, Referent ≈ 0, Own Work +0.033\* |
+| S15 | Reply lag strongest correlate of retention (β = −0.035) |
 
 ---
 
