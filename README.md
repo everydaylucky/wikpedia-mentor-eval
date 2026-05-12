@@ -2,10 +2,6 @@
 
 Research pipeline for collecting and analyzing Wikipedia's [Growth Team Mentorship Program](https://www.mediawiki.org/wiki/Growth/Mentor_dashboard) data.
 
-This repository contains the code and data for the paper:
-
-> **Who Benefits from Wikipedia's Growth Mentorship? The Role of Newcomer Information Needs.**
-
 ---
 
 ## Overview
