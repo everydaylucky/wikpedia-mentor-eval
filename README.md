@@ -27,7 +27,8 @@ s10_3_agreement.py             → data/s10/ (inter-annotator & human-LLM agreem
 s11_build_features.py          → data/s11/ (analysis-ready feature matrix)
 s12_build_psm_dataset.py       → data/s12/ (PSM dataset: covariates + outcomes)
 s13_psm_analysis.py            → data/s13/ (main PSM results + robustness checks)
-s14_heterogeneous_effects.py   → data/s14/ (within-subgroup PSM by question type)
+s14_1_heterogeneous_effects.py → data/s14/ (within-subgroup PSM by question type)
+s14_2_technical_persistence.py → data/s14/ (windowed effect persistence for Technical)
 s15_1_reply_text_analysis.py   → data/s15/ (reply text feature extraction)
 s15_2_reply_association.py     → data/s15/ (reply feature–retention association)
 ```
@@ -55,7 +56,8 @@ All scripts are **resume-safe** with checkpoint files. Restart at any point and 
 ├── s11_build_features.py
 ├── s12_build_psm_dataset.py
 ├── s13_psm_analysis.py
-├── s14_heterogeneous_effects.py
+├── s14_1_heterogeneous_effects.py
+├── s14_2_technical_persistence.py
 ├── s15_1_reply_text_analysis.py
 ├── s15_2_reply_association.py
 ├── data/
@@ -263,13 +265,22 @@ Full PSM analysis: propensity score estimation (logistic regression with 5-fold 
 
 ---
 
-### `s14_heterogeneous_effects.py`
+### `s14_1_heterogeneous_effects.py`
 Within-subgroup PSM analysis by Morrison question type (Q1–Q5). Re-estimates propensity scores within each subgroup and computes subgroup-specific ATTs with bootstrap CIs.
 
 | Output | Description |
 |--------|-------------|
 | `data/s14/tables/` | Subgroup ATTs, cross-DV heatmap data |
 | `data/s14/figures/` | Subgroup forest plots, heatmap |
+
+---
+
+### `s14_2_technical_persistence.py`
+Windowed effect persistence analysis for the Technical subgroup, following Morgan & Halfaker (2018). Partitions the post-reply period into four non-overlapping windows (0–14d, 15–28d, 29–60d, 61–180d) and estimates ATT for 1+ and 5+ mainspace edit thresholds within each window.
+
+| Output | Description |
+|--------|-------------|
+| `data/s14/tables/technical_persistence.csv` | Windowed ATT estimates with bootstrap CIs |
 
 ---
 
@@ -328,7 +339,8 @@ python3 s11_build_features.py              # ~30min
 # Analysis (s12–s15)
 python3 s12_build_psm_dataset.py           # ~2min
 python3 s13_psm_analysis.py                # ~20min
-python3 s14_heterogeneous_effects.py       # ~30min
+python3 s14_1_heterogeneous_effects.py     # ~30min
+python3 s14_2_technical_persistence.py    # ~5min
 python3 s15_1_reply_text_analysis.py       # ~2min
 python3 s15_2_reply_association.py         # ~5min
 ```

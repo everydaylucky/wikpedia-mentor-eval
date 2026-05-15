@@ -1,0 +1,483 @@
+cluster,pair_rank,pair_id,role,retention,outcome,cid,mentee_dist,emb_cosine_sim,question_text,reply_text,question_words,reply_words,mentee_name,mentor_name
+0,0,c0_p0,A,high,1,20760,1.6933,0.0,"Buongiorno, vorrei aggiungere aggiornamenti sulla proposta di direttiva 565/2021 e spiegare che questa non è stata emanata, le cause della mancata applicazione e la disciplina ad oggi vigente in ambito dell'Unione Europea.
+Tuttavia non sono in grado ad aggiungere le fonti al testo e vorrei sapere materialmente quale sia la procedura per farlo.
+Ringrazio in anticipo per la disponibilità e mi impegno a seguire pedissequamente le prescrizioni per garantire un lavoro degno della piattaforma.","@: Hi, and sorry for not responding in Italian as my Italian writing skills are subpar. I suggest looking through [POLICY] to get some basic grasp on how to edit the English Wikipedia. Since it's a bit unclear what you would like to add I suggest you go forward with your addition (that's supported by [POLICY]) or make a detailed comment on the article talk page ([WIKILINK]) explaining what you'd like to get changed and a member of the community will help you. If you have any further questions, do not hesitate to ask. Best regards, '|",74,97,Ioiods,A09
+0,0,c0_p0,B,low,0,1299,1.6933,0.0,What are the agreement between European country and Africa country after colonization,"I don't understand what you mean, sorry.",12,7,Kenny's search,Ritchie333
+0,1,c0_p1,A,high,1,15962,2.0817,0.1169,"What does ""Wasian"" mean?","Hi @! It's slang for someone who is half [WIKILINK], half [WIKILINK] (which is what I am). My username comes from an old joke with my childhood friends. ( • )",4,28,InstyTheScotFlag,Wasianpower
+0,1,c0_p1,B,low,0,31971,2.0817,0.1169,"Hello
+Can you help compile the following in to a report
+People were gathered from all corners of the country to come and discuss issues concerning tourism in our country. And to come up with solutions as to how we can improve tourism in our country. Promoting private public partnership.
+A lot of issues were raised from both the public and private entities, including community beneficiation from the natural resources around them, how the investors are associating with the community, and improving transportation around the tourism areas. Several examples were sited like providing employment to the locals, helping in the community at large such as ploughing for them and building general dealership.
+Engaging the community as partners in the management of the natural resources and corporate governance within the community-based projects. Setting principles like accountability, transparency and responsibility. Providing education to the people and getting the process right, protocols are being observed and providing resources.
+They also came up with models that can make the tourism succeed like community uplifting, secure community rights, strong governance structures, professional management, markets, infrastructure, skill diversification and making sure that the skills we put on the market is what the market needs. Providing technical advisory, border efficiency, regulation changes in terms of tariffs, Collaborations through competitions, and strengthening the Botswana Tourism Organization through the tourism levy.
+One of the models that was highlighted was connectivity both locally and internationally. Providing airstrip infrastructures
+Encouraging private sector to engage local artists in the marketing and branding of their businesses.
+Financing the private sector. Developing, sustaining and facilitating tourism projects we had organizations like CEDA, LEA, World Bank and the National Development Bank.","Can you compile that in to a report
+no",276,9,Rebecca.seloi,Tankishguy
+0,2,c0_p2,A,high,1,27110,2.9048,0.1228,total aircraft of canadian air force,@. Sorry. Please be clear.,6,5,Jk1324,Maliner
+0,2,c0_p2,B,low,0,20041,2.9048,0.1228,The Social and economic chenges brought by the Natives land of 1913 in South Africa ?,"Hey @! I'm not to sure what it is you're referring to, and how this relates to the [WIKILINK] article. Could you clarify for me what it is you need help with? •",15,32,Lisolethi nqenqa,Panini!
+0,3,c0_p3,A,high,1,14280,4.2327,0.0,"I attempted to enhance the position of the ‘References’ section multiple times, but unfortunately, I was unsuccessful in achieving the desired outcome.",Whileonthewait [STATUS]. Fixed. Regards.,22,3,Whileonthewait,Cassiopeia
+0,3,c0_p3,B,low,0,13108,4.2327,0.0,Hello when was ingen founded,"Hi Mikedawsonceo. This is where you can ask questions about editing Wikipedia, sourcing etc. Generally we can't help answer random trivia questions. I am not sure what ingen is as it doesn't appear you're talking of the [WIKILINK]. Are you talking about [WIKILINK]? If so, appears it's at least 999 years old.",5,51,Mikedawsonceo,TheSandDoctor
+0,4,c0_p4,A,high,1,13459,4.5678,0.0,who do you think is going to win the world cup,"@ No idea, but when one team wins, it will almost instantly be updated on Wikipedia!",11,16,I102588,FULBERT
+0,4,c0_p4,B,low,0,23792,4.5678,0.0,Hello,"Hello! If you have any questions, don't be afraid to ask them. ∫",1,13,Allaboutthemusicwriter,Mwwv
+1,0,c1_p0,A,high,1,28463,3.7184,0.603,Ok,"What? HwyNerd
+@ Hi! Do you have any specific question you want to ask? –  ツ",1,16,Utorotn,LuniZunie
+1,0,c1_p0,B,low,0,23382,3.7184,0.603,How,"Hi @, welcome to Wikipedia! If you are asking about how to get started editing, try [HELP_PAGE].",1,17,Hasitha akash,Justiyaya
+1,1,c1_p1,A,high,1,14861,4.6742,0.6931,yo,"@: What's the question? (, , )",1,6,Kian654,Leonidlednev
+1,1,c1_p1,B,low,0,29706,4.6742,0.6931,Ok,"@, do you have a question? '",1,7,MrbananaTV104,JayCubby
+1,2,c1_p2,A,high,1,4549,5.969,0.5634,Final,M.A.Nejat Was there a question?,1,4,M.A.Nejat,Glane23
+1,2,c1_p2,B,low,0,5301,5.969,0.5634,I,"Hi, did you have a question?",1,6,Juliohardwick,Gråbergs Gråa Sång
+1,3,c1_p3,A,high,1,33422,7.679,0.5327,sup,"Hello! ( · )
+yoo",1,2,FallGuysLover2025,Phoenix
+1,3,c1_p3,B,low,0,6679,7.679,0.5327,ok it is fine,@: Hi there! Did you have a question?,4,8,History Of Pothowar,GoingBatty
+2,0,c2_p0,A,high,1,22970,0.1517,0.0692,Why is wheel alignment essential for maintaining optimal performance and safety in our four-wheeler vehicles?,", is this question related to Wikipedia? If not, try [POLICY]. —",15,10,Samvitgaragetools,Qwerfjkl
+2,0,c2_p0,B,low,0,15985,0.1517,0.0692,what is microecomics,"Hi @. Welcome to Wikipedia! Are you referring to [WIKILINK], [WIKILINK], or [WIKILINK]. I suggest using [POLICY] for questions that are not directly related to editing Wikipedia articles. Thanks!",3,29,Roshni naz,94rain
+2,1,c2_p1,A,high,1,34605,1.3208,0.2095,"Hi, the last 330 with the XM cabins is now in Singapore for retrofit, we will never see the 292 pax version again. Thx",", welcome to Wikipedia! If you have any questions about editing, let me know :) —",24,13,Avnerd23,Frostly
+2,1,c2_p1,B,low,0,8923,1.3208,0.2095,"Daftarkan semua anggota ruang contoh berikut ini:
+(a) Himpunan bilangan bulat antara 1 dan 50 yang habis dibagi 8.
+(b) Himpunan S = (xx+4x-5= 0}.
+(c) Himpunan semua hasil percobaan bila sekeping uang logam dilemparkan samp sisi angka muncul atau sisi gambar muncul tiga kali.
+(d) Himpunan S = {xx adalah benua).
+(e) Himpunan S (x 2x 40 dan x < 1).","Immanuel laia hello and welcome to Wikipedia! This is the English Wikipedia; other languages can be found at [WIKILINK].
+Wikipedia is about building an encyclopedia, so if this is a homework question then it would be suited to some other website. For instance, [LINK] can answer maths questions in English but only when the question writer shows their working out, makes a serious attempt at solving the given problems and explains where they are stuck. —",62,73,Immanuel laia,Bilorv
+2,2,c2_p2,A,high,1,5842,1.7374,0.2166,E.g wut is 2+2?,"Bennett30JE, you can do better than that.",4,7,Bennett3OJE,Cullen328
+2,2,c2_p2,B,low,0,36076,1.7374,0.2166,how does the survey map of townships and range interpreted,"Hi , I'm happy to help, but could you be more specific on what you're looking for? ( · )",10,16,Tommychow99,Myrealnamm
+2,3,c2_p3,A,high,1,32930,2.7182,0.2126,HISBN 0-226-68535-7,"Hi @, I'm not sure what you mean. Could you clarify, please? Thanks! (he/him )
+==Welcome to The Wikipedia Adventure!==
+Hi EpicPupper! We're so happy you wanted to play to learn, as a friendly and fun way to get into our community and mission. I think these links might be helpful to you as you get started.
+[POLICY]
+[POLICY]
+[POLICY]
+[POLICY]
+-- 19:27, Sunday, January 9, 2022 ([WIKILINK])",1,66,Metaphysical-Patricia,Frostly
+2,3,c2_p3,B,low,0,9046,2.7182,0.2126,Sex p,Ndabe Smith hi! Do you have a question about Wikipedia? —,2,8,Ndabe Smith,Bilorv
+2,4,c2_p4,A,high,1,4521,2.8765,0.1225,This is vest earn point saite and developed countries *,:POPI mandatory Did you have specific questions about editing Wikipedia?,10,8,POPI mandatory,Glane23
+2,4,c2_p4,B,low,0,38961,2.8765,0.1225,X2-4x=21,"Hello, I have a relatively simple question about infoboxes. I want to know when to include what information in a public figure's infobox. I have been updating the infoboxes of public figures- mostly scientists. I have noticed that the information in someone's infobox is not always standard. For example, a person's military service is not always included. The authors Walter Miller and Robert Heinlein had very important military experiences that influenced their later work. I feel like their military service should be included in the infobox. Additionally, there is an academic researcher whose page I edited who achieved a significant military rank and awards- although he is most known for other things, I feel his military information belongs in the infobox.
+Are there guidelines on what determines what belongs in an infobox? Or does it all come down to best judgment of the page author(s)? I don't want to step on anyone's toes or violate rules.",1,156,Taiwo Richie,Maliner
+3,0,c3_p0,A,high,1,8778,0.7587,0.5094,"Hi bro
+Pls help me in this journey","Tagorejcloud, what do you need help with? (Very Busy)",8,8,Tagorejcloud,Yoshi24517
+3,0,c3_p0,B,low,0,31613,0.7587,0.5094,I need help with everything I'm sl lost,"Hi @, how would you like to contribute to Wikipedia? Cheers,",8,11,Daniellenocha1,SunloungerFrog
+3,1,c3_p1,A,high,1,36059,1.4825,0.5797,Hello what my know to helping here,"@ Hi, do you have any questions for me about editing Wikipedia? I would be very glad to help! ( · )",7,19,CYDRIC1234,Myrealnamm
+3,1,c3_p1,B,low,0,2401,1.4825,0.5797,Hey I need help brother ?,Welcome to Wikipedia! What kind of help do you need?,5,10,JSTACK161,Lfstevens
+3,2,c3_p2,A,high,1,34130,2.3543,0.6346,Hello please help me,"Of course, I'm here to help! What do you need assistance with?
+==Teahouse host - belated welcome==
+Dear Saurabhsaha,
+Thank you for volunteering as a Host at the [POLICY]. Wikipedia is a community of people working together to make knowledge free. You are an important part of that effort! By joining as a Host, and by following [POLICY], you are helping new users to get started here at Wikipedia, and aiding more experienced users who just have a question about how something works. We appreciate your willingness to help!
+Here are some links you may find helpful as a Host:
+[POLICY] you can install to make responding easier,
+[POLICY] and, of course:
+[POLICY] itself.
+Editors who have signed up as hosts, but who have not contributed at the Teahouse for six months or so may be removed from the [POLICY].
+My apologies for the belated welcome. Although you've not yet made many and contributions to the Teahouse, I do hope you feel confident to help others editors there in the future.",4,171,Super Sport News,Aryan
+3,2,c3_p2,B,low,0,26373,2.3543,0.6346,"Hello, how may I assist ?","@, Hello. I do not need assisting, but I can assist you in any way for Wikipedia. Cheers,",5,18,Ravindra211986,Relativity
+3,3,c3_p3,A,high,1,30606,4.4793,0.5439,helo i wnna ask for help,"Kevin loud
+:Please see [HELP_PAGE] for tutorial how to edit Wikipedia. Thanks.",6,10,Kevin loud,KuyaMoHirowo
+3,3,c3_p3,B,low,0,1497,4.4793,0.5439,hi i need help a.s.a.p,"Hello! Feel free to ask any questions you have about Wikipedia to me, or you can ask at the [POLICY].",5,20,Me and you forever1215,Iffy
+3,4,c3_p4,A,high,1,4640,5.0664,0.5649,"Hi, Do you need any help with anything?",[WIKILINK] I'm good. How about you?,8,6,Fennke,Glane23
+3,4,c3_p4,B,low,0,31848,5.0664,0.5649,I’d like to download some pictures and will need your help with this,"If you click on the picture you want, there should be a download icon somewhere near the bottom right.",13,19,Gleganof,ScrabbleTiles
+4,0,c4_p0,A,high,1,11431,1.5991,0.2732,How i start work ? Without investment,Could you clarify?,6,3,Sana khn,Aaron Liu
+4,0,c4_p0,B,low,0,4838,1.5991,0.2732,Hello. Dear Sir or Madam Can the coins collected in the game be converted into real money or digital currency? And if possible please guide the solution to convert coins to money,"Hi @, I can only answer questions about editing Wikipedia.",32,10,Laleh119,Alyo
+4,1,c4_p1,A,high,1,7445,4.0364,0.4082,How do I meet my daily goals without internet,"Hi, let me know if you currently have any specific question regarding editing Wikipedia. Thanks.",9,15,Inueltrey,Vis M
+4,1,c4_p1,B,low,0,12223,4.0364,0.4082,Hello how are you doing my people I am new here can someone tell me how to do it to work set I will be earning money by answering questions like my partners?,"Hello ! I am not sure I understand your question. It seems like you are asking about how to answer questions like the one you've just asked, and be paid for doing so (if not, my apologies, could you please clarify?). If so, you are mistaken about how Wikipedia works: there are no paid employees, and there is no selection process for people wanting to contribute. Anybody is allowed to contribute to Wikipedia, and everybody who does is a volunteer and does not earn any money for contributing.",33,87,Morrow Ncho,Tollens
+4,2,c4_p2,A,high,1,27448,4.9088,0.3971,ICH WARTE SCHON SEIT 11.6.24 AUF INSGESAMT 4.500.000 DOLLAR PLUS BONUS ÜBER 7.000 DOLLAR WÖCHENTLICH BIS ZUM LEBENSENDE DIE ICH BEI RECHTMÄßIGEN SWEEPSTAKES GEWONNEN HABE UND DEM ZUFALLSPRINZIP ZU VERDANKEN HABE. ALLE GLÜCKWUNSCHTEXTE UNTERLIEGEN DEM PARAGRAPH 661BGB 1B UND SOMIT MÜSSEN DIE INSGESAMT 4.500.000 DOLLAR PLUS BONUS ÜBER 7.000 DOLLAR WÖCHENTLICH BIS ZUM LEBENSENDE AUSBEZAHLT WERDEN WIE ES AM 9.7.24 UM 5.20 UHR VON DANNIELLE LAM VERSPROCHEN WURDE. BITTE SOFORT DANNIELLE LAM KONTAKTIEREN UND SIE ZUR PERSÖNLICHEN GEWINNÜBERGABE NACH TRIER WENZELBACHSTRASSE GERMANY SCHICKEN WIE SIE ES AM 9.7.24 UM 5.20 UHR VERSPROCHEN HATTE. VIELEN LIEBEN DANK VOLKER PICK,Answered at .,98,2,MEGAGEWINNE,Matrix
+4,2,c4_p2,B,low,0,18430,4.9088,0.3971,How do I get money 💰in Wikipedia,@ You don't. Wikipedia is not a place to make money. See [POLICY]. [WIKILINK]],7,14,Usman Muhammad Avu,Toadspike
+5,0,c5_p0,A,high,1,752,1.214,0.8456,do i earn by editing?,"Onesmus ki: No, edits should be freely given to the encyclopaedia; there are no earnings.",5,13,Onesmus ki,AllyD
+5,0,c5_p0,B,low,0,9163,1.214,0.8456,Do I get paid for editing,"@ No. Wikipedia editing is a volunteer project. Folks edit because they want to and like the subjects they write about :) If anyone does pay you to edit, you have to disclose that per [POLICY].",6,35,Victor2903hw,CaptainEek
+5,1,c5_p1,A,high,1,13831,3.4458,0.7197,When I will be getting money from editing?,"@: Hey there—put very simply, you won't. Wikipedians are volunteers. While we'd love your help, if making money from writing is your end goal, please find another platform.
+Thank you for your feedback, and I sincerely apologize if my intentions came across differently than expected. I truly respect the efforts and dedication of Wikipedians as volunteers. My goal is to contribute meaningfully, and I understand the importance of upholding the platform's values. I appreciate the clarification and will adjust my approach moving forward. Thank you for your understanding!
+@: You're all good! I'm sorry if I came across a bit harsh; that's just one of those questions with a really clear answer that's hard to sugarcoat. Please know I'll be here if you have any other questions or concerns about contributing to Wikipedia—happy editing!",8,134,InfoSeeker19,Bsoyka
+5,1,c5_p1,B,low,0,13837,3.4458,0.7197,Can we earn money by editing in Wikipedia?,"@: Hey there! Very simply, no.",8,6,Dhruv-0024,Bsoyka
+5,2,c5_p2,A,high,1,35393,5.1404,0.7939,"Hello sir./madam, do Wikipedia editors get paid?","@ Generally, the answer to that would be ""no;"" we certainly aren't paid by the Wikimedia Foundation, unless our username ends in (WMF). People who are being paid by an employer/client other than the WMF need to disclose as such on their userpage.
+Any reason you'd ask?",7,47,KhethiweM,I dream of horses
+5,2,c5_p2,B,low,0,39342,5.1404,0.7939,Hi I want to ask do you get paid for doing this here on wikipedia,I don't think anybody gets paid here. I could be wrong. But I don't believe so. Let me know what you find out. This would be a really cool job! I love writing.,15,33,Nana teenwolf,Oshwah
+5,3,c5_p3,A,high,1,21791,8.0136,0.7023,"Hello,
+Do we get paid for editing and article on Wikipedia?","HimanshuBhakar07 Welcome to Wikipedia. You should really read [POLICY], but to answer your question in short: No, Wikipedia does not pay us to edit articles. Even people who are paid by a third-party need to follow strict guidelines on [POLICY] before editing. If you are still interested in editing on Wikipedia, then I suggest that you start and finish [POLICY].",11,59,HimanshuBhakar07,MPGuy2824
+5,3,c5_p3,B,low,0,32481,8.0136,0.7023,Are there any earnings after editing?,"Hello, and welcome!
+Wikipedia is a volunteer based effort. Everyone edits for free out of their own motivation and never expect compensation beyond personal compensation. Donations to the Wikimedia Foundation (which run Wikipedia) go to maintaining the site and other efforts to support the project and its ideals.",6,48,Teresia Njuguna,GGOTCC
+5,4,c5_p4,A,high,1,2609,11.676,0.67,"how do you get the motivation to edit actively for multiple years for almost nothing in return, do you have a job?","@, glad that you had asked. I have a job, but both do not interfere with each other.
+# See [LINK] It sums up perfectly the primary motivation. And the environment here is conducive for discourse to happen.
+# After awhile, you gain a [POLICY] here. Or [WIKILINK]. Or [WIKILINK]. Or on and on and on... Over time you will develop friendships with others here, sharing the same goal of building the repository of [WIKILINK] be it by content, technical or other types of contributions.",22,85,Jeees777,Robertsky
+5,4,c5_p4,B,low,0,26592,11.676,0.67,"Hello, do you pay anything in return after editing?","Hello! No, Wikipedia is a volunteer project, essentially; so nobody gets [POLICY].",9,12,Elvoster Boy,Relativity
+6,0,c6_p0,A,high,1,2779,0.6794,0.3381,Do you do this full time?,"Hi @ - no, not full-time at all. I usually do some work on Wikipedia almost every day, but it is far from full-time. Feel free to ask me any questions about editing. Regards,",6,34,Dotowl,Goldsztajn
+6,0,c6_p0,B,low,0,2403,0.6794,0.3381,"Hi, I am very new here and I am the founder and CEO of ConsultX Business English.
+I have come here to look for forums that are discussing Corporate and Business English.
+I may be able to offer some insight, tips and solutions to adult students that are just starting their journey towards a professional career and will need a strong grounding and understanding of what Corporate and Business English entails.
+You are welcome to ask any questions or join our free Newsletter to dive deeper into what we have to offer.
+It is our plan to provide 3 posts per week which will ignite curiosity by potential students. There will be a link in those posts where you can join our Newsletter, thank you, J.","Welcome to Wikipedia. This is not generally a place for discussions, except about issues relating to specific articles. Hope you will contribute to articles in your area of expertise. Good luck with your endeavor!",126,34,Jeremyhare,Lfstevens
+6,1,c6_p1,A,high,1,27304,0.6794,0.3377,Saludos friend How do I make an appointment?,@ An appointment with whom?,8,5,Jatoleyosel,Mach61
+6,1,c6_p1,B,low,0,6594,0.6794,0.3377,"Yes, my question is my son is incarcerated at Vienna correctional facility in Illinois. He is having a major surgery. Nobody has contacted me regarding this gave me information. I am his mother. I can’t believe that nobody even notified me at all, and I am on his list.",@: I'm sorry that you're in that situation. I know less about the [WIKILINK] than you do. My user talk page is meant to discuss Wikipedia. I wish you and your son luck with your situation.,49,36,Angersad,GoingBatty
+6,2,c6_p2,A,high,1,40477,1.5783,0.2414,"Hello Sam, I just got started and I am yet to go through all the ""Get help"" resources. I will definitely reach out when I have any questions.",Good to hear. Have fun.,28,5,Klaus Mikaelson1,SamuelNelsonGISP
+6,2,c6_p2,B,low,0,32381,1.5783,0.2414,Como mandar uma carta para wade Wilson,"I'm afraid I don't understand what you're asking. You may be better off asking that on the [WIKILINK]. (You're only supposed to communicate in English here, on the English Wikipedia. / Aqui, na Wikipédia em inglês, a comunicação deve ser feita apenas em inglês.)",7,44,Angeldeoop,Gommeh
+6,3,c6_p3,A,high,1,33884,1.9415,0.308,"Hi,
+No questions yet. I have requested to be moved up so that I can edit a semi-restricted page but have not heard back. Waited until the very last minute to get an assignment done for a college class and may have really screwed the pooch on this one.
+Kathleen","Hi @, it looks like [POLICY]. Best of luck with your studies! ‣ //",50,14,Tiredofurwhining,Phoenix
+6,3,c6_p3,B,low,0,27720,1.9415,0.308,Hello. I have a research manuscript I would like to publish. I look forward to your guidance on the process. Best regards.,"@: Hi, Wikipedia does not publish research as it is an encyclopedia, not a journal. You may want to look into the traditional academic publishers or [WIKILINK]. Ping me!",22,29,Mukhtar Muhammad Ahmad Sharaf al-Din,ARandomName123
+6,4,c6_p4,A,high,1,39195,2.6207,0.4399,"hi nightwolf, i didn't follow up on this last thurs, and now i'm 15 minutes from the beginning of the next zoom session with kelly. can we start this later today? (or tomorrow?)
+thanks HarryBarks","Yea, no probs. Feel free to drop by with any questions you may have.",34,14,HarryBarks,NightWolf1223
+6,4,c6_p4,B,low,0,2173,2.6207,0.4399,"Hello, nice to meet you. I’m glad to know I have a knowledgeable individual to help me out as it is inevitable that I will have questions.
+Felix Navidad,
+WK",@ - hellos and welcome to wikipedia. iIput some links at . Feel free to get in touch about anything wikipedia-related!,30,20,Wordskeep,Mujinga
+7,0,c7_p0,A,high,1,5081,0.2738,0.4687,"i love becca tobin and isobel steele even becky swonke tina Obrien
+be my mentor","Hi Billy christopher platt! I like your enthusiasm. Maybe you'd like to start by editing some of those actress articles? You could do some copyediting, or read the cited sources looking for more info, or look for more [POLICY] to add to the articles. Once you get a few edits in, if you'd like me to review your work, let me know. ( / )",15,59,Billy christopher platt,Firefangledfeathers
+7,0,c7_p0,B,low,0,5012,0.2738,0.4687,"Hello
+My name is Jonathan Acholoh, you've been assigned to me as my mentor","""Hi, Jonathan. Welcome to Wikipedia.",14,5,Ajodoh,GenQuest
+7,1,c7_p1,A,high,1,23657,0.7853,0.4493,Hello Mentor! Why is it unfortunate?,"Runningpen Just a bad joke. ( · · )
+@ I know right... But I am looking forward to your help. Editing is a dream come true.",6,22,Runningpen,Snowmanonahoe
+7,1,c7_p1,B,low,0,13729,0.7853,0.4493,"Dear Mentor,
+Hello mentor. My username (not real name) is Lemin Lemon. Can you help me with my Oprah Winfrey assignment?
+Thanks,
+Name","@: Hey there! Sorry, but I'm not here to help with school assignments. Best of luck though!",21,17,Lemin lemon,Bsoyka
+7,2,c7_p2,A,high,1,19348,0.9111,0.6962,Hi...Are you my mentor?,Yes. Do you have any questions?,4,6,Avijoy De,Liu1126
+7,2,c7_p2,B,low,0,24417,0.9111,0.6962,Thank you for being my mentor,"@ No worries, feel free to ask me any questions that come up while editing.",6,15,George K. Opoku,1AmNobody24
+7,3,c7_p3,A,high,1,27605,1.0655,0.4846,no way I need a mentor for wikipedia this is gayyyy,"@: I mean, it's up to you whether or not you want to engage with me. I'm just here to answer and Wikipedia-related questions you may have. Ping me!",11,29,Hello world hehehehhe,ARandomName123
+7,3,c7_p3,B,low,0,6624,1.0655,0.4846,"Hi GoingBatty,
+Thanks for being my mentor!
+Best,
+DogeCoinFan",@: Welcome to Wikipedia! Please let me know if you have any questions.,7,13,DogeCoinFan,GoingBatty
+7,4,c7_p4,A,high,1,37738,1.0947,0.7697,"Hi GoingBatty,
+Thanks for being my mentor!
+Best,
+DogeCoinFan",@: Welcome to Wikipedia! Please let me know if you have any questions.,8,13,Nucleusforever,GoingBatty
+7,4,c7_p4,B,low,0,6624,1.0947,0.7697,"Hi GoingBatty,
+Thanks for being my mentor!
+Best,
+DogeCoinFan",@: Welcome to Wikipedia! Please let me know if you have any questions.,7,13,DogeCoinFan,GoingBatty
+8,0,c8_p0,A,high,1,25796,0.5886,0.4656,Recover google account,"This is Wikipedia, not Google.",3,5,Amir Shazad Ranjha 55,Asilvering
+8,0,c8_p0,B,low,0,5868,0.5886,0.4656,How can the world gets my information through Google,"Hello, Excitedkizz. You will have to learn that from [WIKILINK]. Wikipedia editors do not control Google search results although a well-written Wikipedia article usually ranks high.",9,25,Excitedkizz,Cullen328
+8,1,c8_p1,A,high,1,22189,7.5046,0.6044,How to add my wiki page in Google??,"User pages on the English Wikipedia are ""noindexed"" which means that they typically don't appear in search engine results. This is by design as they are not meant to be articles, and there is no reason for them to appear in Google. If you are looking to promote yourself in Google search results, Wikipedia is not the place for that.",8,60,Hasandhrubo603,DanCherek
+8,1,c8_p1,B,low,0,9807,7.5046,0.6044,How can I put biography on Google,"Hi Niyogisubizogad, I'm not sure what you mean. Can you explain further? Cheers. (Ping me or leave a message on my [TALK_PAGE])",7,21,Niyogisubizogad,Alextejthompson
+8,2,c8_p2,A,high,1,24509,7.9146,0.4119,How to appear on the Frontline on Google,"Hi , that should never be the motivation for writing or changing articles, improving the Wikipedia is the goal, not helping Google.",8,21,Ghost lermaine,1AmNobody24
+8,2,c8_p2,B,low,0,29670,7.9146,0.4119,"Hello mentor, I want my name to be popular in internet when they type it all my information appears","I'd advise you to take a look at [POLICY]
+A search of your username in Google doesn't yield any coverage on a particular subject, so that alone indicates a lack of notability. The first results for 'Gabriel Bassey' are a variety of LinkedIn profiles and several news articles on a [LINK]. Also see [HELP_PAGE], which explains in great depth how an article can be started.
+If you are [LINK] at [WIKILINK] then I suggest looking at [POLICY], the gist of which is that you much have had a significant in your field, which doesn't appear to be the case from the single publication.
+Hope this helps. '",19,107,Gabriel Bassey,JayCubby
+8,3,c8_p3,A,high,1,32543,9.2054,0.6021,Please I want to be seen of google when searched,"Hello @. Wikipedia is not a place for you to promote yourself or make sure that you are seen in Google Search. Please see [POLICY], [POLICY], and [POLICY]. Please note that engaging in advertising or promotional behaviors can lead to a loss of editing privileges.",10,45,Milodancer,Fathoms Below
+8,3,c8_p3,B,low,0,12891,9.2054,0.6021,How do I make my music and artist profile visible on Google,"Hi, @, I can't help you with [WIKILINK], which is what I think you are really asking about here. If you have any questions about editing Wikipedia, I am happy to help.",12,32,The IG official,Eddie891
+8,4,c8_p4,A,high,1,18850,9.3572,0.4754,Please how can I make my portfolio public on google,"Hi, I'm not sure what you mean by this? Do you need help publishing a Wikipedia page?",10,17,Fazecode,Encoded
+8,4,c8_p4,B,low,0,5868,9.3572,0.4754,How can the world gets my information through Google,"Hello, Excitedkizz. You will have to learn that from [WIKILINK]. Wikipedia editors do not control Google search results although a well-written Wikipedia article usually ranks high.",9,25,Excitedkizz,Cullen328
+9,0,c9_p0,A,high,1,25666,0.3035,0.9386,hi,"Hello I AM A VERY PERSONY PERSON|p=, and welcome to Wikipedia! I'll stop by your talk page shortly with some helpful links to help you get started.
+ok ty",1,29,I AM A VERY PERSONY PERSON,Asilvering
+9,0,c9_p0,B,low,0,5599,0.3035,0.9386,Hi,"@ Hello, and welcome to wikipeida. Is there anything I can help you with?",1,14,Jessica Amanda 2,Jeffrey R. Clark
+9,1,c9_p1,A,high,1,1957,0.5091,1.0,Hi,@ hellos! anything wikipedia-related i can help with?,1,8,Happydayy0023,Mujinga
+9,1,c9_p1,B,low,0,38713,0.5091,1.0,Hi,Hi,1,1,Dwayne Chirere,Lfstevens
+9,2,c9_p2,A,high,1,22221,1.0408,1.0,Hi,Hi Let me know if you have any questions about editing Wikipedia.,1,12,Zandisile6,DanCherek
+9,2,c9_p2,B,low,0,22222,1.0408,1.0,Hi,Hi Let me know if you have any questions about editing Wikipedia.,1,12,ManishAzadJH,DanCherek
+9,3,c9_p3,A,high,1,21286,1.1363,1.0,Hi,"Hello , and welcome to wikipedia! let me know if i can help you with anything.",1,15,Migfab,Sakura emad
+9,3,c9_p3,B,low,0,31244,1.1363,1.0,Hi,Hello!,1,1,Aquinas Chacko Saji,MuffinHunter0
+9,4,c9_p4,A,high,1,27155,1.9503,1.0,hi,@ hello and welcome. Do you need help with anything?,1,10,Russia1202,CanonNi
+9,4,c9_p4,B,low,0,12858,1.9503,1.0,hi,"Hey! Anything I can help you with, feel free to let me know. :)",1,13,Inifastboy543221,Eddie891
+10,0,c10_p0,A,high,1,30839,1.1759,0.6164,"hello GoldRomean, are you a robot.","Hi, @, and welcome to Wikipedia! No, I am not a robot.",5,12,Kitty mcCheeseFace,GoldRomean
+10,0,c10_p0,B,low,0,16368,1.1759,0.6164,"Hello Hannah, are you a bot or a real person?",JaySmylz I'm a real person.,10,4,JaySmylz,Clovermoss
+10,1,c10_p1,A,high,1,33874,2.1877,0.6064,Who are you?,"Hi @! I’m a Wikipedia editor, much like yourself. I’ve been assigned to be your mentor, which is basically someone who helps new editors to learn the ropes, stuff about how Wikipedia works, etc.
+If you have any questions, feel free to ask them. I’m more than happy to help. ( · )
+Yes but what is mean for the wikipedia num free copositive network.
+What do you mean by the ""num free copositive network""? ( · )",3,72,Wikieditorhanselgred43,Phoenix
+10,1,c10_p1,B,low,0,30406,2.1877,0.6064,Are you AI,Nope!,3,1,BobBobzBob,Lordseriouspig
+10,2,c10_p2,A,high,1,25999,2.927,0.5631,are you ai,"@ No. Some more experienced Wikipedians, including myself, signed up to be mentors. We're all human (bots have to be clearly marked as such).",3,24,123123123yobro,Nahida
+10,2,c10_p2,B,low,0,27630,2.927,0.5631,"Hello ARandomName, Are you a human being or a robot?","@: Hi, I'm a human being. Ping me!",10,8,MarySol6192,ARandomName123
+10,3,c10_p3,A,high,1,8116,4.637,0.4539,Is your message automated or real,Real! —,6,1,Yunuoooy,Ganesha811
+10,3,c10_p3,B,low,0,20348,4.637,0.4539,Are you ai,"Thank you very much, @!",3,5,Dawikidumy,GraziePrego
+10,4,c10_p4,A,high,1,5506,5.2209,0.476,This a real person?,"@ Very much a real person, how can I help you.
+Sorry, that was a joke question. I've never seen something like this before and it's impressive!
+@ Thats ok, this is a fairly new thing here on wikipedia. If you every need to ask a question I'm here to answer them.",4,52,BaklavaEnjoyer,Jeffrey R. Clark
+10,4,c10_p4,B,low,0,13288,5.2209,0.476,Are you a bot,"MeVeryCool Nope, I'm a human being. ––",4,5,MeVeryCool,FormalDude
+11,0,c11_p0,A,high,1,24406,3.279,0.2882,Idk who u are but give me advice ahaha,"Hi @, Are you looking for something specific or just general advice for editing?",9,14,Durk1234,1AmNobody24
+11,0,c11_p0,B,low,0,11176,3.279,0.2882,"Hello
+How do i have all medical drugs dictionary?","@ Welcome to Wikipedia! If I understood you right, [POLICY] is a friendly community of editors interested in editing about Medical topics. If you are trying to access academic journals, Wikimedia has institutional partnerships with academic journals. However it requires having at least 500 edits and being active. You can find more details here [POLICY]. Happy editing and researching! In general for getting started on Wikipedia I would recommend going thru [POLICY]. It is a challenging environment at first but a lot of fun! ~ (he/him • )",9,84,Dr Tamim asefi,Shushugah
+11,1,c11_p1,A,high,1,7768,3.5207,0.5149,Do you have any tips for me?,"Hi there Lightningm! Welcome to Wikipedia. Good question, hmm, in terms of ""general tips"" on joining, I'd have to say:
+#Find area(s) that interest you - both in terms of content and activity (e.g. I find and add reviews for bands in some genres of music to make sure the articles won't be deleted). Your dashboard may be able to help
+#Dip a leg in, not your head - that is, don't write an article as your first thing. I did, it failed and I had a sulk for years - but when I made some smaller edits first I stuck around
+#Remember you can ask for help. I'm you mentor, but if I'm not online the [POLICY] will provide 24hr support. Or [HELP_PAGE] will give a good basic overview (pick the visual editor path)",7,134,Lightningm,Nosebagbear
+11,1,c11_p1,B,low,0,19966,3.5207,0.5149,Ask me anything,"Hey, Jowanhaje69, I'm the one who answers the questions here. If you have any, please don't hesitate!",3,16,Jowanhaje69,Panini!
+11,2,c11_p2,A,high,1,37383,3.6083,0.3564,"Hey! I have lots of questions and don't know where to begin:/ first of all, as a student of this, I can't see where all the learning videos are at that I was checking out before:/ I'd like to just watch the directions again but don't know where my professor put the link. Are you familiar? Thanks!",How do I create my Wikipedia public profile?,57,8,Bessbereal,Firefangledfeathers
+11,2,c11_p2,B,low,0,21781,3.6083,0.3564,Hi! How do you get more information (right/legal),"St4xxr Welcome to Wikipedia. Could you elaborate about sort of information you are looking for? I've left a message with a bunch of links on your talk page. Hopefully you get what you are looking for there. If not, please provide me with more details so that I can look for an answer. Happy editing!",8,54,St4xxr,MPGuy2824
+11,3,c11_p3,A,high,1,21905,3.9014,0.3219,"Hello, I'm not sure what to do specificly it's a bit overwhelming","Bumblebirb123 Welcome to Wikipedia. I looked over some of your edits and they seem good. Ideally you should leave an [HELP_PAGE] for every edit that you do though.
+Wikipedia is a huge project and you don't have to figure out everything in one go. Take it slow. If you want you can do [POLICY], which would help you to get used to editing and collaborating with other editors. Are you interested in a particular subject or geographical area? If so, I can point you to places where you could help improve articles in those areas. Happy editing!",12,96,Bumblebirb123,MPGuy2824
+11,3,c11_p3,B,low,0,25335,3.9014,0.3219,What first step after morning wakeup.,"Hi, Som Singh Bhura! The mentor question feature is to ask a question about editing Wikipedia I can't help with much outside of that. Do you have any questions about editing Wikipedia?",6,29,Som Singh Bhura,Perfect4th
+11,4,c11_p4,A,high,1,33639,4.4875,0.2791,I still need help with what to do with a drunken sailor,"Hi, please don't put troll questions on my talk page. If you have a question about editing, I am more than happy to help.",12,24,Catkid2280,Rambley
+11,4,c11_p4,B,low,0,14258,4.4875,0.2791,I do not have any question,Jahongir123321 Good day. If you have questions then let me know. Regards.,6,11,Jahongir123321,Cassiopeia
+12,0,c12_p0,A,high,1,25677,0.2989,0.3116,"Hello! I have some experience with wikitext as I am a regular editor on Explain xkcd, which is a small wiki dealing with everything xkcd. I know some, but not all commands. Here is a list of all the commands I currently fully understand.
+ref
+sup
+sub
+nowiki
+links
+files
+I also know the basics of tables.
+I learn by watching and trial + error. Sometimes I go to edit a page and view the wikitext to figure out what to do. May reach out periodically if I need assistance. Thanks!","Hi @, welcome to wikipedia! Great name, by the way.",91,10,DollarStoreBaal44,Asilvering
+12,0,c12_p0,B,low,0,41245,0.2989,0.3116,"Hola, buen día, me acabo de incorporar a wikipedia y deseo poner un articulo de una parroquia que se llama San José Obrero, ya la cree en el taller y la deseo pasar para que se publique pero no tengo habilityada la opcion para pasarla, me puedes ayudar a entender por que no la puedo pasar para publicarla, muchas gracias.
+Saludos: José Luis",¡Hola! ¡Creo que quizás estés buscando [LINK] ꧁꧂,63,7,José BePe,Zanahary
+12,1,c12_p1,A,high,1,36684,1.02,0.3573,"So, in general what is Wikipedia! questions amirite","Norhyrex The Grand Predominantly it's a big free online encyclopedia, created with the goal of making information accessible to everyone. There's a great page available [POLICY] that talks about why Wikipedia exists. Let me know if you have any other questions! '",8,39,Norhyrex The Grand,AviationFreak
+12,1,c12_p1,B,low,0,37067,1.02,0.3573,Quisiera añadir un artículo información a wikipedia sobre mi organización.,"I'm sorry, I only speak English.",10,6,Bily Anthony,Dafootballguy
+12,2,c12_p2,A,high,1,2428,2.9412,0.4639,"Good morning sir. Sorry to disturb you. I am a newbie, please I have read all rules and regulations and everything of Wikipedia. Help",Welcome to Wikipedia! Congratulations with your reading. Let me know if you have any questions that I can answer.,24,19,ProliArtistic,Lfstevens
+12,2,c12_p2,B,low,0,879,2.9412,0.4639,"Hi ally I have a question, how does Wikipedia know everything","Hi WikiBossiny, over the years thousands of volunteers have added facts to articles in their areas of interest, referenced them to outside sources and added links between articles. If Wikipedia 'knows"", it is in these linked and referenced articles.",11,38,WikiBossiny,AllyD
+12,3,c12_p3,A,high,1,20042,3.0766,0.4934,"Ciao, come faccio ad inserire un'immagine sul wikipedia?","Hello @, Please read the policy [POLICY] and you should be able to insert image. Thanks",8,16,Oriental pearl tower 468,C1K98V
+12,3,c12_p3,B,low,0,21862,3.0766,0.4934,Hello what do you like about Wikipedia besides editing.,"Magfanforever Welcome to Wikipedia. Editing is nice, but sometimes i go deep into rabbit-holes about certain topics. What areas are you interested in? Maybe i can suggest a few wikiprojects that you can join.
+I've left you a message on your talk page. Go through some of the links when you find the time. I'd suggest that you start [POLICY] to get an idea of how wiki editing works. Happy editing!",9,70,Magfanforever,MPGuy2824
+12,4,c12_p4,A,high,1,33934,3.2554,0.4386,¿Cómo se puede hacer una bandera en Wikipedia?,"Hola, estás en Wikipedia en inglés, no en Wikipedia en español. Aquí, normalmente no hablamos español. Sí quieres contribuir en español, puedes visitar Wikipedia en español ([LINK]
+En la Wikipedia en español, y también aquí, hay ""templates"" (es como se llaman en inglés -- no sé el nombre español) para hacer las banderas, por ejemplo [TEMPLATE_REF] aquí. Creo que puedes encontrar algún similar en la Wikipedia en español también.
+¡Gracias! ~ ~",8,70,Chacapu,Rusty Cat
+12,4,c12_p4,B,low,0,41245,3.2554,0.4386,"Hola, buen día, me acabo de incorporar a wikipedia y deseo poner un articulo de una parroquia que se llama San José Obrero, ya la cree en el taller y la deseo pasar para que se publique pero no tengo habilityada la opcion para pasarla, me puedes ayudar a entender por que no la puedo pasar para publicarla, muchas gracias.
+Saludos: José Luis",¡Hola! ¡Creo que quizás estés buscando [LINK] ꧁꧂,63,7,José BePe,Zanahary
+13,0,c13_p0,A,high,1,21089,0.9391,0.5879,How to join this event?,"To sign up for the contest, add your signature to the bottom of the list of names below using # while logged in..
+Eg: # and use tilde sign four times ..and that's it.",5,33,V.M.Shashidhar,Spbvj
+13,0,c13_p0,B,low,0,40530,0.9391,0.5879,Hello there I need help me to join illuminati,Hello how do I edit on Wikipedia,9,7,Akon256,ScrabbleTiles
+13,1,c13_p1,A,high,1,17388,13.5729,0.2036,Do people get salary form wikipedia?,"Vidz Shingri Hello, and welcome! Everyone who writes what you read on Wikipedia does so on a volunteer basis, but some people are employed by [POLICY] do get paid. Let me know if you have any other questions, and have a great day! Best,",6,42,Vidz Shingri,HouseBlaster
+13,1,c13_p1,B,low,0,29883,13.5729,0.2036,how do i make an arrival,"@, an article? See [HELP_PAGE] '",6,6,Philip daily oninstgram,JayCubby
+14,0,c14_p0,A,high,1,32176,1.9728,0.3108,Hii,"Hello @, and welcome to Wikipedia. What is your question? -- [POLICY]",1,12,Fall Out Boyzzz,Pro-anti-air
+14,0,c14_p0,B,low,0,592,1.9728,0.3108,When did Hello Start?,"In 1826, see our article about [WIKILINK].",4,7,Bbukowsky,Lectonar
+14,1,c14_p1,A,high,1,4067,2.3841,0.4639,Hi sir,"Hi , let me know if you have any questions about editing Wikipedia. — ( · )",2,12,SahariarAhmedNishad,Mx. Granger
+14,1,c14_p1,B,low,0,35170,2.3841,0.4639,hii,Hello. Do you have a question? [WIKILINK],1,7,Dandiwal 012,Olliefant
+14,2,c14_p2,A,high,1,5626,2.7421,0.5211,Hello sir,"@ Hello, welcome to Wikipedia. If there's anything I can help you with, feel free to ask.",2,17,OFFICIAL SECTION,Jeffrey R. Clark
+14,2,c14_p2,B,low,0,30563,2.7421,0.5211,Hiii,Hello!,1,1,Umogal,Reconrabbit
+14,3,c14_p3,A,high,1,38143,3.1856,0.5248,Hello :),"Hello, Nicitax, and welcome to Wikipedia. You'll see I've left some useful links on your talk page. Please let me know if you run into any difficulties. Happy editing!",1,28,NicitaX,Ipigott
+14,3,c14_p3,B,low,0,33242,3.1856,0.5248,hii,Izelle789o Hello and welcome to Wikipedia!!!,1,5,Izelle789o,Hajoon0102
+14,4,c14_p4,A,high,1,5273,3.2647,0.3536,Hello’s,Hello.,1,1,Debo Naki,Gråbergs Gråa Sång
+14,4,c14_p4,B,low,0,13129,3.2647,0.3536,Hello sir,Hi there Mikdotey! Do you have any questions?,2,7,Mikdotey,TheSandDoctor
+15,0,c15_p0,A,high,1,26069,0.4552,0.3616,marge,"Hello , and welcome to Wikipedia! I'm not sure what you mean here. Please can you elaborate? {}",1,16,Tetrazhozen,Praseodymium-141
+15,0,c15_p0,B,low,0,11994,0.4552,0.3616,hi man,"Hello, @. Welcome to Wikipedia. Do you need any help?",2,10,Ayaan.man,Idoghor Melody
+15,1,c15_p1,A,high,1,31188,0.8282,0.1688,Soy sero,"I'm not sure what you mean, sorry.",2,7,Cero777,Randomdude121
+15,1,c15_p1,B,low,0,9056,0.8282,0.1688,How can I build an ai bot that will dominate fan duel dfs contest,"@ This is Wikipedia, where we are working to build a free encyclopedia. That question is probably better suited for another place :)",14,22,Wsawyer858,CaptainEek
+15,2,c15_p2,A,high,1,883,1.2062,0.3395,"Create Sandbox on ,Draft Oops First out. Akumi Word hits ,It's very easy to get more deaths,, Draft Sandbox","Hi Akumi93939, your sandbox is one place to get familiar with the basic of Wiki editing, especially if you intend to create a new article (in which case, it is worth reading [WIKILINK]). You can also try [WIKILINK] to get started on editing.",17,42,Akumi93939,AllyD
+15,2,c15_p2,B,low,0,1260,1.2062,0.3395,"Jkvhjkgv vfhjgvhn Bfhj Bm nm nb njbv mv b nbv bmv vb nb?
+Fflojkg, lhjk fsdglhjk! Fkfldjwsfkglsdj nbirg cv, mnvfdb.
+Fljkfsdg, fsdgjklgfj.",Yakka foob mog. Grug pubbawup zink wattoom gazork. Chumble spuzz.,22,10,Svingya,Ritchie333
+15,3,c15_p3,A,high,1,3526,1.4559,0.3085,hi IV ealready made countless battles but on a temporary account unfortunatly,Hi ! No worries; we're happy that you decided to create an account and join us! Please don't hesitate to let me know if I can answer any questions or assist you with anything. :-) Best,12,34,Historian Felix,Oshwah
+15,3,c15_p3,B,low,0,32187,1.4559,0.3085,Hey Guy im sheikh,:Do you have a question related to editing Wikipedia? -- –– ––,4,9,Zahan3743,Pro-anti-air
+15,4,c15_p4,A,high,1,20764,1.4559,0.4367,Cgw,Huh? '|,1,2,Zia jasZ,A09
+15,4,c15_p4,B,low,0,7878,1.4559,0.4367,I have a Carr,Let me see.,4,3,Ashok kumae,"Me, Myself, and I are Here"
+16,0,c16_p0,A,high,1,25588,1.0408,0.1135,I cant understand code language,"@, are you looking for [HELP_PAGE], maybe?",5,7,Riyaariyasharmars,Asilvering
+16,0,c16_p0,B,low,0,34474,1.0408,0.1135,Is now good for digging garden,"Hi @, [POLICY]. If you want to talk about gardening I bet there are other Internet communities that you can participate in. Best, ( • )",6,23,Between Blue and Green,~delta
+16,1,c16_p1,A,high,1,10981,1.4183,0.244,I love cartoon,"Hello @,
+That’s awesome to hear — cartoons are a great blend of art and storytelling! 😊
+Do you have any favourites? Or are you interested in learning how to write about cartoons on Wikipedia?
+There are lots of cartoon-related topics on Wikipedia — from specific shows and characters to the history of animation. If you’re passionate about cartoons, you can contribute by:
+Improving existing articles about shows you love,
+Creating new pages (if the topic meets Wikipedia’s notability guidelines), or
+Adding reliable sources, episode summaries, or fun facts to improve quality!
+Let me know how you’d like to get involved — I’d be happy to guide you!",3,108,Zebrahum,Ampimd
+16,1,c16_p1,B,low,0,10056,1.4183,0.244,"merhaba
+kainat ve evren hakkında semavi bilgiler ışığında tasvirler görseller yapıyorum. ancak bu site hakkında teknik bilgim zayıf","Hi Abdurrahman Toraman, I only speak English sorry. (Ping me or leave a message on my [TALK_PAGE])",18,15,Abdurrahman Toraman,Alextejthompson
+16,2,c16_p2,A,high,1,4582,2.2041,0.2203,you have enterpreneuurship or ?,Althaf Rifqi Adiwidya I am unsure what your question about this article might be. Can you explain a little futher?,4,17,Althaf Rifqi Adiwidya,Glane23
+16,2,c16_p2,B,low,0,34347,2.2041,0.2203,Hello. What is the difference between a biography and autobiography?,"A biography is written by another person while a autobiography is self written
+==Your draft article, [DRAFT]==
+Hello, OlifanofmrTennant. It has been over six months since you last edited the [POLICY] submission or [POLICY] page you started, ""[DRAFT]"".
+In accordance with our policy that Wikipedia is not for the indefinite hosting of material, the draft has been deleted. When you plan on working on it further and you wish to retrieve it, you can [LINK]. An administrator will, in most cases, restore the submission so you can continue to work on it.
+Thank you for your submission to Wikipedia, and happy editing.
+==Your draft article, [DRAFT]==
+Hello, OlifanofmrTennant. This message concerns the [POLICY] submission or [POLICY] page you started, ""[DRAFT]"".
+Drafts that go unedited for six months are eligible for deletion, in accordance with our [POLICY], and this one has been nominated for deletion. If you plan on working on it further, or editing it to address the issues raised if it was declined, simply , and remove the [TEMPLATE_REF], [TEMPLATE_REF], or [TEMPLATE_REF] code.
+If your submission has already been deleted by the time you read this, you can request its undeletion by following the instructions [POLICY]. An administrator will, in most cases, restore the draft so you can continue to work on it.
+Thank you for your submission to Wikipedia!
+==Concern regarding [DRAFT]==
+Hello, OlifanofmrTennant. This is a bot-delivered message letting you know that [DRAFT], a page you created, has not been edited in at least five months. Drafts that have not been edited for six months [POLICY], so if you wish to retain the page, please again or [POLICY] that it be moved to your userspace.
+If the page has already been deleted, you can [POLICY] so you can continue working on it.
+Thank you for your submission to Wikipedia.",10,301,Sphelelo,Olliefant
+16,3,c16_p3,A,high,1,4107,2.4597,0.3175,how can i tell what is text and what isnt?,"Hi , thanks for the message. If you're asking about how Wikipedia articles' formatting is generated by wikitext, you can find detailed information at [HELP_PAGE] and a basic guide at [HELP_PAGE]. If you mean something else, can you please rephrase the question? — ( · )",10,41,Cyrian88,Mx. Granger
+16,3,c16_p3,B,low,0,34002,2.4597,0.3175,do you know words that begin with i before e except after c,"@: Sure! ""Friend"" has ""i"" before ""e"". However, ""receive"" has ""i"" after ""e"" since there is a ""c"" immediately preceding. You may also find our article [WIKILINK] helpful. ~ ~",13,28,Ethsun,Rusty Cat
+16,4,c16_p4,A,high,1,12361,4.2498,0.1762,"Hello, I see people say at times that you should put p.m. or a.m. But for others, people say it's pm or am. Does it really matter?","Hi ! For Wikipedia articles, looks like it's not a big deal as long as it's consistent within an article. The relevant manual of style (MOS) section is [POLICY], which doesn't note a preference but gives examples for both and . Best,",27,40,SkinWearer,Vermont
+16,4,c16_p4,B,low,0,21733,4.2498,0.1762,Here is what the new band is about.,"Hi, @; welcome to Wikipedia! I don't think I understand your question; could you clarify? @",8,15,CUIDID,Tol
+17,0,c17_p0,A,high,1,1856,1.7586,0.2119,Why the name Mujinga? Are you Kenyan..,"Hi ImayaTierra no I am not Kenyan, does Mujinga mean something in Kenyan? Also can I help with any wikipedia-related enquiries? Happy editing!!",6,21,ImayaTierra,Mujinga
+17,0,c17_p0,B,low,0,1857,1.7586,0.2119,Who is DDP DJ DOMINIC PEWEE,mentorship be an interesting journey for sure,6,7,Frederick AND DJ DOMINIC,Mujinga
+17,1,c17_p1,A,high,1,34932,3.0608,0.371,"Passenger Vishu refers to a social media personality known for their travel-related content, particularly on Instagram and Facebook. They are a young individual, 24 years old, who shares their travel experiences and ambitions online. Their content primarily revolves around their journeys and is targeted towards an audience interested in travel and lifestyle.
+Key Aspects of Passenger Vishu's Online Presence:
+Travel Content Creator:
+Passenger Vishu primarily creates and shares content related to their travels, documenting their experiences and destinations.
+Social Media Platforms:
+Their main platforms are Instagram and Facebook, where they engage with followers and share updates about their travels.
+Age and Ambition:
+They are a young individual, 24 years old, who expresses a strong ambition to travel the world.
+Content Style:
+The content likely includes photos, videos, and stories documenting their journeys, offering glimpses into different locations and cultures.
+Engagement:
+They actively engage with their followers, encouraging interaction and sharing their travel experiences.",:Please do not use AI to write articles. See [POLICY] and [POLICY].,149,12,Passenger Vishu,Ca
+17,1,c17_p1,B,low,0,31556,3.0608,0.371,Tossy Ani musician songwriter music website own by his hardworking achievement,What? Please add clarify.,11,4,Ttttaaaa7,Nedia020415
+17,2,c17_p2,A,high,1,6315,4.0173,0.1852,Soccer player,@ This makes no sense. Do you have a question for me about editing Wikipedia?,2,15,RobertoSanchez1990,Nick Moyes
+17,2,c17_p2,B,low,0,20794,4.0173,0.1852,"Hello good morning sir, what is your take about President Bola Ahmed Tinubu adding ""ADEGUNLE"" to his name","SUNDAY EFFIONG BASSEY, I have no opinion on the matter. [POLICY]. —",18,8,SUNDAY EFFIONG BASSEY,Sirdog
+17,3,c17_p3,A,high,1,30893,5.8683,0.3261,Hey there i tried too fix Sneako's page and add his pictue and his personal life and career etc,"NAWEHA1 Your text edits were removed because you failed to cite any sources. Remember that all material at Wikipedia must be [POLICY] and any information that is not verifiable (via citations to [POLICY]) is subject to removal at any time. Your image was reverted because that image is a copyright violation -- you may not load images you find elsewhere on the internet to Wikipedia or Wikimedia Commons as the images published elsewhere are subject to copyright limitations that are not compatible with Wikipedia's licensing rules.
+Sorry, ok I will do better job also that Picture is owned by Sneako and I have put his link for his Tweet where he posted it on his official Twitter account. Thank you",19,119,NAWEHA1,GoldRomean
+17,3,c17_p3,B,low,0,4350,5.8683,0.3261,Hello iam mabruuk wellcome to dire dawa for year 2025,"Hi Mabruukprk and welcome to Wikipedia. Is there anything I can help you with? Best,",10,14,Mabruukprk,Pichpich
+17,4,c17_p4,A,high,1,9767,11.1017,0.252,Pkilla Musik Net Worth,:Pkillamusik1 Do you have a question or need help? -/,4,8,Pkillamusik1,Liance
+17,4,c17_p4,B,low,0,27427,11.1017,0.252,"Hello, Good booster and boss overboard. I here by certified from Ghana to the whole world wide registered companies between I and my country Ghana a a a. Citizen of Ghana to help push our cultural talents in the world marketing centers",RB Wizzy$10000000kG do you have a question about Wikipedia? Please lmk if so —' [TEMPLATE_REF] mewhen u reply ( - ),42,19,RB Wizzy$10000000kG,Matrix
+18,0,c18_p0,A,high,1,5814,1.2352,0.2498,My YouTube channel video upload support,"BB baal veer, that is not a question and Wikipedia is not a place to promote your YouTube channel.",6,16,BB baal veer,Cullen328
+18,0,c18_p0,B,low,0,6663,1.2352,0.2498,[LINK],"@: Hi there. Your comment seems to be a URL, not a question.",1,13,Ilovedjarif,GoingBatty
+18,1,c18_p1,A,high,1,26186,1.5291,0.4639,"[TEMPLATE_REF]
+Not a question but thanks!!",[WIKILINK],6,1,QueenStaceySlater,Queen of Hearts
+18,1,c18_p1,B,low,0,14022,1.5291,0.4639,[LINK],"WWIC Calculator Good day. If you have a question, then let me know. The URL you mentioned about is considered a risk site to view as per my security software in my computer and I didnt open it. Stay safe and best.",1,40,WWIC Calculator,Cassiopeia
+18,2,c18_p2,A,high,1,6297,2.1889,0.3563,I am Unable To Create knowledge panel please Help me..,"@ The true “knowledge panel” is found on Google Search results, and often incorporates Wikipedia information. We have no control over how Google uses our data. Here, we use [TEMPLATE_REF] to create a [POLICY] in an article.
+:Please check those out for guidance. As I am away from home right now until Monday, please seek further help at the [POLICY].",10,59,Nabi Bux Zardari,Nick Moyes
+18,2,c18_p2,B,low,0,33298,2.1889,0.3563,JE VEUX picture it 10 pour windows,"Hi @, I’m not sure I quite understand. Could you rephrase your question? Thanks!",7,14,Daniel Besnard,Frostly
+18,3,c18_p3,A,high,1,12228,3.4093,0.3141,Can i get 1000 subscribers a day on my YouTube channel walakiraronald 165 in one week,"Hello ; I'm only here to help with questions about using or editing Wikipedia, and Wikipedia is also not a place for advertising or promotion. Perhaps you can get 1000 subscribers a day, but I can't give you advice about how and Wikipedia will not be an effective place to point people to your channel from.",16,55,Walakira Ronald165,Tollens
+18,3,c18_p3,B,low,0,35294,3.4093,0.3141,I would like to download books by the telegram bot but can't find the bottom,Sorry I have no idea what you are talking about Martin ( · ),15,11,NancyMos,MSGJ
+18,4,c18_p4,A,high,1,17876,5.3159,0.3591,Hi [LINK],Looks good!,2,2,BobPunk1997,Lajmmoore
+18,4,c18_p4,B,low,0,6183,5.3159,0.3591,"hello
+i want to upload the wedding cards, t-shirts and mug designs to get orders","Hurainmughal Wikipedia is [POLICY]. This is an encyclopedia, not a market place. Please find another website to conduct your business.",15,19,Hurainmughal,Pbsouthwood
+19,0,c19_p0,A,high,1,1393,3.3733,1.0,Hello!,"Welcome! Feel free to use the mentoring feature to ask any questions you have about Wikipedia, or you can ask at the [POLICY].",1,23,Mayo Code,Iffy
+19,0,c19_p0,B,low,0,22738,3.3733,1.0,Hello!,Hello! If you have any questions about Wikipedia feel free to ask.,1,12,Murtadha19,Sungodtemple
+19,1,c19_p1,A,high,1,5311,3.3753,0.5312,"Hello, I am Tomas.",Hello.,4,1,Tomaskakq,Gråbergs Gråa Sång
+19,1,c19_p1,B,low,0,29768,3.3753,0.5312,"Hello, I am new to this","@, I was new once. Do you need help with anything? '",6,12,Adonis.Sensei,JayCubby
+19,2,c19_p2,A,high,1,34094,4.3986,0.4251,Hello!,@: Welcome!,1,2,WikiLearner73,Rusty Cat
+19,2,c19_p2,B,low,0,9675,4.3986,0.4251,Hello I am bca student,"Hi , did you have a question about Wikipedia? [WIKILINK]",5,9,Shifa09,WindTempos
+19,3,c19_p3,A,high,1,34654,4.4048,1.0,Hello Rusty Cat!,@: Hello and welcome to Wikipedia! Call me Rusty. Feel free to ask if you have any questions! ~ ~,1,18,Karmel Humphrey,Rusty Cat
+19,3,c19_p3,B,low,0,22738,4.4048,1.0,Hello!,Hello! If you have any questions about Wikipedia feel free to ask.,1,12,Murtadha19,Sungodtemple
+19,4,c19_p4,A,high,1,23190,4.9164,0.5253,Hello!,", hi! Have any questions about Wikipedia? —",1,6,LogoFan2007,Qwerfjkl
+19,4,c19_p4,B,low,0,17344,4.9164,0.5253,"Hello, I am brand new here. Are you human or AI? Thanks. My name is Jane",Iconcoctions I am a real human! Let me know if you need anything; [HELP_PAGE] and have some great information :),16,18,Iconcoctions,HouseBlaster
+20,0,c20_p0,A,high,1,11048,1.1066,0.4549,Actually do you want to know if a new editor speaks other languages?,"Hi RussianTrueToType! Editors may publish other languages they know on their userpage at times (I have). This is useful if dealing with [POLICY] in another language or otherwise working with Wikipedia-related things in other languages; otherwise, on Wikipedia, it's mostly just trivia, though certainly fun :) Happy editing,",13,46,RussianTrueToType,Ampimd
+20,0,c20_p0,B,low,0,6188,1.1066,0.4549,"Hi, I am in Barbados. I studied law, I like research but I am very new to editing on Wikipedia. I have written books and like AI research. I am a woman.","Welcome to Wikipedia, I hope you get satisfaction from reading and editing here. Be careful with AI as a research tool. It can be useful but can also be very unreliable. You need to check the actual sources before you can use anything it provides. Cheers, :",32,46,Smiledreamangel,Pbsouthwood
+20,1,c20_p1,A,high,1,24982,1.2685,0.4841,Hi! No real burning questions yet. Other than whether you have been an editor on Wikipedia for very long. Thanks!,@ I've been editing since October 2021 so about 2.5 years :) (they/them),20,11,Cal-batman,Zippybonzo
+20,1,c20_p1,B,low,0,28571,1.2685,0.4841,"Hi, It's been bugging me for years that there's inaccurate information on a particular magazine series. I started a ""talk"" on the specific page, but I'm not sure it will be seen.","Because that page is not protected, why not [POLICY] (Although if you are requesting that the file name be changed due to factual errors, there is a better chance to receive attention if you seek help at the talk page of [POLICY].) However, in Wikipedia, editors are required to link most claims with a [POLICY], and your edit to [WIKILINK] doesn't have any.",32,63,ArchiverOrgan,AlphaBetaGamma
+20,2,c20_p2,A,high,1,17106,1.3657,0.3983,"Hello, Ilikemycheesedrippybruh120 here. In the ""Choose topics you are interested in editing"" section of the user home page, the first two buttons found in the ""History and Society"" section of it are ""Biography (all)"" and ""Biography (women)"". Not including another button for men feels biased. To clarify, I would say the same if there was only a button for men and not one for women. There needs to be more gender balance, and so far, I feel that the current feminist system isn't being effective enough to make moves to true equality.
+Please understand, and have a good night.","Thank you for your message, and apologies for the delay in responding to your message. To an extent, I agree with you. It would be good to have an option for biographies of men if we're going to have an option for biographies of women.
+This is not an area of Wikipedia I am very familiar with, but my understanding is that the ""Biography (women)"" option exists because biographies of women are severely underrepresented. A significant proportion of Wikipedia's editors are straight, white men and so much of the project is written from their perspective. As are much of our history books. Men overwhelmingly tend to contribute to articles about men. Therefore, there are concerted efforts on Wikipedia to improve our coverage of women, as well as other underrepresented groups.",98,130,Ilikemycheesedrippybruh120,Adam Black
+20,2,c20_p2,B,low,0,5765,1.3657,0.3983,Editing,"Hello, Hassan Mubaraq Aduagba. That is not a question. Do you have one?",1,10,Hassan Mubaraq Aduagba,Cullen328
+20,3,c20_p3,A,high,1,18358,2.2997,0.2574,"Bonjour,
+Dans les liens proposés sur la page concernant l'utilitarisme négatif, certains ne correspondent nullement au sujet dont il est question.
+Je suis nouveau et j'aimerais savoir ce qu'il faut faire pour modifier cela.
+Cordialement.","Hi Cl51RLM2013, I'm afraid I do not speak French and therefore am unable to help here. If this is a page on this wiki, I will have to speak in English, alternatively the community on French Wikipedia may be able to help you. Thank you,",35,44,Cl51RLM2013,Ferien
+20,3,c20_p3,B,low,0,33525,2.2997,0.2574,"Hi Rambley
+I'm an ancient ex-teacher of language and communication (which doesn't appear on Wiki's list of interests). All the problems of old age, but an avid reader of interesting or challenging interests. I'm also a good reader, writer, and editor. In short, I'll probably be inoperative in the near future, but am open to discussion, problem solving or just ""stuff""-- until the inevitable happens!","Welcome to Wikipedia! As Wikipedia has [POLICY], feel free to edit at your own pace. I hope you'll be able to find a topic area that interests you in due time, and I am here to answer any questions you have about editing.",64,43,Frank Roger Mann,Rambley
+20,4,c20_p4,A,high,1,27265,2.3314,0.5776,It shows you have over 29 thousand edits in 3 years. Are you AI?,There are editors with far more edits than I. [POLICY]. ( · ),14,10,Frankinward,Cremastra
+20,4,c20_p4,B,low,0,6220,2.3314,0.5776,"How many edits do you make in, say, a month?","However many you want, there is no limit!",10,8,Stargizzle,Pbsouthwood
+21,0,c21_p0,A,high,1,35539,0.7892,0.3338,Chhatauni Lucknow District Uttar Pradesh,@ Please write on the Wikipedia in your mother tongue.,5,10,Saroj Kumar 53,I dream of horses
+21,0,c21_p0,B,low,0,37087,0.7892,0.3338,Hello sir I am hansikha,Keluru Hansikha Greetings. Do you have aquestion about that article or editing Wikipedia in general?,5,13,Keluru Hansikha,David notMD
+21,1,c21_p1,A,high,1,25901,1.3594,0.2927,Animal Flim se By : Prottoy Wajid,"@ sorry, no idea what you're asking.",6,7,Prottoy77,Asilvering
+21,1,c21_p1,B,low,0,28926,1.3594,0.2927,Prophet Muhammad,"Merged ""Question from (11:16, 17 January 2024) (2)"".Martin Luther king Jr ~~",2,11,Gambo abiso junior,2NumForIce
+21,2,c21_p2,A,high,1,33236,2.2999,0.3683,"Hello guys
+I have an question for you
+Who is the best captain
+Virat kohli or MS Dhoni",:Deepesh kafalatiya - I'm not sure I understand your question. Have you got any questions on how to edit Wikipedia?,18,17,Deepesh kafalatiya,Lee Vilenski
+21,2,c21_p2,B,low,0,16048,2.2999,0.3683,Hello! Do you know about the biggest criminal of India which is unsung means who is not known by anyone? He is dead or not?,"Hello Rockysince2008, you can ask this question at the [POLICY]. However, if the criminal(s) you want to know about needs to be obscure like you mentioned, it might be harder to find one.",25,32,Rockysince2008,Capsulecap
+21,3,c21_p3,A,high,1,714,2.4875,0.3119,"[TEMPLATE]
+| appealsto = [WIKILINK]
+| terms =
+| positions =[LINK]
+| budget =
+| website = [LINK]
+| chiefjudgetitle = [WIKILINK]
+| chiefjudgename = Sakchai Rangsiwong
+| termstart = 1 October 2022
+| termend =
+| termend2 =
+| chiefjudgetitle2 =
+| chiefjudgename2 =
+| termstart2 =
+| termend3 =
+| termend4 =
+}}
+The Criminal Court (; ; ) is a Thai [WIKILINK] of [WIKILINK] responsible for the application of [WIKILINK] in [WIKILINK]. The court is located on [WIKILINK] and is colloquially called ""Ratchada Criminal Court"" (ศาลอาญารัชดาฯ).
+ประวัติข้าราชกาลรัฐวิสาหกิจ ระดับชำนาญงาน 6ดาว ททน1
+พันตำรวจโทวิศิษฎ์ ทองโม้
+[[File:พันตำรวจโทวิศิษฎ์",LAW42000 you have copied and pasted a large part of the [WIKILINK] article onto my Talk page here. I am not clear why?,95,22,LAW42000,AllyD
+21,3,c21_p3,B,low,0,15567,2.4875,0.3119,Chandramohan,"Hello @. You have not edited the article on the [WIKILINK], nor any other Wikipedia article, so you are going to have to explain further if you expect me to answer any questions.",1,33,Chandramohanlodhi,Michael D. Turnbull
+21,4,c21_p4,A,high,1,34359,3.1437,0.2801,my edit was undone. It was official link (url) to watch the TV serial.,"Usually, you shouldn't link to it most TV articles dont include netflix links",14,13,Ganesh-B-72,Olliefant
+21,4,c21_p4,B,low,0,32169,3.1437,0.2801,Actor,Ok. -- –– ––,1,1,Daspardeshi,Pro-anti-air
+22,0,c22_p0,A,high,1,18202,0.5267,1.0,Hello,"Hi Acenexice, welcome to Wikipedia! Let me know if I can help in any way :) Happy editing,",1,16,Acenexice,Ferien
+22,0,c22_p0,B,low,0,5122,0.5267,1.0,Hello,Hello ! Welcome to Wikipedia. Let me know if there's anything I can do to help you. ( / ),1,16,Mukambo Joe Kennedy,Firefangledfeathers
+22,1,c22_p1,A,high,1,11152,1.6692,1.0,Hello,@ Welcome to Wikipedia! I enclosed some helpful links on your talk page ~ (he/him • ),1,13,Pencils are cool1234,Shushugah
+22,1,c22_p1,B,low,0,17420,1.6692,1.0,Hello,"Geomarni Hello, and welcome to Wikipedia! Let me know if you have any questions",1,13,Geomarni,HouseBlaster
+22,2,c22_p2,A,high,1,33058,1.9859,1.0,Hello,"Hi @! Nice to meet you 😄 Is there anything I can help with? (he/him )
+==Happy Birthday!==
+[TEMPLATE]
+Ooh,Happy Birthday! ' Has about 7.9% of all [POLICY]
+Adam Cuerden! Have a nice day! (he/him )",1,32,WinterMilton,Frostly
+22,2,c22_p2,B,low,0,13655,1.9859,1.0,Hello,"@: Hi, is there something I can help with?",1,9,Es Yøur'boii Kidå,Bsoyka
+22,3,c22_p3,A,high,1,33089,2.4202,1.0,Hello,"Hi @, is there anything you need help with?",1,9,Ihsanullah Danish,Asartea
+22,3,c22_p3,B,low,0,3564,2.4202,1.0,Hello,"Aditya, fire., hi! do you have a question I can answer for you?",1,11,"Aditya, fire.",Calliopejen1
+22,4,c22_p4,A,high,1,16119,3.0614,0.9614,Hello,Hi @,1,1,FaranSajid013,Kinvidia
+22,4,c22_p4,B,low,0,4444,3.0614,0.9614,hello,?,1,1,Zumza007,Glane23
+23,0,c23_p0,A,high,1,16834,0.7892,0.4689,Can You Expand For Me Thanks.,"TysWorld Hello, as you haven't asked a specific question I can't help you.",6,12,TysWorld,Pickersgill-Cunliffe
+23,0,c23_p0,B,low,0,14593,0.7892,0.4689,"Thanks , I tend to this topics that you count
+as well",Welcome.,11,1,Dr.ibrahimk,Jenhawk777
+23,1,c23_p1,A,high,1,4953,0.9105,0.6194,Thank you for being available.,@ Happy to help :) Let me know if you have any questions.,5,12,StephRab18,Alyo
+23,1,c23_p1,B,low,0,29244,0.9105,0.6194,Hello thank you i appreciate that I'll keep on that,"@, I appreciate your thanks, but please note that thanking users in a short duration of time, for random edits, only goes to being [POLICY] and will most likely lead to a [POLICY]. You may find [HELP_PAGE] helpful.",10,38,Lesegothami,ToadetteEdit
+23,2,c23_p2,A,high,1,28413,2.0362,0.6068,"Hello,
+Thank you for the warm welcome.
+I will check here whenever I need help.
+Regards.",@ Sounds good! Welcome to the community and happy editing =) –  ツ,16,13,Funsho.ayo,LuniZunie
+23,2,c23_p2,B,low,0,24263,2.0362,0.6068,"Hi GGOTCC, thanks.","Hello, and welcome! We are glad to have you here at Wikipedia.
+If you have any questions, feel free to ask me a question! Feel free to read [HELP_PAGE] if you are looking for somewhere to start.",2,37,EzhuthuVaal,GGOTCC
+23,3,c23_p3,A,high,1,33841,2.7096,0.4594,God bless us all thanks,@: Do you have a question about editing or using Wikipedia? ~ ~,5,11,Skizzy DE Donnie,Rusty Cat
+23,3,c23_p3,B,low,0,29244,2.7096,0.4594,Hello thank you i appreciate that I'll keep on that,"@, I appreciate your thanks, but please note that thanking users in a short duration of time, for random edits, only goes to being [POLICY] and will most likely lead to a [POLICY]. You may find [HELP_PAGE] helpful.",10,38,Lesegothami,ToadetteEdit
+23,4,c23_p4,A,high,1,1913,3.6559,0.5132,Noted Thanks for informing me.,@ feel free to get in touch with any wikipedia-related questions!,5,11,Catherine2118,Mujinga
+23,4,c23_p4,B,low,0,12827,3.6559,0.5132,"Firstly , I would like to thank you for your service in helping me with my project.","Hi @, and welcome to Wikipedia! I'm happy to help in whatever way I can. Let me know if you have any questions I can answer.",16,26,Sharda23,Eddie891
+24,0,c24_p0,A,high,1,33629,0.5886,0.2817,Nasıl Fotoğraf ekleyebilirim ?,:Please communicate in English. I have left a message on your talk page directing you to TRWIKI. [POLICY] (she/they ),3,18,KınalıSûfi,~delta
+24,0,c24_p0,B,low,0,27318,0.5886,0.2817,How to create my own application?,@ Hello. What kind of application are you talking about?,6,10,OdaxNobunaga,Mach61
+24,1,c24_p1,A,high,1,742,2.023,0.4616,Como criar uma citação?,"Royalty Thorn, please see [WIKILINK]. Or you may be more comfortable with [WIKILINK].",4,11,Royalty Thorn,AllyD
+24,1,c24_p1,B,low,0,4455,2.023,0.4616,Cum creez o pagină nouă?,"Mr.elian22 If you are looking to write an article in Romanian, you should inquire at the [LINK].",5,16,Mr.elian22,Glane23
+24,2,c24_p2,A,high,1,32430,2.2439,0.4726,How to write a news?,"Hello! Wikipedia is an encyclopedia, [POLICY]. Do you mean the ""In the news"" section on the [WIKILINK]? If so, check out [POLICY], which answers all questions about it. If you want to write actual news articles, consider [LINK] instead.",5,39,Khethukubonga,Flexagoon
+24,2,c24_p2,B,low,0,37755,2.2439,0.4726,How to publish a journal article?,"@: Hi there! If the journal meets Wikipedia's criteria for inclusion at [POLICY], then follow the instructions at [HELP_PAGE]. Happy editing!",6,21,MELCHORA V ABONAL,GoingBatty
+24,3,c24_p3,A,high,1,24660,4.0627,0.333,Hello how can I publish my own book or article,please take help from [POLICY],10,5,Masangwenii,Endrabcwizart
+24,3,c24_p3,B,low,0,712,4.0627,0.333,How can I make a movie,"Santos borges, that isn't something which Wikipedia can help with, as this is a project to build an encyclopaedia. However, I am sure there are forums elsewhere that can help, or you can get together with friends and build movie-making skills together.",6,40,Santos borges,AllyD
+24,4,c24_p4,A,high,1,5166,4.2313,0.5455,"Hola 👋 soy Chris Quiñonez, ¿ como publico una cita?","Hola ! You may be asking about how to add a quote to an article (there's some info about that at [POLICY]) or about how to add a citation to an article (see [HELP_PAGE]). Either way, I'd urge to you to write in English here if you're able. If you are mainly comfortable writing in Spanish, we could use your help at [WIKILINK].
+:(Esto se hizo usando Google Translate, así que lo siento si hay errores): Hola Chris Quiñonez! Quizás te preguntes cómo agregar una cita a un artículo (hay información al respecto en [POLICY]) o cómo agregar una cita a un artículo (ver [HELP_PAGE]). De cualquier manera, le recomiendo que escriba aquí en inglés si puede. Si principalmente se siente cómodo escribiendo en español, nos vendría bien su ayuda en [WIKILINK]. ( / )",8,128,Chris Quiñonez,Firefangledfeathers
+24,4,c24_p4,B,low,0,20657,4.2313,0.5455,Nası alıntı oluşturabilirim,"TahaKarakaya0, Luckily, I have limited exposure to Turkish to recognize. Unfortunately it's not so much exposure that I can make out every word. I believe you are asking how you can edit, correct me if I am wrong? I am going to leave some helpful tips on your user talk page that should assist you. Please seek guidance on [POLICY] for further guidance or you may always ask on my use talk page here. Happy editing!",3,75,TahaKarakaya0,ARoseWolf
+25,0,c25_p0,A,high,1,19234,0.607,0.6838,Hi I just wanted to say hello! New to this!!,Hello!,10,1,Paula Panda Lain,Dege31
+25,0,c25_p0,B,low,0,19548,0.607,0.6838,"Hello, I wanted to introduce myself to you.",Hi Wikiitaliano. I've left some useful links on your talk page.,8,10,Wikiitaliano,Vacant0
+25,1,c25_p1,A,high,1,34652,1.3146,0.5071,"Hey rusky cat,
+Hope you are doing well.
+I am a beginner. Your guidance will be appreciated.
+Thank you",@: Welcome to Wikipedia! What do you want help with specifically? ~ ~,19,11,Mirjist,Rusty Cat
+25,1,c25_p1,B,low,0,27450,1.3146,0.5071,"Hello Matrix, I just wanted to introduce myself and thank you for offering your time to assist folks like me!","Feenixmusic no worries, here to help as always ;) —' [TEMPLATE_REF] mewhen u reply ( - )",19,15,Feenixmusic,Matrix
+25,2,c25_p2,A,high,1,17041,1.8174,0.4477,Hello there! Really looking forward to working with you! Harry.,@ of course!,10,3,EditorialProject,Renamed user 941cc78c00a0c5924c78bcbe91e8541a
+25,2,c25_p2,B,low,0,2256,1.8174,0.4477,"Hi :)
+I'm new here so I don't yet know what to ask for ...
+but,
+have a nice day ! :)",@ good stuff and happy editing! you've got helpful links already at to help you find your way,18,18,Pfihome,Mujinga
+25,3,c25_p3,A,high,1,19678,1.9813,0.5877,"Hello, I don't have many questions yet, and I'm in a very happy mood right now, I just wanted to say Have a great day, Bye for now!",Welcome!,28,1,Hypekone,Vacant0
+25,3,c25_p3,B,low,0,27462,1.9813,0.5877,no question just saying good afternoon :),2u2 :) —' [TEMPLATE_REF] mewhen u reply ( - ),6,9,User of thy name,Matrix
+25,4,c25_p4,A,high,1,16337,2.6622,0.423,"Hi, Hannah! Thanks! Nice to meet you.",Hi Sassywatermelon2. Nice to meet you as well.,7,7,Sassywatermelon2,Clovermoss
+25,4,c25_p4,B,low,0,25692,2.6622,0.423,"Good evening, Sir/Madam. I hope you are doing well. I have a question I’d really appreciate your guidance on.”","Hi @, welcome to wikipedia! If this is about your deleted userpage, well, I'd have let it be, myself, but I can see why it was deleted. Have a look at mine, as a comparison. It's all about my wikipedia editing, not about me as a person. You're welcome to leave some facts about yourself if you like, but mostly, what we're about here is building an encyclopedia.",19,68,Jameshinom,Asilvering
+26,0,c26_p0,A,high,1,17360,1.3588,0.428,can i still make out an international business mail from wikipedia,"No, you may not use Wikipedia for promoting a cause.",11,10,Holy khalif,HouseBlaster
+26,0,c26_p0,B,low,0,14508,1.3588,0.428,The account can be switched to Arabic.,Okay.,7,1,Ahmad zeidm,Jenhawk777
+26,1,c26_p1,A,high,1,9849,1.3588,0.4658,Hlo. Can I can be the hacker of to hack account,"Hi HARIS012, that really isn't what Wikipedia is for. (Ping me or leave a message on my [TALK_PAGE])",11,17,HARIS012,Alextejthompson
+26,1,c26_p1,B,low,0,34596,1.3588,0.4658,Why the recaptcha my google nest accont password manage .yes.No.plz my problam solve,", please contact Google for support with their products. —",12,8,2322.(Wiki),Frostly
+26,2,c26_p2,A,high,1,30103,2.428,0.3453,Merhaba şağ üstte olması gereken düzenle tuşu nerde?+Bilgi kutusu ve değisiklik òzeti nerde,"Apologies, but I do not speak (what I assume to be) Turkish. I have used a welcome template to redirect you to the Turkish Wikipedia. They most likely have the answer to your question. (she/they/all [WIKILINK] • • )",13,34,Sahip Giray,LunaEclipse
+26,2,c26_p2,B,low,0,32134,2.428,0.3453,Sorry used wrong email for this account :(,"@ that is okay! Thanks for letting me know. You can click [LINK] and go to the ""email options"" heading and click on the ""change or remove email address"" button. Then, you need to verify your account's password, then you need to add the correct email and then click on the ""change email"" button. And you got your new email! Thanks, ~ (He, him) • • •",7,64,Cesarcalad,Rafaelthegreat
+26,3,c26_p3,A,high,1,4258,4.1416,0.2772,Hello Instagram team,"Samir09555 Wikipedia [POLICY].
+yes
+==[WIKILINK] has been nominated for renaming==
+[WIKILINK] has been nominated for renaming. A discussion is taking place to decide whether it complies with the [POLICY] guidelines. If you would like to participate in the discussion, you are invited to add your comments at [POLICY] on the [POLICY] page. Thank you.",3,53,Samir09555,Pichpich
+26,3,c26_p3,B,low,0,35009,4.1416,0.2772,Hi ninja this side I just want a one hacker number can you help me ???,"Hi there @. I'm not quite sure what you mean. What do you need help with?
+see this is important if you can help me so give me a hacker's number plz...",15,32,Ninja 111122,Fathoms Below
+26,4,c26_p4,A,high,1,38659,5.8039,0.2981,"State Bank of India
+Credit card","State Bank of India
+@: Why are you spamming a phone number? (, , )",6,14,State Bank Indian,Leonidlednev
+26,4,c26_p4,B,low,0,38983,5.8039,0.2981,My profile and information,Hi Dayyabu Jamilu Morai. I'm not sure what you're asking about. Do you have a question about Wikipedia? I will add a notification containing some general information to your uyser talk page.,4,29,Dayyabu Jamilu Morai,Marchjuly
+27,0,c27_p0,A,high,1,26425,1.1772,0.6981,"Hello, how are you?","@ Pretty good, how are you? Do you have any questions about editing Wikipedia?",4,14,MuzamilJamali,Relativity
+27,0,c27_p0,B,low,0,10273,1.1772,0.6981,How are you sir?,Abhishek singh Abhi I'm good! Did you have any questions about editing Wikipedia? — (; ),4,16,Abhishek singh Abhi ( Gonda),PerfectSoundWhatever
+27,1,c27_p1,A,high,1,33871,2.2068,0.468,Hi are you a lady or a guy,Hi @; I am a lady. ( · ),8,6,Dudu mlambo,Phoenix
+27,1,c27_p1,B,low,0,23386,2.2068,0.468,What is your name?,"Hi @, I'm Justiyaya and I'm an editor here! I'm assigned as your mentor automatically. Feel free to ask any Wikipedia related questions if you need any help. [POLICY] is often a great place to start.",4,35,Dharmarajjaisi,Justiyaya
+27,2,c27_p2,A,high,1,24049,2.927,0.68,Hello how are you doing?,"Hey ! Welcome to Wikipedia! I'm good, thank you. :) :",5,8,Miles Ormerod,Bunnypranav
+27,2,c27_p2,B,low,0,24557,2.927,0.68,"Hey, how’s your day?","Hi , my day is good.",4,5,Soooooooap,1AmNobody24
+27,3,c27_p3,A,high,1,9074,3.7583,0.4923,hello what happend to,"If you refer to , I don't know. They only made three edits back in 2008, so I assume they just never edited again. A lot of folks make a few edits and then don't return, for any number of reasons. Any particular reason for asking?",4,45,Yahoot7,CaptainEek
+27,3,c27_p3,B,low,0,6274,3.7583,0.4923,"Hello, how do you do? Hope you slept well?","@ A bit windy here in the UK last night, thank you, but we slept through the storm. Welcome to Wikipedia. I'll leave a few handy links on your talk page to get you started, but feel free to ask me any questions about editing if you get stuck. Regards,",9,50,OCHIES,Nick Moyes
+27,4,c27_p4,A,high,1,10682,3.7703,0.535,Hi..How are You?,"Hi মো.তাজউদ্দিন I'm good, thank you for asking! How are you enjoying Wikipedia? —",3,12,মো.তাজউদ্দিন,Wugapodes
+27,4,c27_p4,B,low,0,9603,3.7703,0.535,"Hello, i have a question could you please answer",Martinl5935w yes? Please feel free to post it here (and welcome!),9,10,Martinl5935w,Elli
+28,0,c28_p0,A,high,1,38392,0.6794,0.2798,your page is hilarious,"@, thank you. '",4,4,Cbrwe,JayCubby
+28,0,c28_p0,B,low,0,38498,0.6794,0.2798,Say hi to Tyler hynes,Hi @ and welcome! •,5,4,Tylers Hyness,Kqol
+28,1,c28_p1,A,high,1,39167,0.7166,0.3286,"Hello friend , family","Hello, @. Welcome to Wikipedia. What exactly is your question, please? The topic looks highly technical, and the page not at all well-cited. Were you looking to try to improve it? I'll leave one of our standard welcome messages on your talk page which contains a link to start learning how to edit Wikipedia. It's best to start slowly and get familiar with how things work by making small edits before setting off hurriedly to make big changes. If I can help you further, I will. regards,",3,87,Lincoln Briggs,Nick Moyes
+28,1,c28_p1,B,low,0,8262,0.7166,0.3286,"Hi this is toktam
+I am a curator of Ghasedak folk music in Iran.
+I want to know how we can participate in your festival?
+If necessary, I can send you some samples of our performances.","Hello! To be clear, Wikipedia doesn't run an actual folk festival. However, our article does contain a list of those festivals which are individually [POLICY]. If you share some [POLICY] sources here, perhaps we could find out if there is a festival associated with Ghasedak music that could have a Wikipedia article. —",36,52,Toktam abedian,Ganesha811
+28,2,c28_p2,A,high,1,34329,0.8214,0.3735,hello how much impact have you made?,:Depends on how you measure impacts. I have over 10K edits and several peices of quality content but my subject area is some what niche,7,25,JZ124,Olliefant
+28,2,c28_p2,B,low,0,38255,0.8214,0.3735,"hello i have no intention of editing i only use ""w"" to look up items and reqd them... i also send money every year i just wnt to be able to look something up .. this is all ne to me and very confusing for an 84 year old","Hi there, Malaban, and welcome to Wikipedia. I'm in my 83rd year myself and am still pretty active. You might be able to get a better idea of how Wikipedia is built up by looking into some of the links in my welcome message on your talk page. Please let me know if you need help with anything in particular.",48,59,Malaban,Ipigott
+28,3,c28_p3,A,high,1,27840,1.0533,0.3968,"Hello Randfreeman, may I call you Rand?",Of course!,6,2,Teeheeha,RandFreeman
+28,3,c28_p3,B,low,0,28538,1.0533,0.3968,hey have a great day first i am looking for an english space can you point me out that,"Hi @! I'm happy to help, but I don't quite understand what you're asking. This is the English Wikipedia, so if that is what you mean, then you are in the right place! - 🔥 🔥",19,36,Mubarik haldoor,Illusion Flame
+28,4,c28_p4,A,high,1,14125,2.2659,0.3968,Hello bOOMBan,@: Please elaborate on your question. [POLICY] (she/they ),2,7,Riley20000,Cassiopeia
+28,4,c28_p4,B,low,0,35506,2.2659,0.3968,Hello my name is Amache I am trying to figure out how I can send Denzel Washington a message or if that's even possible,"@ I don't know if it's possible, but it's not possible through Wikipedia.",24,13,Amache Spencer,I dream of horses
+29,0,c29_p0,A,high,1,24452,1.7658,0.2612,Hi this isn't like a question abt editing I'm just wondering if you're Nobody as in the dude who killed that poor cyclops or,"Hi , I don't think i'm related to [WIKILINK] nor have I met a a Cyclops like [WIKILINK] before.",24,18,Paragonne,1AmNobody24
+29,0,c29_p0,B,low,0,23872,1.7658,0.2612,"My father should have been included in the section on Medal of Heroic Deeds by the Norwegian royalty. He received this medal (his is gold) in 1958. He rescued the tug boat Polar Bjorn off the coast of Greenland. The reigning monarch was Olav V.
+This information is in the book, Flying into History-Volume 1 by Richard Pierson and Billie Parker.","Hi @, welcome to Wikipedia. We have a number of policies on when to include information - we don’t normally list information just because it’s true or verifiable. It has to be [POLICY] to get its own article, and significant to the subject if mentioned on another article. I haven’t got access to that book so I’m unsure what the proposed edit would look like.",61,65,RhondAnn0603,Barnards.tar.gz
+29,1,c29_p1,A,high,1,3758,2.1764,0.2569,H rosie i have edited many times. although i made another account so i ccan hav a nicer name. lastname was Wikalevi,"Hi Winter the dog. I don't see a question, but thanks for notifying me about you username change. In that regard, I found [POLICY]. Please go back to that ""Changing username"" page as there are some important steps that you haven't completed yet. If you have questions regarding the instructions, the editors on that page would be glad to help you. Happy editing!",22,60,Winter the dog,Rosiestep
+29,1,c29_p1,B,low,0,27210,2.1764,0.2569,"Does anyone know anything about Mickey Duff or “Mickey Blue Eyes”? He was my grandfather and I can’t seem to find any information about him online, would love to find out more about him","@ is [WIKILINK] what you're looking for? If not, there is unfortunately not yet an article about him, but you can help by searching for sources online and [HELP_PAGE].",34,29,Dylaniswondering,CanonNi
+29,2,c29_p2,A,high,1,25449,2.1764,0.2237,"Thank You kpddg for your kindness & guidance you offer me in Wikipedia, I am very thankful to have a good mentor like you
+your's sincerely
+Dr.Anton Hudson Bradley White","Hello, and thank you for your kind words. However, I'm not sure when I have interacted with you before, and if in any case you do have an alternate account, do disclose it. Anyways, welcome to Wikipedia. The welcome message I left on your talk page should help you in getting started.",29,52,Dr Anton Hudson Bradley White,Kpddg
+29,2,c29_p2,B,low,0,5062,2.1764,0.2237,I have to tell you i can not stay silent about this fraudulent Davis pretending to have created my patch. I started 211 in 1993 in the utah state prison. Me and my brother who has now passed Lloyd pace were in cell 13 oquirrhs and i sat down and came up with the patch then he tatooed it on my stomach then did the same to himself on his ribcage. How utah has not show the photos taken after the death of anouther broth Ben West in the prison i have no idea. We were all taken out photos were taken of 7 of us then we were all questioned about what it was and stood for. Nobody said anything other then it was religious because it partly was and is. So the lying fraud Davis should be called out as any kind of man because he is a lying coward!,"Lokiesghost211, is there a Wikipedia article that has this content wrong? [WIKILINK] does not exist yet. ( / )",152,15,Lokiesghost211,Firefangledfeathers
+29,3,c29_p3,A,high,1,28858,2.1923,0.1445,"Digital Creator Mrarady Um
+Oum Majeudy Wikipedia Program developer Hardware ( talk page )","Combined from ""Oum Majeudy Wikipedia"". ~~",12,4,Oum Majeudy,2NumForIce
+29,3,c29_p3,B,low,0,28372,2.1923,0.1445,"Hi there nice to meet you. Can you help I have a question. Joseph and his amazing technicolour dreamcoat was brought to the olympia theatre in Dublin many year ago, the narrator was Katy John, I'm thinking it was 1989 but I am not sure, can you help?","Greetings! Remember, at Wikipedia when referring to information, we stick to [POLICY], so most won't take you seriously when you call something ""amazing"" like that, hope you enjoy your Wikipedia Adventure. I do need last names for Joseph, could you provide this for me and I will get back to you as soon as possible.",48,55,Cathyrobo19,Grapefanatic
+29,4,c29_p4,A,high,1,33463,2.5311,0.0811,"Hola, he notado que existe un artículo en la Wikipedia en ruso sobre el pueblo de Landman, ubicado en Kazajistán. Sin embargo, no he encontrado una versión en español (España). ¿Sería posible considerar la creación o traducción de dicho artículo al español? Gracias de antemano por su consideración.","Wikidata uses [WIKILINK] for Landman.
+Este enlace ya está utilizado.",48,10,Fernklang,Aafi
+29,4,c29_p4,B,low,0,5781,2.5311,0.0811,"Unless my memory fails me, I believe the very first presentation of the Salem Witch trial course that was presented at UMass Amherst by Nissenbaum & Boyd actually occurred during the summer academic semester in 1969, and only photocopies of purportedly ""original"" court transcripts, personal affidavits and diaries were provided as classroom aids for classroom discussions.","Hello, Preter Anthony. That is all moderately interesting but it is not a question and I am unsure what effect it would have on Wikipedia. We do not rely on the memories of editors, after all, but only on published reliable sources. Do you have a question?",56,45,Preter Anthony,Cullen328

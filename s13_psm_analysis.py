@@ -240,7 +240,8 @@ def main():
     # Outcomes
     OC_KEYS = ["primary", "n_mainspace_edits_14d", "primary_constructive", "sec2",
                "constructive_edit_15_60d", "reverted_any", "active_days_30d",
-               "constructive_days_30d", "unique_ns", "cross_day_constructive_14d"]
+               "constructive_days_30d", "unique_ns", "cross_day_constructive_14d",
+               "cross_day_any_14d"]
     WINDOW_KEYS = [f"mainspace_{w}d" for w in [7, 14, 21, 28, 30, 60, 180]]
     OC = {}
     for k in OC_KEYS + WINDOW_KEYS:
@@ -262,11 +263,12 @@ def main():
 
     # Outcome dimensions for main effects
     DIMS = [
-        ("1+_mainspace_edit_14d",  "primary",              "primary"),        # retention (binary)
+        ("1+_mainspace_edit_14d",  "primary",              "primary"),        # post-reply editing (binary)
         ("n_mainspace_edits_14d",  "n_mainspace_edits_14d","supplementary"),  # productivity (count)
         ("active_days_30d",        "active_days_30d",      "supplementary"),  # engagement persistence
         ("unique_namespace_14d",   "unique_ns",            "supplementary"),  # participation breadth
         ("reverted_any_14d",       "reverted_any",         "supplementary"),  # edit quality
+        ("2+_active_days_14d",     "cross_day_any_14d",     "supplementary"),  # repeated engagement (binary)
     ]
 
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
@@ -382,6 +384,29 @@ def main():
     fig.tight_layout()
     fig.savefig(OUT_FIG / "A4_love_plot.pdf", bbox_inches="tight")
     plt.close(fig)
+
+    # Top-20 love plot for main text
+    smd_top20 = smd_df.nlargest(20, "raw").sort_values("raw", ascending=True).reset_index(drop=True)
+    fig, ax = plt.subplots(figsize=(8, 6))
+    y_pos = range(len(smd_top20))
+    ax.scatter(smd_top20["raw"], y_pos, marker="D", color="#d62728", s=30, label="Raw", zorder=3)
+    ax.scatter(smd_top20["strat"], y_pos, marker="o", color="#1f77b4", s=30, label="Stratified", zorder=3)
+    for i in range(len(smd_top20)):
+        ax.plot([smd_top20["raw"].iloc[i], smd_top20["strat"].iloc[i]], [i, i],
+                color="gray", lw=0.6, alpha=0.5)
+    ax.axvline(x=0.1, color="gray", ls="--", alpha=0.6, label="SMD = 0.1")
+    ax.set_yticks(list(y_pos))
+    ax.set_yticklabels(smd_top20["label"].tolist(), fontsize=9)
+    ax.set_xlabel("Absolute Standardized Mean Difference")
+    ax.set_title(f"Covariate Balance: Top 20 Most Imbalanced (of {len(smd_df)})\nRaw vs. Stratified")
+    ax.legend(fontsize=9)
+    ax.set_ylim(-0.5, len(smd_top20) - 0.5)
+    ax.annotate(f"All {len(smd_df)} covariates:\nmax stratified SMD = {smd_df['strat'].max():.3f}",
+                xy=(0.55, 0.45), xycoords="axes fraction", fontsize=9, color="gray")
+    fig.tight_layout()
+    fig.savefig(OUT_FIG / "A4_love_plot_top20.pdf", bbox_inches="tight")
+    plt.close(fig)
+    print("  Saved A4_love_plot_top20.pdf")
 
     print(f"  Total covariates: {len(smd_df)}")
     print(f"  Imbalanced after stratification (SMD > 0.1): {n_bad}/{len(smd_df)}")
@@ -615,28 +640,30 @@ def main():
                   f"[{r['Mentee_CI_lo']:>+.4f}, {r['Mentee_CI_hi']:>+.4f}] {r['Mentee_Sig']:>4s} "
                   f"[{r['Mentor_CI_lo']:>+.4f}, {r['Mentor_CI_hi']:>+.4f}] {r['Mentor_Sig']:>4s}")
 
-    # ── B4. Forest plot ────────────────────────────────────────────────────
+    # ── B4. Forest plot (binary outcomes only, ATT in pp) ─────────────────
     print("\n[B4] Forest plot...")
-    fig, ax = plt.subplots(figsize=(9, len(res_df) * 0.7 + 1.5))
-    y_positions = list(range(len(res_df)))
+    binary_outcomes = ["1+_mainspace_edit_14d", "2+_active_days_14d", "reverted_any_14d"]
+    binary_labels = ["1+ mainspace edit (14d)", "2+ active days (14d)", "Any edit reverted (14d)"]
+    bin_df = res_df[res_df["Outcome"].isin(binary_outcomes)].copy()
+    bin_df["Outcome"] = bin_df["Outcome"].map(dict(zip(binary_outcomes, binary_labels)))
+    bin_df = bin_df.set_index("Outcome").loc[binary_labels].reset_index()
 
-    for i, (_, r) in enumerate(res_df.iterrows()):
+    fig, ax = plt.subplots(figsize=(7, 2.8))
+    y_positions = list(range(len(bin_df)))
+
+    for i, (_, r) in enumerate(bin_df.iterrows()):
         yp = y_positions[i]
-        c = "#1f77b4" if r["Sig"] == "*" else "#cccccc"
-        ax.plot([r["d_CI_lo"], r["d_CI_hi"]], [yp, yp], color=c, lw=2.5, solid_capstyle="round")
-        ax.plot(r["Cohen_d"], yp, "o", color=c, markersize=8, zorder=5)
-        att_str = f"ATT={r['ATT']:+.4f}"
+        c = "#1f77b4" if r["Sig"] == "*" else "#999999"
+        ax.plot([r["CI_lo"] * 100, r["CI_hi"] * 100], [yp, yp], color=c, lw=2.5, solid_capstyle="round")
+        ax.plot(r["ATT"] * 100, yp, "o", color=c, markersize=8, zorder=5)
         sig_str = " *" if r["Sig"] == "*" else ""
-        ax.annotate(f"{att_str}{sig_str}", xy=(r["d_CI_hi"] + 0.003, yp),
-                    fontsize=8, va="center", color="#333333")
+        ax.annotate(f"{r['ATT']*100:+.1f}pp{sig_str}", xy=(r["CI_hi"] * 100 + 0.15, yp),
+                    fontsize=9, va="center", color="#333333")
 
     ax.axvline(x=0, color="black", lw=0.8, ls="-")
     ax.set_yticks(y_positions)
-    ax.set_yticklabels(res_df["Outcome"].tolist(), fontsize=9)
-    ax.set_xlabel("Cohen's d (ATT / SD_control)", fontsize=10)
-    ax.set_title(f"PSM Treatment Effects on Newcomer Outcomes\n"
-                 f"Stratified ATT · Cluster bootstrap 95% CI · N={N:,}",
-                 fontsize=11, fontweight="bold")
+    ax.set_yticklabels(bin_df["Outcome"].tolist(), fontsize=10)
+    ax.set_xlabel("ATT (percentage points)", fontsize=10)
     ax.grid(axis="x", alpha=0.2)
     ax.invert_yaxis()
     fig.tight_layout()
@@ -775,6 +802,95 @@ def main():
         e_val = e_val_ci = np.nan
         print(f"\n  ATT ≤ 0, E-value not applicable.")
 
+    # ── C7. Pseudo-time assignment robustness ─────────────────────────────
+    print("\n[C7] Pseudo-time assignment robustness...")
+    PSEUDO_NAMES = {
+        "median": "Median lag",
+        "p25": "25th pctl lag",
+        "p75": "75th pctl lag",
+        "zero": "Zero lag (immediate)",
+        "multi": "Multi-draw avg",
+    }
+
+    pseudo_lag_info = D["pseudo_lag_info"] if "pseudo_lag_info" in D else None
+    if pseudo_lag_info is not None:
+        print(f"  Lag values: median={pseudo_lag_info[0]:.2f}d, p25={pseudo_lag_info[1]:.2f}d, "
+              f"p75={pseudo_lag_info[2]:.2f}d, K={int(pseudo_lag_info[4])}")
+
+    pseudo_results = []
+    pseudo_results.append({
+        "Strategy": "Random draw (main)",
+        "ATT": results_main["primary"]["att"],
+        "CI_lo": results_main["primary"]["ci"][0],
+        "CI_hi": results_main["primary"]["ci"][1],
+    })
+
+    for ps_name, ps_label in PSEUDO_NAMES.items():
+        oc_key = f"oc_primary__{ps_name}"
+        if oc_key not in D:
+            print(f"  Skipping {ps_name}: not in dataset")
+            continue
+        y_out_alt = D[oc_key]
+        att_alt = strat_att(y_treat, y_out_alt, strata)
+        ci_lo_alt, ci_hi_alt = cluster_boot_ci(y_treat, y_out_alt, strata, mentee_ids)
+        sig_alt = "*" if (ci_lo_alt > 0 or ci_hi_alt < 0) else ""
+        pseudo_results.append({
+            "Strategy": ps_label,
+            "ATT": att_alt, "CI_lo": ci_lo_alt, "CI_hi": ci_hi_alt,
+        })
+        print(f"  {ps_label:<25s}  ATT={att_alt:+.4f}  [{ci_lo_alt:+.4f},{ci_hi_alt:+.4f}] {sig_alt}")
+
+    # Full outcome breakdown across all pseudo-time strategies
+    print(f"\n  Pseudo-time ATT across all outcomes:")
+    dim_short = [dn[:18] for dn, _, _ in DIMS]
+    print(f"  {'Strategy':<25s}" + "".join(f" {s:>12s}" for s in dim_short))
+    print(f"  {'-'*25}" + "".join(f" {'-'*12}" for _ in DIMS))
+
+    pseudo_full_rows = []
+    for ps_name, ps_label in [("main", "Random draw (main)")] + list(PSEUDO_NAMES.items()):
+        row_data = {"Strategy": ps_label}
+        line = f"  {ps_label:<25s}"
+        for dim_name, dim_key, _ in DIMS:
+            if ps_name == "main":
+                att_val = results_main[dim_key]["att"]
+            else:
+                oc_key = f"oc_{dim_key}__{ps_name}"
+                if oc_key not in D:
+                    line += f" {'N/A':>12s}"
+                    continue
+                att_val = strat_att(y_treat, D[oc_key], strata)
+            line += f" {att_val:>+12.4f}"
+            row_data[dim_name] = att_val
+        print(line)
+        pseudo_full_rows.append(row_data)
+
+    ps_df = pd.DataFrame(pseudo_results)
+    ps_df["Sig"] = ps_df.apply(lambda r: "*" if (r["CI_lo"] > 0 or r["CI_hi"] < 0) else "", axis=1)
+    ps_df.to_csv(OUT_TBL / "C7_pseudo_time.csv", index=False)
+    pd.DataFrame(pseudo_full_rows).to_csv(OUT_TBL / "C7_pseudo_time_full.csv", index=False)
+
+    # Forest plot
+    fig, ax = plt.subplots(figsize=(9, max(3, len(ps_df) * 0.6 + 1)))
+    y_pos = list(range(len(ps_df)))[::-1]
+    for i, (_, r) in enumerate(ps_df.iterrows()):
+        yp = y_pos[i]
+        is_main = "main" in r["Strategy"].lower()
+        c = "#1f77b4" if is_main else ("#2ca02c" if r["Sig"] == "*" else "#999999")
+        lw = 2.5 if is_main else 1.5
+        ms = 9 if is_main else 6
+        ax.plot([r["CI_lo"], r["CI_hi"]], [yp, yp], color=c, lw=lw)
+        ax.plot(r["ATT"], yp, "o" if is_main else "s", color=c, markersize=ms, zorder=5)
+    ax.axvline(x=0, color="black", lw=0.8)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(ps_df["Strategy"].tolist(), fontsize=9)
+    ax.set_xlabel("ATT (PRIMARY: 1+ mainspace edit 14d)")
+    ax.set_title("Pseudo-Time Assignment Robustness")
+    ax.grid(axis="x", alpha=0.3)
+    fig.tight_layout()
+    fig.savefig(OUT_FIG / "C7_pseudo_time.pdf", bbox_inches="tight")
+    plt.close(fig)
+    print("  Saved C7_pseudo_time.pdf")
+
     # ── C6. Robustness summary ─────────────────────────────────────────────
     print("\n[C6] Robustness summary...")
     rob_rows = []
@@ -790,6 +906,12 @@ def main():
     for _, r in pd.DataFrame(strata_sens).query("Outcome == '1+_mainspace_edit_14d'").iterrows():
         rob_rows.append({"Spec": f"K={int(r['Strata'])}", "ATT": r["ATT"],
                          "CI_lo": r["CI_lo"], "CI_hi": r["CI_hi"]})
+
+    # Add pseudo-time results to robustness summary
+    for _, r in ps_df.iterrows():
+        if "main" not in r["Strategy"].lower():
+            rob_rows.append({"Spec": f"Pseudo: {r['Strategy']}", "ATT": r["ATT"],
+                             "CI_lo": r["CI_lo"], "CI_hi": r["CI_hi"]})
 
     rob_df = pd.DataFrame(rob_rows)
     rob_df["Sig"] = rob_df.apply(lambda r: "*" if (r["CI_lo"] > 0 or r["CI_hi"] < 0) else "", axis=1)

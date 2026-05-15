@@ -1,0 +1,419 @@
+======================================================================
+  s2_tag_match — full local coverage analysis
+  Mentors: 402  |  Date: 2026-04-20 10:47
+======================================================================
+
+  Total tag revisions:        42646
+  Strict match (user+ts):     34727  (81.4%)
+  Name-only (ts mismatch):    1252  (2.9%)
+  Still missing:              6667  (15.6%)
+  Loose coverage (match+name): 84.4%
+
+  Breakdown of still-missing:
+    Reverted (mw-reverted):   1321  (19.8% of missing)
+    NOT reverted:             5346  (80.2% of missing)
+
+  Mentor                            tags match  name  miss revert  !rev  match%
+  ------------------------------------------------------------------------------
+  Balsam Cottonwood                   24     0     0    24      0    24    0.0%
+  Dot.py                              25     0     0    25      2    23    0.0%
+  Iterresise                          11     0     0    11      0    11    0.0%
+  Maproom                             13     0     0    13      0    13    0.0%
+  NoobbTr                              2     0     0     2      0     2    0.0%
+  Ozzie10aaaa                        308     0     0   308     71   237    0.0%
+  SSR07                               21     0     0    21      0    21    0.0%
+  Thilio                              15     0     0    15      0    15    0.0%
+  Wikiediter2029                       1     0     0     1      1     0    0.0%
+  AirshipJungleman29                 172     5     2   165     11   154    2.9%
+  Fuddle                             223     7     0   216     42   174    3.1%
+  Ipigott                            327    13     0   314      8   306    4.0%
+  Oshwah                             622    29     1   592     59   533    4.7%
+  PeriodicEditor                      29     2     0    27      0    27    6.9%
+  Scope creep                         14     1     0    13      0    13    7.1%
+  .nhals8                             13     1     0    12      0    12    7.7%
+  SamuelNelsonGISP                    25     3     0    22      1    21   12.0%
+  Chocmilk03                          24     3     0    21      2    19   12.5%
+  Luka Maglc                          15     2     0    13      1    12   13.3%
+  CabinetCavers                       22     3     0    19      0    19   13.6%
+  Lflin16                             18     3     2    13      1    12   16.7%
+  Renamed user 941cc78c00a0c5924c78bcbe91e8541a   130    23     0   107      0   107   17.7%
+  Tonymetz                             9     2     0     7      0     7   22.2%
+  Hurricane Wind and Fire             22     5     0    17      0    17   22.7%
+  VidanaliK                           13     3     1     9      2     7   23.1%
+  Organhaver                          20     5     0    15      3    12   25.0%
+  Fermiboson                          27     7     0    20      0    20   25.9%
+  Coolgurl5555                        66    18     3    45      1    44   27.3%
+  Lp0 on fire                         39    11     0    28      0    28   28.2%
+  Rodney Baggins                       7     2     2     3      0     3   28.6%
+  InfernoHues                         10     3     0     7      0     7   30.0%
+  Zanahary                           102    31     2    69      6    63   30.4%
+  JustARandomSquid                    42    13     0    29      1    28   31.0%
+  EasternShah                         15     5     0    10      0    10   33.3%
+  Xaosflux                             3     1     2     0      0     0   33.3%
+  Crestfalling                         8     3     0     5      0     5   37.5%
+  MWFwiki                             68    26     1    41      3    38   38.2%
+  Satdeep Gill                        26    10     0    16      2    14   38.5%
+  Shadestar474                        15     6     0     9      4     5   40.0%
+  SCHolar44                           22     9     4     9      2     7   40.9%
+  ArkadenBoden                        61    25     2    34      1    33   41.0%
+  David notMD                        100    41     4    55      6    49   41.0%
+  Aplucas0703                         40    17     0    23      0    23   42.5%
+  BlueStaticHorse                      7     3     0     4      0     4   42.9%
+  Snugglebuns                         14     6     0     8      0     8   42.9%
+  Lectonar                           141    63     3    75      4    71   44.7%
+  Endrabcwizart                      118    56     1    61      1    60   47.5%
+  WeWake                              48    23     1    24      3    21   47.9%
+  NightWolf1223                      111    55     3    53      5    48   49.5%
+  Flexagoon                           16     8     0     8      0     8   50.0%
+  HurricaneZeta                        4     2     0     2      0     2   50.0%
+  Kqol                                12     6     0     6      0     6   50.0%
+  Phlogiston Enthusiast                2     1     0     1      1     0   50.0%
+  Bagwe Neza                          57    29     2    26      0    26   50.9%
+  CoconutOctopus                      53    27     1    25      2    23   50.9%
+  SnowyRiver28                        56    29     0    27      0    27   51.8%
+  LuniZunie-Mentor                    33    18     2    13      0    13   54.5%
+  Feedmepaperr                        14     8     0     6      1     5   57.1%
+  Nyxion303                           19    11     0     8      4     4   57.9%
+  HundredVisionsAndRevisions          22    13     0     9      0     9   59.1%
+  Randomdude121                      115    68     2    45      1    44   59.1%
+  Dafootballguy                       30    18     0    12      1    11   60.0%
+  Enbi                                 5     3     1     1      0     1   60.0%
+  LittlePuppers                       15     9     1     5      0     5   60.0%
+  Lfstevens                          213   129     9    75      4    71   60.6%
+  SunloungerFrog                     114    70     0    44      2    42   61.4%
+  LionmerterTHE                       13     8     0     5      0     5   61.5%
+  Thriley                             46    29     2    15      3    12   63.0%
+  Rfqii                               19    12     0     7      0     7   63.2%
+  Closed Limelike Curves              53    34     4    15      6     9   64.2%
+  Iseult                              14     9     0     5      0     5   64.3%
+  GearsDatapacks                      26    17     0     9      0     9   65.4%
+  Tankishguy                          73    48     3    22      2    20   65.8%
+  Mathglot                            60    40     1    19      1    18   66.7%
+  Pyrrhic victor                      48    32     0    16      2    14   66.7%
+  Steven Walling                       3     2     1     0      0     0   66.7%
+  The9Man                             40    27     1    12      0    12   67.5%
+  Celestina007                        25    17     5     3      1     2   68.0%
+  Kline                               47    32     1    14      0    14   68.1%
+  Seawolf35                          219   150     2    67      5    62   68.5%
+  ObserveOwl                          89    61     4    24      4    20   68.5%
+  Bhairava7                           33    23     2     8      6     2   69.7%
+  UtherSRG                           185   129     7    49     20    29   69.7%
+  Wasianpower                         73    51     1    21      1    20   69.9%
+  I am bad at usernames               17    12     1     4      0     4   70.6%
+  Cremastra                           55    39     0    16      4    12   70.9%
+  HwyNerd Mike                        31    22     1     8      0     8   71.0%
+  Dreamy Jazz                         33    24     6     3      2     1   72.7%
+  Spbvj                               44    32     3     9      0     9   72.7%
+  IAmChaos                            59    43     0    16      2    14   72.9%
+  Snowmanonahoe                       63    46     0    17      1    16   73.0%
+  SmokeyJoe                           19    14     0     5      0     5   73.7%
+  Shellwood                          288   213    10    65     31    34   74.0%
+  SafariScribe                        27    20     2     5      1     4   74.1%
+  JayCubby                           330   245    29    56     24    32   74.2%
+  ClaudineChionh                      51    38     4     9      0     9   74.5%
+  AssumeGoodWraith                    12     9     1     2      2     0   75.0%
+  Qcne                               124    93     2    29      2    27   75.0%
+  Shyamal                              4     3     1     0      0     0   75.0%
+  Soni                                 8     6     0     2      1     1   75.0%
+  Sophisticatedevening                 8     6     2     0      0     0   75.0%
+  Thebiguglyalien                     87    66     3    18      1    17   75.9%
+  Yoshi24517                         228   173    11    44     11    33   75.9%
+  TheTechie                          107    82     3    22      3    19   76.6%
+  Edmund Patrick                      13    10     0     3      0     3   76.9%
+  Tenshi Hinanawi                     57    44     2    11      4     7   77.2%
+  Ser!                                75    58    13     4      4     0   77.3%
+  LunaEclipse                        148   115     2    31      6    25   77.7%
+  FormalDude                         126    98     3    25      9    16   77.8%
+  Justarandomamerican                  9     7     0     2      2     0   77.8%
+  MSK                                 62    49     1    12      1    11   79.0%
+  MuffinHunter0                       72    57     2    13      1    12   79.2%
+  Whpq                               130   103     4    23      0    23   79.2%
+  Reconrabbit                        184   146     2    36      7    29   79.3%
+  Rosiestep                          271   216     5    50      4    46   79.7%
+  Kvng                               227   181     6    40     19    21   79.7%
+  GraziePrego                        124    99     8    17      2    15   79.8%
+  Alaexis                            250   200     7    43     13    30   80.0%
+  AviationFreak                      229   184     6    39     17    22   80.3%
+  Liance                              46    37     3     6      1     5   80.4%
+  Matrix                             119    96     5    18      1    17   80.7%
+  Rotideypoc41352                     73    59     7     7      2     5   80.8%
+  Ganesha811                         336   272     6    58     18    40   81.0%
+  Myrealnamm                          58    47     3     8      2     6   81.0%
+  Wugapodes                          191   155     3    33      6    27   81.2%
+  Clovermoss                         292   238    12    42     24    18   81.5%
+  Nedia020415                        149   122     9    18      6    12   81.9%
+  Kingsif                            127   104     9    14      3    11   81.9%
+  Royiswariii                        105    86     0    19      5    14   81.9%
+  Sdkb                               189   155     8    26     11    15   82.0%
+  Usedtobecool                        45    37     3     5      4     1   82.2%
+  Chlod                              158   130    12    16      7     9   82.3%
+  Qwerfjkl                           582   479    37    66     19    47   82.3%
+  WindTempos                          29    24     3     2      2     0   82.8%
+  Blaze Wolf                         196   163     6    27     22     5   83.2%
+  Bookku                              12    10     0     2      2     0   83.3%
+  FatalFit                            24    20     2     2      2     0   83.3%
+  Meena                                6     5     1     0      0     0   83.3%
+  Leonidlednev                       152   127     5    20      2    18   83.6%
+  AlphaBetaGamma                     225   188     2    35      8    27   83.6%
+  LR.127                             128   107     2    19      2    17   83.6%
+  Me, Myself, and I are Here          81    68     0    13      5     8   84.0%
+  KuyaMoHirowo                       156   131     3    22      3    19   84.0%
+  Mwwv                               144   121     3    20      3    17   84.0%
+  Vermont                            182   153     4    25      8    17   84.1%
+  Ahmetlii                            88    74     4    10      3     7   84.1%
+  LuniZunie                          132   111    14     7      3     4   84.1%
+  Usernamekiran                      302   254    10    38     12    26   84.1%
+  Iffy                               253   213     3    37      7    30   84.2%
+  Michael D. Turnbull                272   229    12    31      8    23   84.2%
+  Bunnypranav                        108    91     4    13      5     8   84.3%
+  Olliefant                          115    97     5    13      7     6   84.3%
+  A09                                 96    81     1    14      2    12   84.4%
+  AviCapt                             39    33     1     5      1     4   84.6%
+  JJPMaster                          104    88     3    13      2    11   84.6%
+  Oronsay                             13    11     2     0      0     0   84.6%
+  PlanetJuice                         13    11     0     2      1     1   84.6%
+  Tollens                            203   172    12    19      8    11   84.7%
+  ARoseWolf                          131   111     4    16      5    11   84.7%
+  Glane23                            276   234     5    37      3    34   84.8%
+  Pineapple Storage                   33    28     0     5      0     5   84.8%
+  Ritchie333                         252   214     3    35     11    24   84.9%
+  Melecie                             47    40     2     5      5     0   85.1%
+  Goldsztajn                         285   243    10    32      6    26   85.3%
+  MSGJ                               102    87     4    11      3     8   85.3%
+  Asilvering                         517   441    30    46      9    37   85.3%
+  Frostly                            381   326    35    20     13     7   85.6%
+  Gråbergs Gråa Sång                 223   191     3    29      7    22   85.7%
+  HouseBlaster                       314   269    11    34      7    27   85.7%
+  Dege31                              63    54     1     8      3     5   85.7%
+  TheresNoTime                         7     6     0     1      1     0   85.7%
+  Tol                                239   205    21    13      2    11   85.8%
+  Lee Vilenski                        36    31     1     4      1     3   86.1%
+  Gnoeee                             211   182     4    25      2    23   86.3%
+  EF5                                103    89     0    14      2    12   86.4%
+  GoingBatty                         332   287     7    38      2    36   86.4%
+  AllyD                              259   224     6    29      5    24   86.5%
+  Sungodtemple                       583   505    12    66     15    51   86.6%
+  Cullen328                          299   259     9    31      8    23   86.6%
+  Justiyaya                          339   294    22    23     13    10   86.7%
+  Dreamyshade                        144   125     8    11      1    10   86.8%
+  FULBERT                            160   139     7    14      1    13   86.9%
+  Mujinga                            568   494    15    59      3    56   87.0%
+  Firefangledfeathers                224   195    16    13      2    11   87.1%
+  Aafi                               232   202     1    29     14    15   87.1%
+  Robertsky                          179   156     5    18      2    16   87.2%
+  Estar8806                          281   245     4    32     28     4   87.2%
+  Juxlos                              63    55     3     5      5     0   87.3%
+  Alyo                               350   306    16    28     16    12   87.4%
+  Avishai11                            8     7     1     0      0     0   87.5%
+  John M Wolfson                       8     7     1     0      0     0   87.5%
+  Zindor                              16    14     1     1      0     1   87.5%
+  Schazjmd                            97    85     4     8      1     7   87.6%
+  Destinyokhiria                     186   163     2    21      3    18   87.6%
+  1AmNobody24                        316   277    12    27     16    11   87.7%
+  Lordseriouspig                     294   258     7    29      5    24   87.8%
+  ToadetteEdit                        91    80     4     7      3     4   87.9%
+  Rusty Cat                          391   344    15    32      6    26   88.0%
+  Maliner                            109    96     2    11      7     4   88.1%
+  Pichpich                           235   207     6    22      6    16   88.1%
+  JavaHurricane                      127   112     3    12      4     8   88.2%
+  Jeffrey R. Clark                   229   202     1    26      3    23   88.2%
+  Rambley                            246   217    14    15      2    13   88.2%
+  DreamRimmer                         34    30     3     1      0     1   88.2%
+  Nick Moyes                         221   195    17     9      3     6   88.2%
+  UndercoverClassicist               213   188     3    22      2    20   88.3%
+  ARandomName123                     275   243    10    22      1    21   88.4%
+  Ca                                 147   130     1    16      4    12   88.4%
+  Eddie891                           147   130     3    14      3    11   88.4%
+  EDG 543                            132   117     7     8      5     3   88.6%
+  Zoozaz1                            353   313     3    37     10    27   88.7%
+  楊文祖                                124   110     4    10      2     8   88.7%
+  Idoghor Melody                     267   237     5    25      9    16   88.8%
+  Isochrone                          145   129     6    10      2     8   89.0%
+  Fritzmann2002                      310   276     8    26      4    22   89.0%
+  Cowboygilbert                       64    57     2     5      0     5   89.1%
+  Sunny Cryolite                      64    57     1     6      4     2   89.1%
+  Pbsouthwood                        277   247    12    18      9     9   89.2%
+  Abo Yemen                           74    66     2     6      4     2   89.2%
+  Alextejthompson                    408   364    11    33      9    24   89.2%
+  Lajmmoore                          252   225     9    18      2    16   89.3%
+  TheSandDoctor                      280   250     9    21      5    16   89.3%
+  Shushugah                          309   276    18    15      3    12   89.3%
+  MPGuy2824                          338   302    12    24      9    15   89.3%
+  Blacephalon                         19    17     2     0      0     0   89.5%
+  Encoded                            209   187     8    14      1    13   89.5%
+  Valorrr                             19    17     0     2      2     0   89.5%
+  Ampimd                             306   274    22    10      1     9   89.5%
+  CaptainEek                         283   254     6    23      9    14   89.8%
+  Chaotic Enby                        98    88     2     8      4     4   89.8%
+  Alpha3031                          178   160     5    13      2    11   89.9%
+  Gommeh                              60    54     0     6      3     3   90.0%
+  Kpddg                               40    36     0     4      4     0   90.0%
+  Stewpot                             10     9     0     1      0     1   90.0%
+  Voorts                              60    54     2     4      2     2   90.0%
+  Vacant0                            192   173     3    16      3    13   90.1%
+  Perfect4th                         176   159     9     8      3     5   90.3%
+  Ferien                             459   415    26    18      3    15   90.4%
+  Cocobb8                             84    76     3     5      3     2   90.5%
+  Relativity                         317   287     3    27      7    20   90.5%
+  Cassiopeia                         440   399    17    24      6    18   90.7%
+  Tails Wx                           151   137     5     9      5     4   90.7%
+  I dream of horses                  325   295    13    17      5    12   90.8%
+  Aaron Liu                          186   169     2    15      2    13   90.9%
+  LEvalyn                            274   249     8    17      5    12   90.9%
+  SkyWolf369                          55    50     0     5      4     1   90.9%
+  GGOTCC                             199   181     3    15      5    10   91.0%
+  Aryan                               45    41     0     4      4     0   91.1%
+  GoldRomean                         315   287     5    23      3    20   91.1%
+  RandFreeman                         45    41     0     4      1     3   91.1%
+  Garrettw87                          34    31     0     3      2     1   91.2%
+  Marchjuly                          125   114     2     9      2     7   91.2%
+  LindsayH                           139   127     4     8      6     2   91.4%
+  Barnards.tar.gz                     93    85     1     7      2     5   91.4%
+  Prithee P                           35    32     2     1      0     1   91.4%
+  Robertjamal12                      106    97     3     6      5     1   91.5%
+  14 novembre                         12    11     1     0      0     0   91.7%
+  Aseleste                            12    11     0     1      1     0   91.7%
+  Khagendrawiki                       12    11     0     1      0     1   91.7%
+  MouseCursor                         24    22     0     2      1     1   91.7%
+  Nythar                             156   143     4     9      2     7   91.7%
+  Phoenix                             84    77     2     5      5     0   91.7%
+  ScottishFinnishRadish               12    11     0     1      0     1   91.7%
+  Veko                                36    33     0     3      1     2   91.7%
+  Vis M                               24    22     0     2      0     2   91.7%
+  Calliopejen1                       205   188     1    16      6    10   91.7%
+  Cyberdog958                        266   244     4    18      2    16   91.7%
+  Mach61                              49    45     1     3      1     2   91.8%
+  Extraordinary Writ                 136   125     7     4      1     3   91.9%
+  Jenhawk777                         272   250    11    11      5     6   91.9%
+  Grumpylawnchair                    124   114     3     7      1     6   91.9%
+  Gerald Waldo Luis                   38    35     2     1      1     0   92.1%
+  Nosebagbear                         89    82     2     5      3     2   92.1%
+  Elli                               385   355     9    21     14     7   92.2%
+  Toadspike                          103    95     5     3      3     0   92.2%
+  TypeInfo                            13    12     0     1      0     1   92.3%
+  Bsoyka                             314   290    11    13      8     5   92.4%
+  CanonNi                            118   109     2     7      3     4   92.4%
+  Panini!                            161   149     4     8      2     6   92.5%
+  Pyrrho the Skipper                 108   100     4     4      0     4   92.6%
+  Bilorv                             245   227     5    13      4     9   92.7%
+  Pickersgill-Cunliffe               273   253     5    15      7     8   92.7%
+  2NumForIce                         110   102     4     4      1     3   92.7%
+  ~delta                             110   102     2     6      4     2   92.7%
+  Illusion Flame                      28    26     0     2      0     2   92.9%
+  Isabelle Belato                     84    78     1     5      4     1   92.9%
+  PerfectSoundWhatever               112   104     1     7      5     2   92.9%
+  Rusalkii                           154   143     1    10      1     9   92.9%
+  SignedInteger                       14    13     0     1      0     1   92.9%
+  Fathoms Below                      141   131     4     6      3     3   92.9%
+  Codename Noreste                   113   105     2     6      1     5   92.9%
+  Fieryninja                          73    68     3     2      1     1   93.2%
+  Mx. Granger                        205   191     3    11      3     8   93.2%
+  Schminnte                           74    69     3     2      0     2   93.2%
+  Queen of Hearts                     30    28     0     2      1     1   93.3%
+  Voidxor                             15    14     0     1      1     0   93.3%
+  DanCherek                          153   143     5     5      3     2   93.5%
+  Nahida                              46    43     1     2      0     2   93.5%
+  Capsulecap                          62    58     1     3      1     2   93.5%
+  IntentionallyDense                  31    29     0     2      0     2   93.5%
+  MolecularPilot                      31    29     0     2      0     2   93.5%
+  The4lines                           47    44     0     3      3     0   93.6%
+  GrayStorm                          110   103     0     7      3     4   93.6%
+  Pichemist                           63    59     0     4      2     2   93.7%
+  Nyakase                             33    31     0     2      0     2   93.9%
+  Dudhhr                              17    16     0     1      1     0   94.1%
+  Raydann                            119   112     0     7      3     4   94.1%
+  Sakura emad                         17    16     0     1      0     1   94.1%
+  Trialpears                          51    48     2     1      1     0   94.1%
+  Zippybonzo                         464   437     6    21      7    14   94.2%
+  Pelagic                             35    33     2     0      0     0   94.3%
+  Kinvidia                            88    83     2     3      3     0   94.3%
+  Plutus                              53    50     2     1      0     1   94.3%
+  CaroleHenson                        18    17     1     0      0     0   94.4%
+  Grapefanatic                        54    51     0     3      0     3   94.4%
+  NotAGenious                        163   154     4     5      1     4   94.5%
+  Liu1126                            220   208     3     9      5     4   94.5%
+  Maddy from Celeste                  55    52     0     3      1     2   94.5%
+  Commander Keane                     37    35     1     1      0     1   94.6%
+  Scaledish                           74    70     2     2      0     2   94.6%
+  Em-mustapha                        167   158     1     8      7     1   94.6%
+  Sirdog                              93    88     3     2      2     0   94.6%
+  Adam Black                          57    54     2     1      0     1   94.7%
+  HelenDegenerate                     76    72     0     4      1     3   94.7%
+  Ophyrius                            19    18     0     1      0     1   94.7%
+  ScrabbleTiles                      117   111     1     5      3     2   94.9%
+  DoubleGrazing                      120   114     4     2      1     1   95.0%
+  Ezlev                              145   138     1     6      2     4   95.2%
+  Three Sixty                         21    20     0     1      0     1   95.2%
+  Win8x                               21    20     0     1      1     0   95.2%
+  CFA                                106   101     3     2      0     2   95.3%
+  Dolotta                             43    41     0     2      1     1   95.3%
+  CREditzWiki                         22    21     0     1      0     1   95.5%
+  S-Aura                              44    42     1     1      1     0   95.5%
+  Ampil                               68    65     2     1      0     1   95.6%
+  Sohom Datta                         23    22     1     0      0     0   95.7%
+  Asartea                             24    23     0     1      0     1   95.8%
+  Berchanhimez                        24    23     0     1      0     1   95.8%
+  Tarlby                              24    23     0     1      1     0   95.8%
+  Dr vulpes                           74    71     2     1      0     1   95.9%
+  Aerin17                             25    24     0     1      1     0   96.0%
+  Silver seren                        25    24     1     0      0     0   96.0%
+  Z1720                               25    24     1     0      0     0   96.0%
+  Martin Urbanec                      80    77     0     3      3     0   96.2%
+  94rain                              82    79     0     3      1     2   96.3%
+  JML1148                             55    53     0     2      1     1   96.4%
+  EchidnaLives                        28    27     1     0      0     0   96.4%
+  GrabUp                              28    27     1     0      0     0   96.4%
+  Pro-anti-air                        58    56     1     1      0     1   96.6%
+  Praseodymium-141                    88    85     0     3      1     2   96.6%
+  Lightbluerain                       61    59     0     2      2     0   96.7%
+  Hajoon0102                          31    30     0     1      1     0   96.8%
+  Ixtal                               96    93     1     2      2     0   96.9%
+  Royal Autumn Crest                  33    32     0     1      0     1   97.0%
+  SHB2000                             33    32     0     1      0     1   97.0%
+  Sennecaster                         34    33     0     1      1     0   97.1%
+  Alvinategyeka                       37    36     0     1      0     1   97.3%
+  ThadeusOfNazereth                   39    38     0     1      0     1   97.4%
+  Pahunkat                            50    49     0     1      1     0   98.0%
+  GenQuest                            55    54     0     1      1     0   98.2%
+  Utopes                              61    60     1     0      0     0   98.4%
+  Actualcpscm                         62    61     0     1      0     1   98.4%
+  Arado Ar 196                         2     2     0     0      0     0  100.0%
+  Begocc                               8     8     0     0      0     0  100.0%
+  C1K98V                               2     2     0     0      0     0  100.0%
+  CactiStaccingCrane                  14    14     0     0      0     0  100.0%
+  CapnJackSp                           3     3     0     0      0     0  100.0%
+  Cloud atlas                         21    21     0     0      0     0  100.0%
+  Derek J Moore                        3     3     0     0      0     0  100.0%
+  Dimitrie569                          5     5     0     0      0     0  100.0%
+  Editor1769                           3     3     0     0      0     0  100.0%
+  Festucalex                          30    30     0     0      0     0  100.0%
+  Galobtter                            9     9     0     0      0     0  100.0%
+  Jannatulbaqi                         5     5     0     0      0     0  100.0%
+  Jdlrobson                            2     2     0     0      0     0  100.0%
+  KEmel49                             12    12     0     0      0     0  100.0%
+  Kaleeb18                            33    33     0     0      0     0  100.0%
+  L235                                 6     6     0     0      0     0  100.0%
+  Larataguera                         11    11     0     0      0     0  100.0%
+  Lemonaka                            12    12     0     0      0     0  100.0%
+  MMiller (WMF)                        1     1     0     0      0     0  100.0%
+  Newslinger                           8     8     0     0      0     0  100.0%
+  Nobel X300                           1     1     0     0      0     0  100.0%
+  OnlyNano                            54    54     0     0      0     0  100.0%
+  Orthodox Yash                        7     7     0     0      0     0  100.0%
+  PCN02WPS                             2     2     0     0      0     0  100.0%
+  Paradise Chronicle                   3     3     0     0      0     0  100.0%
+  Ratekreel                           17    17     0     0      0     0  100.0%
+  Rkieferbaum                         33    33     0     0      0     0  100.0%
+  Rohini                               3     3     0     0      0     0  100.0%
+  Roundish                            10    10     0     0      0     0  100.0%
+  Seddon                               2     2     0     0      0     0  100.0%
+  SilkTork                             2     2     0     0      0     0  100.0%
+  Siroxo                               9     9     0     0      0     0  100.0%
+  Tanbiruzzaman                        2     2     0     0      0     0  100.0%
+  The person who loves reading        10    10     0     0      0     0  100.0%
+  TheAstorPastor                       5     5     0     0      0     0  100.0%
+  Ultraodan                           46    46     0     0      0     0  100.0%
+  Valereee                             3     3     0     0      0     0  100.0%
+  Vghfr                               16    16     0     0      0     0  100.0%
+  Winner 42                            4     4     0     0      0     0  100.0%
+  ZI Jony                             12    12     0     0      0     0  100.0%

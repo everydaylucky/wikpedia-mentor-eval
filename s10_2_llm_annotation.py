@@ -32,11 +32,13 @@ from pathlib import Path
 from openai import AsyncOpenAI
 from dotenv import load_dotenv
 
-load_dotenv("/Users/Shared/baiduyun/00 Code/0Wiki/.env")
+load_dotenv(BASE.parent.parent / ".env")
+load_dotenv()  # fallback to local .env
 
 BASE = Path(os.path.dirname(os.path.abspath(__file__)))
 S8_FILE = BASE / "data" / "s8" / "s8_first_turns.jsonl"
-CODEBOOK = Path("/Users/Shared/baiduyun/00 Code/0Wiki/2026-4/2026-4-24/codebook_prompt.md")
+CODEBOOK = BASE / "data" / "s10" / "codebook_prompt.md"
+FEWSHOT_FILE = BASE / "data" / "s10" / "irr_annotation_a1.xlsx"
 OUT_DIR = BASE / "data" / "s10"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 OUT_FILE = OUT_DIR / "corpus_annotations_v2.jsonl"
@@ -45,6 +47,8 @@ ERR_FILE = OUT_DIR / "corpus_annotations_v2_errors.jsonl"
 DIMS = ["Q0", "Q2", "Q3", "Q4", "Q5"]
 MAX_CONCURRENT = 1000
 MAX_RETRIES = 3
+USE_FEWSHOT = True
+FEWSHOT_N = 120
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Load data
@@ -230,9 +234,29 @@ async def main():
         print("\n  All questions already annotated!")
         return
 
-    # Load codebook
+    # Load codebook + optional few-shot examples
     codebook_text = CODEBOOK.read_text("utf-8")
-    print(f"  Codebook: {len(codebook_text):,} chars")
+    if USE_FEWSHOT and FEWSHOT_FILE.exists():
+        import openpyxl
+        wb = openpyxl.load_workbook(FEWSHOT_FILE, read_only=True)
+        ws = wb.active
+        headers = None
+        examples = []
+        for row in ws.iter_rows(values_only=True):
+            if headers is None:
+                headers = [str(h) for h in row]
+                continue
+            entry = dict(zip(headers, row))
+            if int(str(entry["idx"])) > FEWSHOT_N:
+                continue
+            labels = {d: str(entry.get(d, "")).strip().upper() for d in DIMS}
+            if all(labels[d] in ("Y", "N") for d in DIMS):
+                examples.append(f"Message: {entry['question']}\nAnswer: {json.dumps(labels)}")
+        wb.close()
+        codebook_text += "\n\n---\n\n## Examples\n\n" + "\n\n".join(examples)
+        print(f"  Codebook + {len(examples)} few-shot examples: {len(codebook_text):,} chars")
+    else:
+        print(f"  Codebook (no few-shot): {len(codebook_text):,} chars")
 
     # Setup client
     client = AsyncOpenAI(

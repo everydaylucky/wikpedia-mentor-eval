@@ -1,0 +1,127 @@
+DV,DV_key,Feature,Feature_col,Beta_std,SE,z,p,Sig,ICC,Subgroup
+1+ mainspace edit (14d),primary,Reply word count,r_words,-0.0054,0.0036,-1.5,0.1341,,0.0,Full treated
+1+ mainspace edit (14d),primary,"""You"" rate (per word)",r_pronoun_you_rate,-0.0045,0.0023,-1.92,0.0549,,0.0,Full treated
+1+ mainspace edit (14d),primary,"""I"" rate (per word)",r_pronoun_i_rate,0.0028,0.0023,1.2,0.231,,0.0,Full treated
+1+ mainspace edit (14d),primary,"""We"" rate (per word)",r_pronoun_we_rate,-0.0061,0.0022,-2.73,0.0063,**,0.0,Full treated
+1+ mainspace edit (14d),primary,VADER compound sentiment,r_vader_compound,0.0058,0.0027,2.12,0.0344,*,0.0,Full treated
+1+ mainspace edit (14d),primary,TextBlob subjectivity,r_tb_subjectivity,0.0012,0.0024,0.49,0.6238,,0.0,Full treated
+1+ mainspace edit (14d),primary,Flesch-Kincaid grade,r_flesch_kincaid,0.0012,0.0026,0.46,0.6446,,0.0,Full treated
+1+ mainspace edit (14d),primary,Imperative sentences,r_n_imperatives,0.0028,0.0024,1.19,0.2352,,0.0,Full treated
+1+ mainspace edit (14d),primary,Resource links (total),r_n_resources,0.0026,0.0141,0.18,0.8543,,0.0,Full treated
+1+ mainspace edit (14d),primary,Wikilinks,r_n_wikilink,-0.002,0.0057,-0.35,0.7289,,0.0,Full treated
+1+ mainspace edit (14d),primary,Policy references,r_n_policy,-0.006,0.0121,-0.5,0.6195,,0.0,Full treated
+1+ mainspace edit (14d),primary,Help page references,r_n_help,-0.0023,0.0038,-0.59,0.5525,,0.0,Full treated
+1+ mainspace edit (14d),primary,Reply lag (hours),r_reply_lag_hours,-0.0346,0.0023,-15.3,0.0,***,0.0,Full treated
+1+ mainspace edit (14d),primary,Reply/question word ratio,r_reply_q_word_ratio,0.001,0.003,0.35,0.7237,,0.0,Full treated
+1+ mainspace edit (14d),primary,Has greeting,r_has_greeting,0.0002,0.0023,0.09,0.9275,,0.0,Full treated
+1+ mainspace edit (14d),primary,Gratitude expression,r_polite_gratitude,0.0001,0.0023,0.04,0.9713,,0.0,Full treated
+1+ mainspace edit (14d),primary,Positive language,r_polite_has_positive,0.0074,0.0034,2.18,0.0293,*,0.0,Full treated
+1+ mainspace edit (14d),primary,Deference,r_polite_deference,-0.0019,0.0032,-0.6,0.5487,,0.0,Full treated
+1+ mainspace edit (14d),primary,Has list,r_has_list,0.0005,0.0023,0.21,0.8337,,0.0,Full treated
+1+ mainspace edit (14d),primary,Question marks in reply,r_n_question_marks,0.0062,0.0023,2.64,0.0084,**,0.0,Full treated
+1+ mainspace edit (14d),primary,Q-R semantic similarity,r_qr_cosine_sim,0.0165,0.0027,6.03,0.0,***,0.0,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Reply word count,r_words,-0.1828,0.3576,-0.51,0.6092,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,"""You"" rate (per word)",r_pronoun_you_rate,-0.1426,0.2315,-0.62,0.538,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,"""I"" rate (per word)",r_pronoun_i_rate,0.2279,0.2308,0.99,0.3235,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,"""We"" rate (per word)",r_pronoun_we_rate,0.0471,0.2223,0.21,0.8322,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,VADER compound sentiment,r_vader_compound,-0.1144,0.2717,-0.42,0.6739,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,TextBlob subjectivity,r_tb_subjectivity,0.4085,0.2357,1.73,0.083,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Flesch-Kincaid grade,r_flesch_kincaid,-0.0373,0.2601,-0.14,0.8859,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Imperative sentences,r_n_imperatives,-0.0092,0.2341,-0.04,0.9687,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Resource links (total),r_n_resources,3.4671,1.4036,2.47,0.0135,*,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Wikilinks,r_n_wikilink,-1.5298,0.5715,-2.68,0.0074,**,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Policy references,r_n_policy,-2.5924,1.2054,-2.15,0.0315,*,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Help page references,r_n_help,-0.9152,0.3778,-2.42,0.0154,*,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Reply lag (hours),r_reply_lag_hours,-0.7082,0.2237,-3.17,0.0015,**,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Reply/question word ratio,r_reply_q_word_ratio,-0.1205,0.2941,-0.41,0.682,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Has greeting,r_has_greeting,-0.0584,0.2316,-0.25,0.801,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Gratitude expression,r_polite_gratitude,0.6487,0.2329,2.79,0.0053,**,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Positive language,r_polite_has_positive,-0.2059,0.3385,-0.61,0.543,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Deference,r_polite_deference,-0.0107,0.3203,-0.03,0.9732,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Has list,r_has_list,0.0109,0.2248,0.05,0.9614,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Question marks in reply,r_n_question_marks,0.2891,0.2333,1.24,0.2152,,0.0001,Full treated
+N mainspace edits (14d),n_mainspace_edits_14d,Q-R semantic similarity,r_qr_cosine_sim,-0.0258,0.2717,-0.09,0.9244,,0.0001,Full treated
+Active days (30d),active_days_30d,Reply word count,r_words,-0.0215,0.0296,-0.72,0.4693,,0.0,Full treated
+Active days (30d),active_days_30d,"""You"" rate (per word)",r_pronoun_you_rate,-0.0142,0.0192,-0.74,0.4611,,0.0,Full treated
+Active days (30d),active_days_30d,"""I"" rate (per word)",r_pronoun_i_rate,0.053,0.0192,2.76,0.0057,**,0.0,Full treated
+Active days (30d),active_days_30d,"""We"" rate (per word)",r_pronoun_we_rate,-0.0046,0.0185,-0.25,0.8031,,0.0,Full treated
+Active days (30d),active_days_30d,VADER compound sentiment,r_vader_compound,0.0329,0.0226,1.46,0.1452,,0.0,Full treated
+Active days (30d),active_days_30d,TextBlob subjectivity,r_tb_subjectivity,0.0153,0.0196,0.78,0.4339,,0.0,Full treated
+Active days (30d),active_days_30d,Flesch-Kincaid grade,r_flesch_kincaid,0.0288,0.0216,1.34,0.1817,,0.0,Full treated
+Active days (30d),active_days_30d,Imperative sentences,r_n_imperatives,-0.0097,0.0194,-0.5,0.6153,,0.0,Full treated
+Active days (30d),active_days_30d,Resource links (total),r_n_resources,-0.2429,0.1165,-2.08,0.0371,*,0.0,Full treated
+Active days (30d),active_days_30d,Wikilinks,r_n_wikilink,0.0625,0.0474,1.32,0.1877,,0.0,Full treated
+Active days (30d),active_days_30d,Policy references,r_n_policy,0.172,0.1001,1.72,0.0856,,0.0,Full treated
+Active days (30d),active_days_30d,Help page references,r_n_help,0.0595,0.0314,1.89,0.0581,,0.0,Full treated
+Active days (30d),active_days_30d,Reply lag (hours),r_reply_lag_hours,-0.1676,0.0187,-8.98,0.0,***,0.0,Full treated
+Active days (30d),active_days_30d,Reply/question word ratio,r_reply_q_word_ratio,0.0019,0.0244,0.08,0.9378,,0.0,Full treated
+Active days (30d),active_days_30d,Has greeting,r_has_greeting,0.0106,0.0192,0.55,0.5821,,0.0,Full treated
+Active days (30d),active_days_30d,Gratitude expression,r_polite_gratitude,0.04,0.0193,2.07,0.0388,*,0.0,Full treated
+Active days (30d),active_days_30d,Positive language,r_polite_has_positive,0.002,0.0285,0.07,0.943,,0.0,Full treated
+Active days (30d),active_days_30d,Deference,r_polite_deference,0.0081,0.0269,0.3,0.7627,,0.0,Full treated
+Active days (30d),active_days_30d,Has list,r_has_list,0.0046,0.0187,0.25,0.8061,,0.0,Full treated
+Active days (30d),active_days_30d,Question marks in reply,r_n_question_marks,0.0794,0.0194,4.1,0.0,***,0.0,Full treated
+Active days (30d),active_days_30d,Q-R semantic similarity,r_qr_cosine_sim,0.0914,0.0226,4.05,0.0001,***,0.0,Full treated
+Unique namespaces (14d),unique_ns,Reply word count,r_words,-0.0109,0.0067,-1.63,0.1035,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,"""You"" rate (per word)",r_pronoun_you_rate,0.0006,0.0043,0.14,0.8908,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,"""I"" rate (per word)",r_pronoun_i_rate,0.0129,0.0043,2.99,0.0028,**,0.0002,Full treated
+Unique namespaces (14d),unique_ns,"""We"" rate (per word)",r_pronoun_we_rate,-0.0083,0.0042,-1.99,0.0464,*,0.0002,Full treated
+Unique namespaces (14d),unique_ns,VADER compound sentiment,r_vader_compound,0.0072,0.0051,1.4,0.161,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,TextBlob subjectivity,r_tb_subjectivity,0.0055,0.0044,1.23,0.2179,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Flesch-Kincaid grade,r_flesch_kincaid,0.007,0.0049,1.43,0.1535,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Imperative sentences,r_n_imperatives,0.0011,0.0044,0.25,0.804,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Resource links (total),r_n_resources,-0.0165,0.0263,-0.62,0.5322,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Wikilinks,r_n_wikilink,0.0013,0.0107,0.12,0.9039,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Policy references,r_n_policy,0.0113,0.0226,0.5,0.6186,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Help page references,r_n_help,-0.0013,0.0071,-0.18,0.8535,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Reply lag (hours),r_reply_lag_hours,-0.0637,0.0042,-15.06,0.0,***,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Reply/question word ratio,r_reply_q_word_ratio,0.0028,0.0055,0.5,0.6146,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Has greeting,r_has_greeting,-0.0027,0.0043,-0.61,0.5398,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Gratitude expression,r_polite_gratitude,0.0044,0.0044,1.01,0.3127,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Positive language,r_polite_has_positive,0.0148,0.0064,2.33,0.0201,*,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Deference,r_polite_deference,-0.0028,0.006,-0.47,0.6388,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Has list,r_has_list,0.005,0.0042,1.19,0.2338,,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Question marks in reply,r_n_question_marks,0.0128,0.0044,2.92,0.0034,**,0.0002,Full treated
+Unique namespaces (14d),unique_ns,Q-R semantic similarity,r_qr_cosine_sim,0.0229,0.0051,4.49,0.0,***,0.0002,Full treated
+Reverted any (14d),reverted_any,Reply word count,r_words,-0.0081,0.0029,-2.81,0.0049,**,0.0001,Full treated
+Reverted any (14d),reverted_any,"""You"" rate (per word)",r_pronoun_you_rate,-0.0006,0.0019,-0.3,0.7611,,0.0001,Full treated
+Reverted any (14d),reverted_any,"""I"" rate (per word)",r_pronoun_i_rate,0.0008,0.0019,0.4,0.6882,,0.0001,Full treated
+Reverted any (14d),reverted_any,"""We"" rate (per word)",r_pronoun_we_rate,-0.0033,0.0018,-1.82,0.069,,0.0001,Full treated
+Reverted any (14d),reverted_any,VADER compound sentiment,r_vader_compound,0.0007,0.0022,0.3,0.7649,,0.0001,Full treated
+Reverted any (14d),reverted_any,TextBlob subjectivity,r_tb_subjectivity,0.003,0.0019,1.55,0.121,,0.0001,Full treated
+Reverted any (14d),reverted_any,Flesch-Kincaid grade,r_flesch_kincaid,-0.0006,0.0021,-0.29,0.7722,,0.0001,Full treated
+Reverted any (14d),reverted_any,Imperative sentences,r_n_imperatives,-0.0009,0.0019,-0.48,0.6322,,0.0001,Full treated
+Reverted any (14d),reverted_any,Resource links (total),r_n_resources,-0.0053,0.0114,-0.46,0.6434,,0.0001,Full treated
+Reverted any (14d),reverted_any,Wikilinks,r_n_wikilink,0.0006,0.0046,0.12,0.9006,,0.0001,Full treated
+Reverted any (14d),reverted_any,Policy references,r_n_policy,0.0102,0.0098,1.04,0.2982,,0.0001,Full treated
+Reverted any (14d),reverted_any,Help page references,r_n_help,0.0007,0.0031,0.24,0.8103,,0.0001,Full treated
+Reverted any (14d),reverted_any,Reply lag (hours),r_reply_lag_hours,-0.0172,0.0018,-9.49,0.0,***,0.0001,Full treated
+Reverted any (14d),reverted_any,Reply/question word ratio,r_reply_q_word_ratio,0.0033,0.0024,1.4,0.1608,,0.0001,Full treated
+Reverted any (14d),reverted_any,Has greeting,r_has_greeting,0.0003,0.0019,0.19,0.8526,,0.0001,Full treated
+Reverted any (14d),reverted_any,Gratitude expression,r_polite_gratitude,0.0014,0.0019,0.76,0.4482,,0.0001,Full treated
+Reverted any (14d),reverted_any,Positive language,r_polite_has_positive,0.0054,0.0027,1.96,0.05,*,0.0001,Full treated
+Reverted any (14d),reverted_any,Deference,r_polite_deference,-0.0031,0.0026,-1.21,0.2281,,0.0001,Full treated
+Reverted any (14d),reverted_any,Has list,r_has_list,0.0028,0.0018,1.56,0.1176,,0.0001,Full treated
+Reverted any (14d),reverted_any,Question marks in reply,r_n_question_marks,0.0053,0.0019,2.79,0.0052,**,0.0001,Full treated
+Reverted any (14d),reverted_any,Q-R semantic similarity,r_qr_cosine_sim,0.0077,0.0022,3.48,0.0005,***,0.0001,Full treated
+2+ active days (14d),cross_day_any_14d,Reply word count,r_words,-0.0029,0.0029,-0.99,0.3208,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,"""You"" rate (per word)",r_pronoun_you_rate,-0.0026,0.0019,-1.37,0.1705,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,"""I"" rate (per word)",r_pronoun_i_rate,0.0032,0.0019,1.69,0.0919,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,"""We"" rate (per word)",r_pronoun_we_rate,-0.0012,0.0018,-0.67,0.5021,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,VADER compound sentiment,r_vader_compound,0.0045,0.0022,2.0,0.0458,*,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,TextBlob subjectivity,r_tb_subjectivity,0.002,0.0019,1.05,0.2933,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Flesch-Kincaid grade,r_flesch_kincaid,-0.0004,0.0021,-0.21,0.8346,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Imperative sentences,r_n_imperatives,-0.0008,0.0019,-0.42,0.674,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Resource links (total),r_n_resources,-0.0033,0.0115,-0.28,0.7769,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Wikilinks,r_n_wikilink,0.0002,0.0047,0.05,0.9581,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Policy references,r_n_policy,0.0026,0.0099,0.26,0.7921,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Help page references,r_n_help,-0.0031,0.0031,-1.0,0.3166,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Reply lag (hours),r_reply_lag_hours,-0.0208,0.0018,-11.32,0.0,***,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Reply/question word ratio,r_reply_q_word_ratio,0.0022,0.0024,0.9,0.3678,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Has greeting,r_has_greeting,0.0004,0.0019,0.21,0.8375,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Gratitude expression,r_polite_gratitude,0.0008,0.0019,0.43,0.666,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Positive language,r_polite_has_positive,0.0035,0.0028,1.27,0.2025,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Deference,r_polite_deference,-0.0008,0.0026,-0.32,0.7502,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Has list,r_has_list,-0.001,0.0018,-0.52,0.6037,,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Question marks in reply,r_n_question_marks,0.0044,0.0019,2.28,0.0227,*,0.0,Full treated
+2+ active days (14d),cross_day_any_14d,Q-R semantic similarity,r_qr_cosine_sim,0.0123,0.0022,5.5,0.0,***,0.0,Full treated

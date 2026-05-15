@@ -9,7 +9,7 @@ Design:
   - Outcome: primary (1+ mainspace edit 14d) and secondary DVs
   - Reply features: standardized (z-scored) so coefficients are comparable
   - Controls: all 164 pre-treatment covariates from the PS model
-  - Model: logistic regression (primary DV) and OLS (continuous DVs)
+  - Model: Mixed-effects linear regression with mentor as random intercept
   - Also runs by subgroup to see if associations differ
 
 This is ASSOCIATIONAL, not causal. Reply features are post-treatment.
@@ -18,6 +18,7 @@ Input:
   data/s12/psm_data/psm_dataset.npz  — covariates + outcomes + treatment
   data/s15/reply_features.csv        — reply features from s15
   data/s11/s11_features.jsonl        — conversation_id order
+  data/s7/s7_conversations_cleaned.jsonl — mentor identity
 
 Output:
   data/s15/association_results.csv
@@ -30,6 +31,8 @@ import pandas as pd
 from pathlib import Path
 from sklearn.preprocessing import StandardScaler
 from scipy import stats
+import statsmodels.api as sm
+from statsmodels.regression.mixed_linear_model import MixedLM
 
 warnings.filterwarnings("ignore")
 sys.stdout.reconfigure(line_buffering=True)
@@ -43,6 +46,7 @@ BASE = Path(os.path.dirname(os.path.abspath(__file__)))
 PSM_FILE = BASE / "data" / "s12" / "psm_data" / "psm_dataset.npz"
 S11_FILE = BASE / "data" / "s11" / "s11_features.jsonl"
 S15_FILE = BASE / "data" / "s15" / "reply_features.csv"
+S7_FILE = BASE / "data" / "s7" / "s7_conversations_cleaned.jsonl"
 OUT_DIR = BASE / "data" / "s15"
 OUT_FIG = OUT_DIR / "figures"
 
@@ -70,6 +74,7 @@ REPLY_FEATURES = [
     ("r_polite_deference",   "Deference"),
     ("r_has_list",           "Has list"),
     ("r_n_question_marks",   "Question marks in reply"),
+    ("r_qr_cosine_sim",      "Q-R semantic similarity"),
 ]
 
 DVS = [
@@ -78,6 +83,7 @@ DVS = [
     ("active_days_30d",       "Active days (30d)"),
     ("unique_ns",             "Unique namespaces (14d)"),
     ("reverted_any",          "Reverted any (14d)"),
+    ("cross_day_any_14d",     "2+ active days (14d)"),
 ]
 
 
@@ -90,29 +96,58 @@ def remove_collinear(X, threshold=0.999):
             continue
         keep.append(j)
     X = X[:, keep]
-    # QR to find rank
     Q, R = np.linalg.qr(X, mode="reduced")
     diag = np.abs(np.diag(R))
     mask = diag > diag.max() * 1e-10
     return X[:, mask], np.array(keep)[mask]
 
 
-def ols_with_controls(y, X_reply, X_controls):
+def mixed_effects_with_controls(y, X_reply, X_controls, groups, rf_cols):
     """
-    OLS: y ~ X_reply + X_controls.
-    Uses QR decomposition to handle collinearity.
-    Returns coefficients, SEs, t-stats, p-values for reply features only.
+    Mixed-effects linear model: y ~ X_reply + X_controls + (1 | mentor).
+    Returns coefficients, SEs, z-stats, p-values for reply features only.
     """
     k_reply = X_reply.shape[1]
 
-    # Remove collinear columns from controls only
     X_c_clean, _ = remove_collinear(X_controls)
 
-    X = np.hstack([np.ones((X_reply.shape[0], 1)), X_reply, X_c_clean])
-    n, p = X.shape
+    # Build DataFrame for statsmodels
+    col_names = [f"rf_{i}" for i in range(k_reply)]
+    ctrl_names = [f"ctrl_{i}" for i in range(X_c_clean.shape[1])]
+
+    df = pd.DataFrame(X_reply, columns=col_names)
+    df_ctrl = pd.DataFrame(X_c_clean, columns=ctrl_names)
+    df = pd.concat([df, df_ctrl], axis=1)
+    df["y"] = y
+    df["mentor"] = groups
+
+    exog_cols = col_names + ctrl_names
+    exog = sm.add_constant(df[exog_cols])
 
     try:
-        # QR-based OLS
+        model = MixedLM(df["y"], exog, groups=df["mentor"])
+        result = model.fit(reml=True, method="lbfgs", maxiter=200)
+
+        beta_r = np.array([result.fe_params[c] for c in col_names])
+        se_r = np.array([result.bse[c] for c in col_names])
+        z_r = np.array([result.tvalues[c] for c in col_names])
+        p_r = np.array([result.pvalues[c] for c in col_names])
+
+        re_var = result.cov_re.iloc[0, 0] if hasattr(result.cov_re, 'iloc') else float(result.cov_re)
+        resid_var = result.scale
+        icc = re_var / (re_var + resid_var) if (re_var + resid_var) > 0 else 0
+
+        return beta_r, se_r, z_r, p_r, icc
+    except Exception as e:
+        print(f"    Mixed-effects failed ({e}), falling back to OLS")
+        return _ols_fallback(y, X_reply, X_c_clean, k_reply)
+
+
+def _ols_fallback(y, X_reply, X_controls, k_reply):
+    """Fallback OLS when mixed-effects fails (e.g., too few groups)."""
+    X = np.hstack([np.ones((X_reply.shape[0], 1)), X_reply, X_controls])
+    n, p = X.shape
+    try:
         Q, R = np.linalg.qr(X, mode="reduced")
         beta = np.linalg.solve(R, Q.T @ y)
         resid = y - X @ beta
@@ -121,15 +156,13 @@ def ols_with_controls(y, X_reply, X_controls):
         var_beta = sigma2 * (R_inv @ R_inv.T).diagonal()
         se = np.sqrt(np.maximum(var_beta, 0))
     except np.linalg.LinAlgError:
-        return (np.full(k_reply, np.nan),) * 4
+        return (np.full(k_reply, np.nan),) * 4 + (np.nan,)
 
-    # reply features are columns 1..k_reply (after intercept)
     beta_r = beta[1:k_reply+1]
     se_r = se[1:k_reply+1]
     t_r = beta_r / np.where(se_r > 0, se_r, np.nan)
     p_r = 2 * (1 - stats.t.cdf(np.abs(t_r), df=max(n - p, 1)))
-
-    return beta_r, se_r, t_r, p_r
+    return beta_r, se_r, t_r, p_r, np.nan
 
 
 def main():
@@ -151,7 +184,7 @@ def main():
     X_all = np.hstack([X_E, X_Qtext, X_Qpersp, X_Qtype, X_emb20, X_temporal])
 
     OC = {}
-    for k in ["primary", "n_mainspace_edits_14d", "active_days_30d", "unique_ns", "reverted_any"]:
+    for k in ["primary", "n_mainspace_edits_14d", "active_days_30d", "unique_ns", "reverted_any", "cross_day_any_14d"]:
         OC[k] = psm[f"oc_{k}"]
 
     # Get conversation_id order from s11
@@ -159,6 +192,15 @@ def main():
     with open(S11_FILE) as f:
         for line in f:
             s11_cids.append(json.loads(line)["conversation_id"])
+
+    # Load mentor identity from s7
+    print("  Loading mentor identity from s7...")
+    cid_to_mentor = {}
+    with open(S7_FILE) as f:
+        for line in f:
+            d = json.loads(line)
+            cid_to_mentor[d["conversation_id"]] = d.get("mentor", "unknown")
+    print(f"  s7: {len(cid_to_mentor):,} conversations with mentor info")
 
     N = len(y_treat)
     treated_mask = y_treat == 1
@@ -179,14 +221,18 @@ def main():
     # Build aligned arrays
     valid_psm_idx = []
     valid_rf_idx = []
+    valid_mentors = []
     for ri, cid in enumerate(rf["conversation_id"]):
         if cid in treated_cid_map:
             valid_psm_idx.append(treated_cid_map[cid])
             valid_rf_idx.append(ri)
+            valid_mentors.append(cid_to_mentor.get(cid, "unknown"))
 
     valid_psm_idx = np.array(valid_psm_idx)
     valid_rf_idx = np.array(valid_rf_idx)
-    print(f"  Matched: {len(valid_psm_idx):,} treated conversations")
+    valid_mentors = np.array(valid_mentors)
+    n_mentors = len(set(valid_mentors))
+    print(f"  Matched: {len(valid_psm_idx):,} treated conversations, {n_mentors} unique mentors")
 
     # Extract aligned matrices
     X_controls = X_all[valid_psm_idx]
@@ -218,10 +264,11 @@ def main():
     for dv_key, dv_name in DVS:
         y = OC[dv_key][valid_psm_idx]
 
-        beta, se, t, p = ols_with_controls(y, X_reply_s, X_controls_s)
+        beta, se, z, p, icc = mixed_effects_with_controls(
+            y, X_reply_s, X_controls_s, valid_mentors, rf_cols)
 
-        print(f"\n  DV: {dv_name} (N = {len(y):,}, mean = {y.mean():.4f})")
-        print(f"  {'Feature':<30s} {'β (std)':>10s} {'SE':>8s} {'t':>8s} {'p':>8s} {'Sig':>5s}")
+        print(f"\n  DV: {dv_name} (N = {len(y):,}, mean = {y.mean():.4f}, ICC = {icc:.4f})")
+        print(f"  {'Feature':<30s} {'β (std)':>10s} {'SE':>8s} {'z':>8s} {'p':>8s} {'Sig':>5s}")
         print(f"  {'-'*30} {'-'*10} {'-'*8} {'-'*8} {'-'*8} {'-'*5}")
 
         for j, (col, name) in enumerate(zip(rf_cols, rf_names)):
@@ -233,16 +280,17 @@ def main():
             elif p[j] < 0.05:
                 sig = "*"
 
-            print(f"  {name:<30s} {beta[j]:>+10.4f} {se[j]:>8.4f} {t[j]:>8.2f} {p[j]:>8.4f} {sig:>5s}")
+            print(f"  {name:<30s} {beta[j]:>+10.4f} {se[j]:>8.4f} {z[j]:>8.2f} {p[j]:>8.4f} {sig:>5s}")
 
             all_results.append({
                 "DV": dv_name, "DV_key": dv_key,
                 "Feature": name, "Feature_col": col,
                 "Beta_std": round(beta[j], 4),
                 "SE": round(se[j], 4),
-                "t": round(t[j], 2),
+                "z": round(z[j], 2),
                 "p": round(p[j], 4),
                 "Sig": sig,
+                "ICC": round(icc, 4),
                 "Subgroup": "Full treated",
             })
 
@@ -281,36 +329,37 @@ def main():
 
         X_r_sg = X_reply_s[sg_mask]
         X_c_sg = X_controls_s[sg_mask]
+        mentors_sg = valid_mentors[sg_mask]
 
         print(f"\n  {'='*60}")
-        print(f"  {sg_name} (N={n_sg:,})")
+        print(f"  {sg_name} (N={n_sg:,}, {len(set(mentors_sg))} mentors)")
         print(f"  {'='*60}")
 
         for dv_key, dv_name in DVS:
             y_sg = OC[dv_key][valid_psm_idx[sg_mask]]
-            beta, se, t_val, p = ols_with_controls(y_sg, X_r_sg, X_c_sg)
+            beta, se, z_val, p, icc = mixed_effects_with_controls(
+                y_sg, X_r_sg, X_c_sg, mentors_sg, rf_cols)
 
-            # Collect all results
             feat_results = []
             for j, (col, name) in enumerate(zip(rf_cols, rf_names)):
                 sig = ""
                 if p[j] < 0.001: sig = "***"
                 elif p[j] < 0.01: sig = "**"
                 elif p[j] < 0.05: sig = "*"
-                feat_results.append((name, col, beta[j], se[j], t_val[j], p[j], sig))
+                feat_results.append((name, col, beta[j], se[j], z_val[j], p[j], sig))
                 sg_results.append({
                     "Subgroup": sg_name, "N": n_sg, "DV": dv_name, "DV_key": dv_key,
                     "Feature": name, "Feature_col": col,
                     "Beta_std": round(beta[j], 4), "SE": round(se[j], 4),
-                    "t": round(t_val[j], 2), "p": round(p[j], 4), "Sig": sig,
+                    "z": round(z_val[j], 2), "p": round(p[j], 4), "Sig": sig,
+                    "ICC": round(icc, 4),
                 })
 
-            # Print: show significant first, sorted by |β|
             sig_feats = [(n, b, pv, s) for n, _, b, _, _, pv, s in feat_results if s]
             sig_feats.sort(key=lambda x: abs(x[1]), reverse=True)
 
             if sig_feats:
-                print(f"\n    {dv_name} (mean={y_sg.mean():.4f})")
+                print(f"\n    {dv_name} (mean={y_sg.mean():.4f}, ICC={icc:.4f})")
                 print(f"    {'Feature':<30s} {'β (std)':>10s} {'p':>8s} {'Sig':>5s}")
                 print(f"    {'-'*30} {'-'*10} {'-'*8} {'-'*5}")
                 for name, b, pv, s in sig_feats:
@@ -329,6 +378,8 @@ def main():
 
     # Figure 1: Forest plot — primary DV, full sample
     primary_res = res_df[res_df["DV_key"] == "primary"].copy()
+    if "t" in primary_res.columns and "z" not in primary_res.columns:
+        primary_res.rename(columns={"t": "z"}, inplace=True)
     primary_res = primary_res.sort_values("Beta_std").reset_index(drop=True)
 
     fig, ax = plt.subplots(figsize=(10, len(primary_res) * 0.45 + 2))
@@ -345,7 +396,7 @@ def main():
     ax.set_yticklabels(primary_res["Feature"], fontsize=8)
     ax.set_xlabel("Standardized β (1 SD increase in reply feature → Δ retention probability)")
     ax.set_title("Reply Feature → Retention Association (Treated Group, N={:,})\n"
-                 "Controlling for 164 pre-treatment covariates · OLS"
+                 "Mixed-effects model (1 | mentor) · 164 pre-treatment covariates"
                  .format(len(valid_psm_idx)),
                  fontsize=10, fontweight="bold")
     ax.grid(axis="x", alpha=0.2)
@@ -392,7 +443,7 @@ def main():
                 ax.text(j, i, txt, ha="center", va="center", fontsize=6, color=color)
     plt.colorbar(im, ax=ax, label="Standardized β", shrink=0.8)
     ax.set_title("Reply Feature → Retention (Primary DV) by Subgroup\n"
-                 "OLS controlling for 164 pre-treatment covariates",
+                 "Mixed-effects (1 | mentor) · 164 pre-treatment covariates",
                  fontsize=10, fontweight="bold")
     fig.tight_layout()
     fig.savefig(OUT_FIG / "association_heatmap.pdf", bbox_inches="tight")

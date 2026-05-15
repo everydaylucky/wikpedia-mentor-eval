@@ -1,0 +1,9 @@
+s4_recover_deleted report — 2026-04-20 21:06
+============================================================
+Mentors processed:     309
+Total missing:         5346
+Recovered ok:          2860
+  With mentor reply:   1566
+Section not found:     4
+Fetch failed:          163
+Skipped (reverted):    1321

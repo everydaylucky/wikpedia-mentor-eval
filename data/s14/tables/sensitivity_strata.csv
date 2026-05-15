@@ -1,0 +1,193 @@
+Subgroup,DV,K,ATT,CI_lo,CI_hi,Sig
+Full sample,primary,3,0.0208,0.0105,0.0302,*
+Full sample,primary,5,0.0196,0.0099,0.0297,*
+Full sample,primary,7,0.0185,0.0082,0.0296,*
+Full sample,primary,10,0.0183,0.008,0.0273,*
+Full sample,n_edits_14d,3,0.6589,-0.1506,1.5302,
+Full sample,n_edits_14d,5,0.5929,-0.229,1.5037,
+Full sample,n_edits_14d,7,0.5886,-0.2326,1.4674,
+Full sample,n_edits_14d,10,0.5835,-0.3032,1.3948,
+Full sample,active_days_30d,3,0.1147,0.0277,0.2001,*
+Full sample,active_days_30d,5,0.1007,-0.0013,0.1919,
+Full sample,active_days_30d,7,0.0995,0.0176,0.1841,*
+Full sample,active_days_30d,10,0.0949,0.0109,0.1818,*
+Full sample,unique_ns_14d,3,0.0326,0.0129,0.0481,*
+Full sample,unique_ns_14d,5,0.0292,0.01,0.0499,*
+Full sample,unique_ns_14d,7,0.0279,0.0087,0.0488,*
+Full sample,unique_ns_14d,10,0.0273,0.0102,0.0471,*
+Full sample,reverted_any_14d,3,0.0066,-0.0002,0.0137,
+Full sample,reverted_any_14d,5,0.0068,-0.0,0.0133,
+Full sample,reverted_any_14d,7,0.0064,-0.0015,0.0137,
+Full sample,reverted_any_14d,10,0.0063,-0.0017,0.014,
+Full sample,2+_active_days_14d,3,0.0171,0.0089,0.0247,*
+Full sample,2+_active_days_14d,5,0.0164,0.0084,0.0245,*
+Full sample,2+_active_days_14d,7,0.0162,0.0084,0.0245,*
+Full sample,2+_active_days_14d,10,0.0157,0.0085,0.0236,*
+Technical,primary,3,0.0233,0.0101,0.0367,*
+Technical,primary,5,0.0238,0.0109,0.0403,*
+Technical,primary,7,0.0236,0.0103,0.0383,*
+Technical,primary,10,0.0227,0.0089,0.0371,*
+Technical,n_edits_14d,3,0.5677,-0.6969,2.0474,
+Technical,n_edits_14d,5,0.5523,-0.7642,1.6752,
+Technical,n_edits_14d,7,0.5194,-0.8908,1.7078,
+Technical,n_edits_14d,10,0.4969,-0.8709,1.5607,
+Technical,active_days_30d,3,0.163,0.0396,0.2815,*
+Technical,active_days_30d,5,0.1601,0.0507,0.2796,*
+Technical,active_days_30d,7,0.1584,0.0201,0.2695,*
+Technical,active_days_30d,10,0.1531,0.0207,0.2644,*
+Technical,unique_ns_14d,3,0.0395,0.0123,0.0669,*
+Technical,unique_ns_14d,5,0.0397,0.0111,0.0703,*
+Technical,unique_ns_14d,7,0.0401,0.015,0.0632,*
+Technical,unique_ns_14d,10,0.0394,0.0085,0.0678,*
+Technical,reverted_any_14d,3,0.0082,-0.0025,0.0198,
+Technical,reverted_any_14d,5,0.009,-0.002,0.0195,
+Technical,reverted_any_14d,7,0.0091,-0.0025,0.0214,
+Technical,reverted_any_14d,10,0.0088,-0.002,0.0196,
+Technical,2+_active_days_14d,3,0.0175,0.0065,0.0287,*
+Technical,2+_active_days_14d,5,0.0171,0.003,0.0299,*
+Technical,2+_active_days_14d,7,0.0173,0.0052,0.0277,*
+Technical,2+_active_days_14d,10,0.0164,0.0036,0.0294,*
+Referent (Q2),primary,3,0.0005,-0.0249,0.0271,
+Referent (Q2),primary,5,-0.0001,-0.0261,0.0258,
+Referent (Q2),primary,7,0.0011,-0.0197,0.0238,
+Referent (Q2),primary,10,0.0014,-0.0208,0.0263,
+Referent (Q2),n_edits_14d,3,-0.8523,-2.8423,0.674,
+Referent (Q2),n_edits_14d,5,-0.8588,-2.4908,0.7333,
+Referent (Q2),n_edits_14d,7,-0.7672,-2.2721,0.7033,
+Referent (Q2),n_edits_14d,10,-0.7454,-2.4392,0.5725,
+Referent (Q2),active_days_30d,3,-0.0929,-0.2793,0.1188,
+Referent (Q2),active_days_30d,5,-0.0866,-0.2672,0.1332,
+Referent (Q2),active_days_30d,7,-0.0697,-0.2664,0.1026,
+Referent (Q2),active_days_30d,10,-0.0674,-0.258,0.1339,
+Referent (Q2),unique_ns_14d,3,0.0096,-0.0352,0.0547,
+Referent (Q2),unique_ns_14d,5,0.0072,-0.0518,0.0497,
+Referent (Q2),unique_ns_14d,7,0.0119,-0.0375,0.0614,
+Referent (Q2),unique_ns_14d,10,0.0114,-0.0312,0.0617,
+Referent (Q2),reverted_any_14d,3,-0.003,-0.0247,0.0145,
+Referent (Q2),reverted_any_14d,5,-0.0037,-0.0232,0.0154,
+Referent (Q2),reverted_any_14d,7,-0.0023,-0.0227,0.0186,
+Referent (Q2),reverted_any_14d,10,-0.0021,-0.0221,0.0155,
+Referent (Q2),2+_active_days_14d,3,0.0014,-0.0171,0.0183,
+Referent (Q2),2+_active_days_14d,5,0.0019,-0.0167,0.0196,
+Referent (Q2),2+_active_days_14d,7,0.0031,-0.0141,0.022,
+Referent (Q2),2+_active_days_14d,10,0.0036,-0.0166,0.0215,
+Appraisal (Q3),primary,3,0.0411,-0.0009,0.0864,
+Appraisal (Q3),primary,5,0.0409,-0.004,0.0809,
+Appraisal (Q3),primary,7,0.0453,-0.0052,0.0896,
+Appraisal (Q3),primary,10,0.0397,-0.0093,0.0882,
+Appraisal (Q3),n_edits_14d,3,0.7324,-4.3722,4.0527,
+Appraisal (Q3),n_edits_14d,5,1.044,-3.3294,4.0265,
+Appraisal (Q3),n_edits_14d,7,1.3243,-3.8648,4.1969,
+Appraisal (Q3),n_edits_14d,10,1.4919,-2.9534,4.3901,
+Appraisal (Q3),active_days_30d,3,0.3347,-0.1292,0.7618,
+Appraisal (Q3),active_days_30d,5,0.338,-0.1034,0.7151,
+Appraisal (Q3),active_days_30d,7,0.405,0.013,0.7624,*
+Appraisal (Q3),active_days_30d,10,0.3863,-0.0495,0.756,
+Appraisal (Q3),unique_ns_14d,3,0.0094,-0.1027,0.117,
+Appraisal (Q3),unique_ns_14d,5,0.0055,-0.078,0.1024,
+Appraisal (Q3),unique_ns_14d,7,0.0206,-0.0677,0.1076,
+Appraisal (Q3),unique_ns_14d,10,0.0046,-0.0903,0.1039,
+Appraisal (Q3),reverted_any_14d,3,-0.0194,-0.0548,0.0103,
+Appraisal (Q3),reverted_any_14d,5,-0.0216,-0.0567,0.0107,
+Appraisal (Q3),reverted_any_14d,7,-0.0157,-0.0538,0.0167,
+Appraisal (Q3),reverted_any_14d,10,-0.0164,-0.0481,0.0168,
+Appraisal (Q3),2+_active_days_14d,3,0.025,-0.015,0.0677,
+Appraisal (Q3),2+_active_days_14d,5,0.0256,-0.0099,0.0615,
+Appraisal (Q3),2+_active_days_14d,7,0.0295,-0.01,0.0669,
+Appraisal (Q3),2+_active_days_14d,10,0.0275,-0.0143,0.0633,
+Normative (Q4),primary,3,0.0193,-0.005,0.045,
+Normative (Q4),primary,5,0.0184,-0.0103,0.0496,
+Normative (Q4),primary,7,0.0178,-0.0102,0.0443,
+Normative (Q4),primary,10,0.0184,-0.0106,0.0504,
+Normative (Q4),n_edits_14d,3,1.6612,-1.115,4.693,
+Normative (Q4),n_edits_14d,5,1.6727,-1.6706,4.8064,
+Normative (Q4),n_edits_14d,7,1.5996,-0.7248,4.5795,
+Normative (Q4),n_edits_14d,10,1.6982,-1.3474,4.1092,
+Normative (Q4),active_days_30d,3,0.1086,-0.1746,0.3582,
+Normative (Q4),active_days_30d,5,0.1061,-0.1288,0.3656,
+Normative (Q4),active_days_30d,7,0.1011,-0.1569,0.3319,
+Normative (Q4),active_days_30d,10,0.112,-0.1617,0.3944,
+Normative (Q4),unique_ns_14d,3,0.0283,-0.0341,0.0895,
+Normative (Q4),unique_ns_14d,5,0.0288,-0.0286,0.0828,
+Normative (Q4),unique_ns_14d,7,0.0274,-0.0294,0.0822,
+Normative (Q4),unique_ns_14d,10,0.0294,-0.023,0.0881,
+Normative (Q4),reverted_any_14d,3,0.0072,-0.0133,0.0317,
+Normative (Q4),reverted_any_14d,5,0.0072,-0.0128,0.0308,
+Normative (Q4),reverted_any_14d,7,0.0065,-0.0151,0.0243,
+Normative (Q4),reverted_any_14d,10,0.0069,-0.012,0.0305,
+Normative (Q4),2+_active_days_14d,3,0.0234,-0.0016,0.0468,
+Normative (Q4),2+_active_days_14d,5,0.0236,-0.0011,0.0496,
+Normative (Q4),2+_active_days_14d,7,0.0226,-0.0011,0.0431,
+Normative (Q4),2+_active_days_14d,10,0.0238,0.0035,0.0463,*
+Non-substantive,primary,3,-0.0001,-0.0154,0.0139,
+Non-substantive,primary,5,-0.0001,-0.0134,0.0127,
+Non-substantive,primary,7,-0.0016,-0.0168,0.0131,
+Non-substantive,primary,10,-0.0006,-0.0155,0.012,
+Non-substantive,n_edits_14d,3,0.7695,-0.3773,1.867,
+Non-substantive,n_edits_14d,5,0.7244,-0.7347,1.8846,
+Non-substantive,n_edits_14d,7,0.6406,-0.7723,2.0884,
+Non-substantive,n_edits_14d,10,0.6573,-0.9054,1.8872,
+Non-substantive,active_days_30d,3,0.0672,-0.046,0.1808,
+Non-substantive,active_days_30d,5,0.0658,-0.0358,0.1854,
+Non-substantive,active_days_30d,7,0.0528,-0.0792,0.169,
+Non-substantive,active_days_30d,10,0.057,-0.0579,0.1612,
+Non-substantive,unique_ns_14d,3,0.0027,-0.0309,0.0291,
+Non-substantive,unique_ns_14d,5,0.0019,-0.0238,0.0335,
+Non-substantive,unique_ns_14d,7,-0.0013,-0.0312,0.0322,
+Non-substantive,unique_ns_14d,10,0.0004,-0.03,0.0285,
+Non-substantive,reverted_any_14d,3,-0.0001,-0.0114,0.0108,
+Non-substantive,reverted_any_14d,5,-0.0005,-0.0149,0.0146,
+Non-substantive,reverted_any_14d,7,-0.0017,-0.0128,0.0123,
+Non-substantive,reverted_any_14d,10,-0.0008,-0.0158,0.0113,
+Non-substantive,2+_active_days_14d,3,0.0042,-0.0076,0.016,
+Non-substantive,2+_active_days_14d,5,0.0047,-0.0058,0.0164,
+Non-substantive,2+_active_days_14d,7,0.0033,-0.0117,0.0138,
+Non-substantive,2+_active_days_14d,10,0.0041,-0.0081,0.0167,
+Own work (Q5=Y),primary,3,0.0334,0.0078,0.0557,*
+Own work (Q5=Y),primary,5,0.033,0.0075,0.0581,*
+Own work (Q5=Y),primary,7,0.0336,0.0092,0.0528,*
+Own work (Q5=Y),primary,10,0.034,0.0101,0.0567,*
+Own work (Q5=Y),n_edits_14d,3,1.8526,0.094,3.4209,*
+Own work (Q5=Y),n_edits_14d,5,1.7813,0.2273,3.3212,*
+Own work (Q5=Y),n_edits_14d,7,1.7997,0.146,3.4716,*
+Own work (Q5=Y),n_edits_14d,10,1.7795,0.0599,3.3006,*
+Own work (Q5=Y),active_days_30d,3,0.2344,0.0428,0.4435,*
+Own work (Q5=Y),active_days_30d,5,0.2196,0.0257,0.4511,*
+Own work (Q5=Y),active_days_30d,7,0.229,0.036,0.4585,*
+Own work (Q5=Y),active_days_30d,10,0.2306,0.0179,0.4121,*
+Own work (Q5=Y),unique_ns_14d,3,0.0637,0.0238,0.1116,*
+Own work (Q5=Y),unique_ns_14d,5,0.0619,0.0154,0.1024,*
+Own work (Q5=Y),unique_ns_14d,7,0.0632,0.0162,0.1078,*
+Own work (Q5=Y),unique_ns_14d,10,0.0636,0.0156,0.1112,*
+Own work (Q5=Y),reverted_any_14d,3,0.0013,-0.0185,0.0222,
+Own work (Q5=Y),reverted_any_14d,5,0.0008,-0.0167,0.0183,
+Own work (Q5=Y),reverted_any_14d,7,0.001,-0.0155,0.0166,
+Own work (Q5=Y),reverted_any_14d,10,0.0009,-0.0173,0.0177,
+Own work (Q5=Y),2+_active_days_14d,3,0.0262,0.0099,0.0459,*
+Own work (Q5=Y),2+_active_days_14d,5,0.0255,0.0052,0.0435,*
+Own work (Q5=Y),2+_active_days_14d,7,0.0256,0.0059,0.043,*
+Own work (Q5=Y),2+_active_days_14d,10,0.0267,0.0083,0.0445,*
+No own work (Q5=N),primary,3,0.0166,0.0047,0.0266,*
+No own work (Q5=N),primary,5,0.0157,0.0056,0.0282,*
+No own work (Q5=N),primary,7,0.0149,0.0034,0.0243,*
+No own work (Q5=N),primary,10,0.0148,0.005,0.025,*
+No own work (Q5=N),n_edits_14d,3,0.274,-0.7013,1.3325,
+No own work (Q5=N),n_edits_14d,5,0.2091,-0.802,1.3573,
+No own work (Q5=N),n_edits_14d,7,0.1473,-0.9081,1.0418,
+No own work (Q5=N),n_edits_14d,10,0.1302,-0.9566,1.2644,
+No own work (Q5=N),active_days_30d,3,0.0825,-0.0256,0.1606,
+No own work (Q5=N),active_days_30d,5,0.0776,-0.0013,0.1753,
+No own work (Q5=N),active_days_30d,7,0.0684,-0.0281,0.1597,
+No own work (Q5=N),active_days_30d,10,0.0674,-0.021,0.199,
+No own work (Q5=N),unique_ns_14d,3,0.0212,-0.0009,0.0472,
+No own work (Q5=N),unique_ns_14d,5,0.0208,-0.0025,0.0404,
+No own work (Q5=N),unique_ns_14d,7,0.0181,-0.0014,0.0421,
+No own work (Q5=N),unique_ns_14d,10,0.0182,-0.0066,0.0381,
+No own work (Q5=N),reverted_any_14d,3,0.0071,-0.0015,0.0157,
+No own work (Q5=N),reverted_any_14d,5,0.0074,-0.0007,0.0148,
+No own work (Q5=N),reverted_any_14d,7,0.0074,-0.0,0.0146,
+No own work (Q5=N),reverted_any_14d,10,0.007,-0.001,0.0149,
+No own work (Q5=N),2+_active_days_14d,3,0.0146,0.0058,0.0232,*
+No own work (Q5=N),2+_active_days_14d,5,0.014,0.0055,0.0226,*
+No own work (Q5=N),2+_active_days_14d,7,0.0132,0.0048,0.021,*
+No own work (Q5=N),2+_active_days_14d,10,0.013,0.0051,0.0207,*

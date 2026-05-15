@@ -1,0 +1,11 @@
+Dimension,Name,Yubo_Rota,Yubo_DSv2,Rota_DSv2,Set
+Q0,Q1 Substantive,0.7713,0.9044,0.8094,test
+Q2,Q2 Referent,0.9001,0.815,0.8002,test
+Q3,Q3 Appraisal,0.8436,0.9,0.8436,test
+Q4,Q4 Normative,0.885,0.7543,0.6773,test
+Q5,Q5 Own Work,0.9094,0.8336,0.7844,test
+Q0,Q1 Substantive,0.8716,0.9243,0.8869,full
+Q2,Q2 Referent,0.95,0.8612,0.8559,full
+Q3,Q3 Appraisal,0.8904,0.9364,0.9108,full
+Q4,Q4 Normative,0.8513,0.7695,0.7385,full
+Q5,Q5 Own Work,0.9259,0.8471,0.8541,full

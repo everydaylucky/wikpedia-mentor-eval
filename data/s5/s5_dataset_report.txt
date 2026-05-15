@@ -1,0 +1,134 @@
+# S5 Complete Dataset Report
+# Generated: 2026-04-21 05:14
+
+## 1. Basic Counts
+Total conversations: 41,339
+  s2_wikitext: 36,165 (87.5%)
+  s4_recovered: 5,174 (12.5%)
+
+Has question_text: 40,886 (98.9%)
+Has mentor_reply:  30,658 (74.2%)
+No mentor_reply:   10,681 (25.8%)
+Has revid:         39,684 (96.0%)
+Has article:       7,388 (17.9%)
+
+## 2. Mentors & Mentees
+Unique mentors: 403
+Unique mentees: 36,431
+
+Questions per mentor:
+  Mean:   102.6
+  Median: 59.0
+  Min:    1
+  Max:    572
+  Std:    110.7
+
+Top 10 mentors by question count:
+  Sungodtemple: 572
+  Mujinga: 569
+  Qwerfjkl: 565
+  Oshwah: 562
+  Asilvering: 504
+  Zippybonzo: 464
+  Ferien: 461
+  Cassiopeia: 430
+  Alextejthompson: 400
+  Rusty Cat: 387
+
+Questions per mentee:
+  Mean:   1.1
+  Median: 1.0
+  Min:    1
+  Max:    31
+  Mentees with >1 question: 3,328 (9.1%)
+
+## 3. Reply Rate
+Overall reply rate: 74.2%
+  s2_wikitext: 27820/36165 (76.9%)
+  s4_recovered: 2838/5174 (54.9%)
+
+Reply rate per mentor:
+  Mean:   69.7%
+  Median: 73.4%
+  Std:    23.1%
+  Mentors with 0% reply rate: 6
+  Mentors with 100% reply rate: 20
+
+## 4. Text Length (characters)
+
+Question text length:
+  N:      40,886
+  Mean:   288
+  Median: 197
+  Std:    297
+  Min:    6
+  Max:    12324
+  P10:   120
+  P25:   143
+  P75:   321
+  P90:   527
+
+Reply text length:
+  N:      30,658
+  Mean:   779
+  Median: 480
+  Std:    1030
+  Min:    9
+  Max:    37176
+  P10:   207
+  P25:   308
+  P75:   853
+  P90:   1609
+
+## 5. Word Count
+
+Question word count:
+  Mean:   41.9
+  Median: 27
+  Std:    45.4
+
+Reply word count:
+  Mean:   100.0
+  Median: 57
+  Std:    143.6
+
+## 6. Temporal Distribution
+
+By year:
+  2021: 979
+  2022: 2,945
+  2023: 5,255
+  2024: 10,082
+  2025: 16,954
+  2026: 5,124
+
+By month (top 20):
+  2025-11: 1,669
+  2025-05: 1,563
+  2025-12: 1,545
+  2026-01: 1,533
+  2025-03: 1,469
+  2025-10: 1,463
+  2025-04: 1,461
+  2026-03: 1,453
+  2025-07: 1,427
+  2025-06: 1,397
+  2025-09: 1,387
+  2025-08: 1,361
+  2026-02: 1,345
+  2025-02: 1,238
+  2025-01: 974
+  2023-11: 893
+  2024-05: 893
+  2024-06: 889
+  2024-04: 878
+  2024-08: 867
+
+## 7. Article (editing module questions)
+Questions with article field: 7,388 (17.9%)
+Questions from homepage (no article): 33,951 (82.1%)
+
+## 8. Data Quality
+Empty question_text: 453
+Very short question (<10 chars): 3
+Very short reply (<10 chars): 1

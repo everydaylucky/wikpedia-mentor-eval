@@ -328,6 +328,9 @@ def build_outcomes(edits, Q, anchor, replied):
     dates_14d = set(e["ts"].date() for e in post_main_c if e["ts"] <= w14)
     cross_day_c = int(len(dates_14d) >= 2)
 
+    dates_14d_any = set(e["ts"].date() for e in post_anchor_main if e["ts"] <= w14)
+    cross_day_any = int(len(dates_14d_any) >= 2)
+
     sec2 = int(any(e["ts"] > w14 and e["ts"] <= w28 and e["ns"] == 0 for e in post_anchor_main))
     c_15_60 = int(any(e["ts"] > w14 and e["ts"] <= w60 for e in post_main_c))
 
@@ -337,8 +340,14 @@ def build_outcomes(edits, Q, anchor, replied):
     reverted_any = int(sum(1 for e in w14_edits if "mw-reverted" in e.get("tags", [])) >= 1)
     unique_ns = len(set(e["ns"] for e in w14_edits))
 
+    active_14d = len(set(e["ts"].date() for e in post_anchor_all if e["ts"] <= w14))
     active_30d = len(set(e["ts"].date() for e in post_anchor_all if e["ts"] <= w30))
     constr_30d = len(set(e["ts"].date() for e in post_all_c if e["ts"] <= w30))
+
+    # 15-30d window outcomes (persistence beyond initial 14d)
+    mainspace_15_30d = int(any(e["ts"] > w14 and e["ts"] <= w30 for e in post_anchor_main))
+    n_mainspace_15_30d = len([e for e in post_anchor_main if e["ts"] > w14 and e["ts"] <= w30])
+    active_days_15_30d = len(set(e["ts"].date() for e in post_anchor_all if e["ts"] > w14 and e["ts"] <= w30))
 
     oc = {
         "primary": primary,
@@ -347,16 +356,30 @@ def build_outcomes(edits, Q, anchor, replied):
         "sec2": sec2,
         "constructive_edit_15_60d": c_15_60,
         "reverted_any": reverted_any,
+        "active_days_14d": active_14d,
         "active_days_30d": active_30d,
         "constructive_days_30d": constr_30d,
         "unique_ns": unique_ns,
         "cross_day_constructive_14d": cross_day_c,
+        "cross_day_any_14d": cross_day_any,
+        "mainspace_15_30d": mainspace_15_30d,
+        "n_mainspace_15_30d": n_mainspace_15_30d,
+        "active_days_15_30d": active_days_15_30d,
     }
 
     # Window sensitivity outcomes (any mainspace edit, regardless of revert)
     for wd in [7, 14, 21, 28, 30, 60, 180]:
         ww = anchor + timedelta(days=wd)
         oc[f"mainspace_{wd}d"] = int(any(e["ts"] <= ww for e in post_anchor_main))
+
+    # Teahouse-style windowed outcomes: 3-4wk (15-28d), 1-2mo (29-60d), 2-6mo (61-180d)
+    w180 = anchor + timedelta(days=180)
+    th_windows = [("15_28d", w14, w28), ("29_60d", w28, w60), ("61_180d", w60, w180)]
+    for wname, wlo, whi in th_windows:
+        edits_in_w = [e for e in post_anchor_main if e["ts"] > wlo and e["ts"] <= whi]
+        n_in_w = len(edits_in_w)
+        oc[f"th_1plus_{wname}"] = int(n_in_w >= 1)
+        oc[f"th_5plus_{wname}"] = int(n_in_w >= 5)
 
     return oc
 
@@ -564,10 +587,17 @@ def main():
 
     lag_array = np.array(all_reply_lags) if all_reply_lags else np.array([1.0])
     median_lag = float(np.median(lag_array))
+    lag_p25 = float(np.percentile(lag_array, 25))
+    lag_p75 = float(np.percentile(lag_array, 75))
     lag_rng = np.random.RandomState(42)
+    multi_rng = np.random.RandomState(123)
+    N_MULTI_DRAWS = 20
+    PSEUDO_STRATS = ["median", "p25", "p75", "zero"]
     print(f"  Median reply lag: {median_lag:.2f} days (mean={lag_array.mean():.2f}, std={lag_array.std():.2f})")
+    print(f"  p25={lag_p25:.2f}d, p75={lag_p75:.2f}d")
     print(f"  Conversations with reply timestamp: {len(reply_ts_map):,}")
     print(f"  Control anchor: random sample from {len(lag_array):,} observed reply lags")
+    print(f"  Pseudo-time robustness: +4 fixed strategies + multi-draw (K={N_MULTI_DRAWS})")
 
     # ── 7. Build all features ───────────────────────────────────────────────
     print(f"\n[7] Building features for {N:,} conversations...")
@@ -587,11 +617,18 @@ def main():
     mentor_reply_rate_list = []
 
     OC_KEYS = ["primary", "n_mainspace_edits_14d", "primary_constructive", "sec2", "constructive_edit_15_60d",
-                "reverted_any", "active_days_30d", "constructive_days_30d",
-                "unique_ns", "cross_day_constructive_14d"]
+                "reverted_any", "active_days_14d", "active_days_30d", "constructive_days_30d",
+                "unique_ns", "cross_day_constructive_14d", "cross_day_any_14d",
+                "mainspace_15_30d", "n_mainspace_15_30d", "active_days_15_30d",
+                "th_1plus_15_28d", "th_5plus_15_28d",
+                "th_1plus_29_60d", "th_5plus_29_60d",
+                "th_1plus_61_180d", "th_5plus_61_180d"]
     OC_WINDOW_KEYS = [f"mainspace_{w}d" for w in [7, 14, 21, 28, 30, 60, 180]]
     ALL_OC_KEYS = OC_KEYS + OC_WINDOW_KEYS
     OC = {k: [] for k in ALL_OC_KEYS}
+    ALT_OC = {}
+    for ps_name in PSEUDO_STRATS + ["multi"]:
+        ALT_OC[ps_name] = {k: [] for k in ALL_OC_KEYS}
 
     n_missing_edits = 0
     n_missing_emb = 0
@@ -671,6 +708,28 @@ def main():
         oc = build_outcomes(edits, Q, anchor, replied)
         for k in ALL_OC_KEYS:
             OC[k].append(oc.get(k, 0))
+
+        # ── Pseudo-time robustness outcomes ──
+        if replied and rts:
+            for ps_name in PSEUDO_STRATS + ["multi"]:
+                for k in ALL_OC_KEYS:
+                    ALT_OC[ps_name][k].append(oc.get(k, 0))
+        else:
+            strat_lags = {"median": median_lag, "p25": lag_p25, "p75": lag_p75, "zero": 0.0}
+            for ps_name, lag_val in strat_lags.items():
+                anchor_alt = Q + timedelta(days=lag_val)
+                oc_alt = build_outcomes(edits, Q, anchor_alt, replied)
+                for k in ALL_OC_KEYS:
+                    ALT_OC[ps_name][k].append(oc_alt.get(k, 0))
+            multi_ocs = {k: [] for k in ALL_OC_KEYS}
+            for _ in range(N_MULTI_DRAWS):
+                lag_draw = float(multi_rng.choice(lag_array))
+                anchor_alt = Q + timedelta(days=lag_draw)
+                oc_draw = build_outcomes(edits, Q, anchor_alt, replied)
+                for k in ALL_OC_KEYS:
+                    multi_ocs[k].append(oc_draw.get(k, 0))
+            for k in ALL_OC_KEYS:
+                ALT_OC["multi"][k].append(float(np.mean(multi_ocs[k])))
 
         if (i + 1) % 5000 == 0:
             print(f"  [{i+1:,}/{N:,}]", flush=True)
@@ -766,6 +825,12 @@ def main():
     # Outcomes
     for k in ALL_OC_KEYS:
         save_dict[f"oc_{k}"] = np.array(OC[k], dtype=float)
+
+    # Pseudo-time robustness outcomes
+    for ps_name in PSEUDO_STRATS + ["multi"]:
+        for k in ALL_OC_KEYS:
+            save_dict[f"oc_{k}__{ps_name}"] = np.array(ALT_OC[ps_name][k], dtype=float)
+    save_dict["pseudo_lag_info"] = np.array([median_lag, lag_p25, lag_p75, 0.0, N_MULTI_DRAWS])
 
     np.savez_compressed(out_path, **save_dict)
     sz = out_path.stat().st_size / 1024 / 1024

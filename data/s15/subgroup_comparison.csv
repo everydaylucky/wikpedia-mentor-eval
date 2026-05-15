@@ -1,0 +1,32 @@
+Feature,Feature_col,Full sample,Technical,Referent (Q2),Appraisal (Q3),Normative (Q4),Non-substantive,Own work (Q5=Y),No own work (Q5=N)
+Reply word count,r_words,52.9314,54.5412,48.5736,78.1035,69.7176,27.5259,67.4277,48.362
+Reply sentence count,r_sentences,3.7532,3.8235,3.5815,5.0521,4.5436,2.5158,4.4601,3.5303
+Reply paragraph count,r_n_paragraphs,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Avg word length,r_avg_word_len,4.6692,4.6923,4.7107,4.6579,4.7181,4.5194,4.6454,4.6767
+Type-token ratio,r_type_token_ratio,0.8676,0.8577,0.8783,0.8288,0.8351,0.9331,0.8389,0.8766
+"""You"" count",r_pronoun_you,2.6535,2.882,2.684,3.0488,3.0069,1.4608,3.1488,2.4974
+"""I"" count",r_pronoun_i,0.9856,0.9263,0.8388,1.6994,1.2254,0.862,1.3102,0.8833
+"""We"" count",r_pronoun_we,0.1644,0.1708,0.1306,0.2291,0.2271,0.0903,0.1985,0.1536
+"""You"" rate (per word)",r_pronoun_you_rate,0.0565,0.0579,0.0603,0.0431,0.048,0.0616,0.0533,0.0574
+"""I"" rate (per word)",r_pronoun_i_rate,0.0215,0.0181,0.0186,0.0255,0.0194,0.0351,0.0219,0.0214
+VADER compound,r_vader_compound,0.4435,0.4442,0.5479,0.4991,0.4484,0.3356,0.445,0.4431
+TextBlob polarity,r_tb_polarity,0.1917,0.1839,0.2485,0.1898,0.1712,0.1898,0.1681,0.1991
+TextBlob subjectivity,r_tb_subjectivity,0.4625,0.4634,0.4717,0.4753,0.4651,0.4462,0.4614,0.4629
+Flesch-Kincaid grade,r_flesch_kincaid,6.6734,6.8116,6.113,7.4982,7.6962,5.4238,7.1234,6.5315
+Avg syllables/word,r_avg_syllables,1.4963,1.4953,1.4701,1.4995,1.5234,1.4922,1.4859,1.4996
+Imperative sentences,r_n_imperatives,0.2124,0.2351,0.2486,0.2138,0.2071,0.1179,0.2143,0.2119
+Numbered steps,r_n_steps,0.0078,0.0085,0.0056,0.0087,0.0096,0.005,0.006,0.0083
+Has step-by-step (%),r_has_steps,0.0021,0.0023,0.0014,0.0027,0.0029,0.0009,0.0019,0.0022
+Has list (%),r_has_list,0.0119,0.0118,0.0079,0.016,0.0179,0.0075,0.0156,0.0108
+Resource links (total),r_n_resources,1.4689,1.6214,1.6011,1.674,1.7508,0.5467,1.5511,1.443
+Wikilinks,r_n_wikilink,0.2097,0.226,0.1124,0.2859,0.2472,0.1774,0.2551,0.1954
+Policy references,r_n_policy,1.0407,1.1447,1.1211,1.2077,1.3495,0.2903,1.1102,1.0188
+Help page references,r_n_help,0.1615,0.1906,0.3365,0.0795,0.0877,0.0349,0.1063,0.1789
+Reply lag (hours),r_reply_lag_hours,41.6365,43.1157,43.1713,45.2925,40.4362,36.977,44.4993,40.7341
+Reply/question word ratio,r_reply_q_word_ratio,3.6144,3.2117,4.8538,2.4574,2.1744,5.7434,2.2843,4.0337
+Gratitude,r_polite_gratitude,0.1047,0.1032,0.0826,0.1576,0.1316,0.0842,0.1356,0.0949
+Deference,r_polite_deference,0.1199,0.1091,0.1492,0.2258,0.1483,0.07,0.1415,0.1131
+Positive language,r_polite_has_positive,0.2026,0.1928,0.2607,0.3059,0.2236,0.1382,0.2179,0.1978
+Greeting,r_polite_indirect_greeting,0.4022,0.409,0.4087,0.4142,0.3982,0.3767,0.4071,0.4006
+Toxicity,persp_r_toxicity,,,,,,,,
+Insult,persp_r_insult,,,,,,,,

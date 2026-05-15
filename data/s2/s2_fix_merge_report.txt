@@ -1,0 +1,69 @@
+======================================================================
+  s2 DATA FIX REPORT
+======================================================================
+
+  BEFORE FIX:
+    s2_matched:    2502 page records
+    s2_unmatched:  236 page records
+    Duplicates in matched: 292
+
+  FIXES APPLIED:
+    Reclassified (unmatched→matched): 218 page records, 2477 questions
+    Newly fetched pages:              89 page records, 1025 questions
+    Duplicates removed:               292
+
+  AFTER FIX:
+    s2_merged:          2517 page records, 37111 questions, 396 mentors
+    s2_unmatched_clean: 18 page records
+
+  MENTORS WITH NEW DATA:
+  Mentor                           before    after    delta
+  -------------------------------------------------------
+  Frostly                               0      366  +   366
+  Rusty Cat                            23      361  +   338
+  Zoozaz1                              20      339  +   319
+  I dream of horses                     0      278  +   278
+  Rambley                               0      225  +   225
+  Aafi                                  1      210  +   209
+  Ca                                    6      129  +   123
+  Olliefant                             0      105  +   105
+  ~delta                                5      106  +   101
+  Fathoms Below                        42      138  +    96
+  Royiswariii                           3       92  +    89
+  MSGJ                                  0       87  +    87
+  CFA                                  20      105  +    85
+  Isabelle Belato                       0       79  +    79
+  Phoenix                               0       79  +    79
+  Ampil                                 0       66  +    66
+  Plutus                                0       52  +    52
+  Trialpears                            0       50  +    50
+  ObserveOwl                           12       61  +    49
+  Myrealnamm                            8       55  +    47
+  Aryan                                 0       41  +    41
+  Usedtobecool                          0       36  +    36
+  AviCapt                               0       34  +    34
+  Pelagic                               0       34  +    34
+  Sennecaster                           0       33  +    33
+  Kaleeb18                              0       33  +    33
+  Lee Vilenski                          0       33  +    33
+  Hajoon0102                            0       30  +    30
+  Nyakase                               2       31  +    29
+  MSK                                  31       57  +    26
+  Asartea                               0       25  +    25
+  Aerin17                               0       24  +    24
+  Coolgurl5555                          0       21  +    21
+  Cloud atlas                           0       21  +    21
+  Blacephalon                           0       19  +    19
+  CaroleHenson                          0       18  +    18
+  Celestina007                          0       18  +    18
+  SHB2000                              16       32  +    16
+  Oronsay                               1       13  +    12
+  Aseleste                              0       11  +    11
+  SCHolar44                             0       10  +    10
+  AssumeGoodWraith                      0        9  +     9
+  Usernamekiran                       622      630  +     8
+  L235                                  0        6  +     6
+  TheresNoTime                          0        6  +     6
+  Valereee                              0        3  +     3
+  PerfectSoundWhatever                106      107  +     1
+  Matrix                              108      109  +     1

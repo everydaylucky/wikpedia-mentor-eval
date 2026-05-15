@@ -1,0 +1,200 @@
+s2_tag_download_all report  —  2026-04-20 10:46
+============================================================
+Total mentors:        440
+Completed (cumul.):   440
+This run processed:   191
+Total revisions in cache: 42646
+Elapsed (this run):   361.8s
+
+Per-mentor counts (this run):
+  Sungodtemple                                583
+  Qwerfjkl                                    582
+  Asilvering                                  517
+  Zippybonzo                                  464
+  Rusty Cat                                   391
+  Justiyaya                                   339
+  MPGuy2824                                   338
+  JayCubby                                    330
+  Relativity                                  317
+  1AmNobody24                                 316
+  GoldRomean                                  315
+  Lordseriouspig                              294
+  ARandomName123                              275
+  Rambley                                     246
+  Tol                                         239
+  AlphaBetaGamma                              225
+  Seawolf35                                   219
+  UndercoverClassicist                        213
+  GGOTCC                                      199
+  Blaze Wolf                                  196
+  Destinyokhiria                              186
+  Reconrabbit                                 184
+  Perfect4th                                  176
+  NotAGenious                                 163
+  Nythar                                      156
+  KuyaMoHirowo                                156
+  DanCherek                                   153
+  Nedia020415                                 149
+  LunaEclipse                                 148
+  Ca                                          147
+  Mwwv                                        144
+  Fathoms Below                               141
+  LuniZunie                                   132
+  LR.127                                      128
+  Grumpylawnchair                             124
+  楊文祖                                         124
+  Matrix                                      119
+  Raydann                                     119
+  Endrabcwizart                               118
+  CanonNi                                     118
+  ScrabbleTiles                               117
+  Olliefant                                   115
+  Randomdude121                               115
+  SunloungerFrog                              114
+  Codename Noreste                            113
+  NightWolf1223                               111
+  GrayStorm                                   110
+  ~delta                                      110
+  2NumForIce                                  110
+  Maliner                                     109
+  Bunnypranav                                 108
+  CFA                                         106
+  Royiswariii                                 105
+  EF5                                         103
+  Chaotic Enby                                 98
+  Barnards.tar.gz                              93
+  ToadetteEdit                                 91
+  ObserveOwl                                   89
+  Praseodymium-141                             88
+  Cocobb8                                      84
+  Phoenix                                      84
+  HelenDegenerate                              76
+  Schminnte                                    74
+  Abo Yemen                                    74
+  Tankishguy                                   73
+  MuffinHunter0                                72
+  Ampil                                        68
+  Coolgurl5555                                 66
+  Cowboygilbert                                64
+  Snowmanonahoe                                63
+  MSK                                          62
+  ArkadenBoden                                 61
+  Voorts                                       60
+  Myrealnamm                                   58
+  Pro-anti-air                                 58
+  Tenshi Hinanawi                              57
+  Bagwe Neza                                   57
+  SnowyRiver28                                 56
+  JML1148                                      55
+  SkyWolf369                                   55
+  Maddy from Celeste                           55
+  Cremastra                                    55
+  Grapefanatic                                 54
+  OnlyNano                                     54
+  Plutus                                       53
+  Mach61                                       49
+  Pyrrhic victor                               48
+  Nahida                                       46
+  Ultraodan                                    46
+  RandFreeman                                  45
+  S-Aura                                       44
+  Kpddg                                        40
+  Lp0 on fire                                  39
+  Veko                                         36
+  Sennecaster                                  34
+  DreamRimmer                                  34
+  SHB2000                                      33
+  Kaleeb18                                     33
+  Bhairava7                                    33
+  Pineapple Storage                            33
+  LuniZunie-Mentor                             33
+  IntentionallyDense                           31
+  MolecularPilot                               31
+  HwyNerd Mike                                 31
+  Queen of Hearts                              30
+  Dafootballguy                                30
+  PeriodicEditor                               29
+  GrabUp                                       28
+  EchidnaLives                                 28
+  Illusion Flame                               28
+  Fermiboson                                   27
+  SafariScribe                                 27
+  GearsDatapacks                               26
+  Aerin17                                      25
+  SamuelNelsonGISP                             25
+  Dot.py                                       25
+  FatalFit                                     24
+  Tarlby                                       24
+  MouseCursor                                  24
+  Balsam Cottonwood                            24
+  Hurricane Wind and Fire                      22
+  CREditzWiki                                  22
+  CabinetCavers                                22
+  Win8x                                        21
+  Three Sixty                                  21
+  Organhaver                                   20
+  Ophyrius                                     19
+  Nyxion303                                    19
+  Valorrr                                      19
+  Rfqii                                        19
+  Lflin16                                      18
+  Sakura emad                                  17
+  I am bad at usernames                        17
+  Flexagoon                                    16
+  Vghfr                                        16
+  Shadestar474                                 15
+  Luka Maglc                                   15
+  EasternShah                                  15
+  Thilio                                       15
+  CactiStaccingCrane                           14
+  SignedInteger                                14
+  Feedmepaperr                                 14
+  Snugglebuns                                  14
+  TypeInfo                                     13
+  VidanaliK                                    13
+  LionmerterTHE                                13
+  .nhals8                                      13
+  Khagendrawiki                                12
+  ScottishFinnishRadish                        12
+  AssumeGoodWraith                             12
+  Lemonaka                                     12
+  14 novembre                                  12
+  KEmel49                                      12
+  Kqol                                         12
+  Larataguera                                  11
+  Iterresise                                   11
+  Roundish                                     10
+  The person who loves reading                 10
+  Begocc                                        8
+  Sophisticatedevening                          8
+  Crestfalling                                  8
+  Orthodox Yash                                 7
+  BlueStaticHorse                               7
+  Jannatulbaqi                                  5
+  TheAstorPastor                                5
+  Dimitrie569                                   5
+  Enbi                                          5
+  HurricaneZeta                                 4
+  CapnJackSp                                    3
+  Arado Ar 196                                  2
+  Tanbiruzzaman                                 2
+  NoobbTr                                       2
+  Phlogiston Enthusiast                         2
+  Nobel X300                                    1
+  Wikiediter2029                                1
+  UID:40327848                                  0
+  0xDeadbeef                                    0
+  Renamed user b12u3ewq1561                     0
+  SGimeno (WMF)                                 0
+  Rusty4321 Test                                0
+  Aananda1                                      0
+  Wolverine XI                                  0
+  Sangsangaplaz                                 0
+  方志維                                           0
+  Pppery (alt)                                  0
+  1250metersdeep                                0
+  VancityRothaug                                0
+  Abhiimanyu7                                   0
+  PolishHamster                                 0
+  Rafaelthegreat                                0
+  Julie Crowell                                 0
